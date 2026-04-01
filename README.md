@@ -9,7 +9,7 @@ The complete theoretical framework is contained in the file **`Twin-Barrier-Theo
 The following cryptographic hash serves as a timestamped proof of the document's contents at the time of publication:
 
 ```
-SHA-256: 07f5b8de04b247921cbadf1e022a491e4ae47c1e26ef7a4525392866517047d0
+SHA-256: 2eab3ce32d2c9827305f4c9d7fec54f0a09ef623264d0d00972e8f93db6b56a8
 File:    Twin-Barrier-Theory.pdf
 ```
 
