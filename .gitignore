@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+*.json
+*.txt
+!requirements.txt
+!README.md

@@ -1,0 +1,112 @@
+==========================================================================
+  MICROSCOPIC DERIVATION OF RS CLOSURE RELATIONS
+  L* = β/m  |  O(L) ~ e^{-kL}  |  ΔG stability
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+  MODULE A: V_eff(L) → L* = β/m
+──────────────────────────────────────────────────────────────────────────
+
+  Parameters: k=1.0, m=0.1, ν=2.002498
+  α₊=4.002498, α₋=-0.002498
+  λ₀=5.0, λ_L=5.0, v₀=2.0, v_L=1.0
+
+  A1. ODE residual: 9.33e-16
+      BC residuals: 3.42e-16, 1.78e-15
+
+  A2-A3. No stable minimum found ✗
+
+  A4. Parameter scan (1000 points)...
+      Done [5.0s]
+      Valid: 411/1000
+      β median = 1.1361
+      β 68%: [0.3033, 3.3383]
+      β ∈ [0.3, 3.0]: 64.2%
+
+──────────────────────────────────────────────────────────────────────────
+  MODULE B: O(L) = e^{-σ(L)},  σ(L) = kL + δσ(L)
+──────────────────────────────────────────────────────────────────────────
+
+  B1. Warp correction (κ²=0.01):
+      kL=  5.0: σ(L)=5.000813  δσ=8.130455e-04  c_eff=1.000163  O=6.7325e-03
+      kL= 10.0: σ(L)=10.000773  δσ=7.728273e-04  c_eff=1.000077  O=4.5365e-05
+      kL= 15.0: σ(L)=15.000734  δσ=7.341136e-04  c_eff=1.000049  O=3.0568e-07
+      kL= 20.0: σ(L)=20.000697  δσ=6.968608e-04  c_eff=1.000035  O=2.0597e-09
+
+  B2. Fitting log O vs kL:
+      Model 1 (pure exp):  R²=1.00000000
+      Model 2 (+power):    p=0.0000  R²=1.00000000
+      Model 3 (general):   c=0.999993 ± 0.000000  p=0.0000  R²=1.00000000
+      c ≈ 1 test: c=0.999993  ✓ PASS
+
+  B3. Scanning c over parameter space (200 points)...
+      Done [3.8s]
+      200 valid fits
+      c median = 0.999998
+      c std = 0.000341
+      c range: [0.9963, 1.0003]
+
+──────────────────────────────────────────────────────────────────────────
+  MODULE C: Closure Stability ΔG
+──────────────────────────────────────────────────────────────────────────
+
+  β = 1.1361,  c = 0.999993
+  L_min = 10.00,  L_corr = 11.36
+  ΔG/G = 0.000000
+  ΔΛ_IR/Λ_IR = 0.743554
+  ΔG < 2:  ✓
+  ΔG < 10: ✓
+
+──────────────────────────────────────────────────────────────────────────
+  VALIDATION PIPELINE (5 tests)
+──────────────────────────────────────────────────────────────────────────
+  T1 Mesh convergence:    ✓ PASS  (rel=5.3110814237158546e-06)
+  T2 Solver consistency:  ✓ PASS  (rel=2.1565917906376577e-13)
+  T3 BC robustness:       ✓ PASS  (spread=0.060703870760978634)
+  T4 Tail stability:      ✓ PASS  (c spread=6.574955161431362e-07)
+  T5 Parameter robustness: ✓ PASS  (median β=1.1110587342214455)
+
+  Tests passed: 5/5
+  [11.6s]
+
+  Generating plots...
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  Plot → /root/ai_ssn/einstein_deturck/github_repo/results/closure_derivation.png
+
+==========================================================================
+  FINAL VERDICT
+==========================================================================
+
+  Module A: β = mL*
+    median β = 1.1361  ✓ O(1)
+  Module B: O(L) ~ e^{-ckL}
+    c = 0.999993 ± 0.000000  ✓ c≈1
+  Module C: ΔG stability
+    ΔG = 0.000000  ✓ <2 (strong)
+
+  Validation: 5/5 passed
+
+  ╔══════════════════════════════════════════════════╗
+  ║             STRONG MICROSCOPIC SUPPORT             ║
+  ╚══════════════════════════════════════════════════╝
+
+  Runtime: 13.1s
+Traceback (most recent call last):
+  File "/root/ai_ssn/einstein_deturck/github_repo/closure_derivation.py", line 1029, in <module>
+    ok = main()
+  File "/root/ai_ssn/einstein_deturck/github_repo/closure_derivation.py", line 1022, in main
+    json.dump(report, f, indent=2)
+  File "/usr/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/usr/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/usr/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable
