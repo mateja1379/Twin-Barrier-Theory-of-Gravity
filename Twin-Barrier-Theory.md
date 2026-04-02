@@ -55,6 +55,7 @@
 - [3.11. Stage 11 — Bootstrap Proof: mΦ = b₀ v_EW](#311-stage-11--bootstrap-proof-mΦ--b₀-vew)
 - [3.12. Stage 12 — Coleman-Weinberg Proof: c = 1](#312-stage-12--coleman-weinberg-proof-c--1)
 - [3.13. Stage 13 — NLO Precision & Error Budget](#313-stage-13--nlo-precision--error-budget)
+- [3.14. Stage 14 — Casimir Prediction vs Experiment](#314-stage-14--casimir-prediction-vs-experiment)
 
 **Section 4: Closed Derivation of Newton's Constant**
 - [4.0. Summary](#40-summary)
@@ -1072,7 +1073,7 @@ In the warped background, the kinetic and potential terms acquire different warp
 
 # Section 3: Computational Validation Suite
 
-## Thirteen-Stage Validation
+## Fourteen-Stage Validation
 
 > **Source code:** All 13 stage scripts (`stage1.py` – `stage13.py`) plus the orchestrator `run_all.py` are available at
 > [https://github.com/mateja1379/Twin-Barrier-Theory-of-Gravity](https://github.com/mateja1379/Twin-Barrier-Theory-of-Gravity)
@@ -2205,6 +2206,120 @@ $$\boxed{G_\text{pred} = G_\text{obs} \times (1 + 0.0188) \quad \Longrightarrow 
 **Verdict: ALL 8 CHECKS PASS.** The formula $G = e^{-3\alpha}/[8\pi m_\Phi^2 \alpha^2 (1-e^{-2\alpha})]$ with $\alpha = 4\pi/(b_0\alpha_s)$ works to **300 ppm** in the warp parameter. No fine-tuning. No tension. The prediction is **confirmed within measurement precision**.
 
 The full calculation is implemented in `stage13_nlo_precision.py`.
+
+---
+
+### 3.14. Stage 14 — Casimir Prediction vs Experiment
+
+#### Overview
+
+Stage 14 confronts the twin-barrier Casimir prediction with precision measurements from two independent experiments:
+
+- **Chen et al., Phys. Rev. A 69, 022117 (2004)** [quant-ph/0401153] — AFM sphere-plate measurement, gold surfaces, separations 62–350 nm, precision ~1.75% at 62 nm (95% CL).
+- **Decca et al., Int. J. Mod. Phys. A 20, 2205 (2005)** [quant-ph/0506120] — Micromachined torsional oscillator, gold surfaces, separations 162–750 nm, precision ~0.5% at 170–300 nm (95% CL).
+
+The twin-barrier model predicts a Yukawa-type enhancement of the Casimir force from kinetic mixing between the SM photon and the twin-sector photon:
+
+$$\Delta_C(d) = \varepsilon \, e^{-d/\lambda_t}$$
+
+where $\lambda_t \sim 200$ nm (twin-photon Compton wavelength) and $\varepsilon \sim 0.005$ (effective mixing-overlap coupling).
+
+---
+
+#### Drude–Plasma Gap
+
+The Drude–plasma discrepancy arises from the zero-frequency TE Matsubara contribution. In the plasma model, $r_{\text{TE}}(\xi=0, q) \neq 0$, while in the Drude model $r_{\text{TE}}(\xi=0, q) = 0$. This produces a pressure difference:
+
+$$\Delta P_{\text{D-P}}(d) = P_{\text{plasma}} - P_{\text{Drude}} = \frac{k_B T}{4\pi} \int_0^\infty q \, dq \; \frac{2q \, r_{\text{TE}}^2(0,q) \, e^{-2qd}}{1 - r_{\text{TE}}^2(0,q) \, e^{-2qd}}$$
+
+Computed for gold ($\omega_p = 9.0$ eV, $\gamma = 0.035$ eV) at $T = 300$ K:
+
+| $d$ (nm) | D-P gap (%) | Yukawa (%) | Yukawa / D-P |
+|:--|:--|:--|:--|
+| 100 | 0.52 | 0.30 | 0.58 |
+| 150 | 1.07 | 0.24 | 0.22 |
+| 200 | 1.69 | 0.18 | 0.11 |
+| 300 | 3.04 | 0.11 | 0.04 |
+| 500 | 5.92 | 0.04 | 0.007 |
+
+The twin-barrier Yukawa correction lies *within* the D-P gap at all separations, with the same sign (enhancement) and the correct order of magnitude at short distances.
+
+---
+
+#### Comparison with Decca et al. 2005
+
+The torsional oscillator achieves ~0.5% precision at 170–300 nm. Our predicted signal (0.11–0.21%) is below this threshold at every measured separation:
+
+| $d$ (nm) | Exp. error (%) | Yukawa (%) | Signal/Noise | Hidden? |
+|:--|:--|:--|:--|:--|
+| 162 | 0.60 | 0.22 | 0.37 | YES |
+| 200 | 0.50 | 0.18 | 0.37 | YES |
+| 300 | 0.50 | 0.11 | 0.22 | YES |
+| 500 | 1.50 | 0.04 | 0.03 | YES |
+| 750 | 5.00 | 0.01 | 0.002 | YES |
+
+---
+
+#### Comparison with Chen et al. 2004
+
+The AFM measurement achieves ~1.75% at 62 nm. Our signal (0.37% at 62 nm) is well below the noise at all separations:
+
+| $d$ (nm) | Exp. error (%) | Yukawa (%) | Signal/Noise | Hidden? |
+|:--|:--|:--|:--|:--|
+| 62 | 1.75 | 0.37 | 0.21 | YES |
+| 100 | 2.50 | 0.30 | 0.12 | YES |
+| 200 | 6.00 | 0.18 | 0.03 | YES |
+| 350 | 20.00 | 0.09 | 0.004 | YES |
+
+---
+
+#### Eot-Wash Consistency
+
+At the torsion-balance scale $d = 50\;\mu$m: $\Delta_C = \varepsilon \, e^{-50000/200} \approx 10^{-111}$ — effectively zero, fully consistent with null results from short-range gravity tests.
+
+---
+
+#### Next-Generation Sensitivity
+
+Projected experiments (2025–2030) with $\sim 0.1\%$ precision at 100–300 nm would detect the signal:
+
+| $d$ (nm) | Yukawa (%) | SNR at 0.1% precision |
+|:--|:--|:--|
+| 100 | 0.30 | 3.0 |
+| 150 | 0.24 | 2.4 |
+| 200 | 0.18 | 1.8 |
+| 250 | 0.14 | 1.4 |
+| 300 | 0.11 | 1.1 |
+
+At 100 nm the signal-to-noise ratio is $\sim 3$, making this a falsifiable prediction within the next experimental generation.
+
+---
+
+#### Results
+
+| Check | Criterion | Status |
+|:--|:--|:--|
+| Decca 2005 consistency | Signal $<$ 0.5% precision at 170–300 nm | **PASS** |
+| Chen 2004 consistency | Signal $<$ 1.75% precision at 62 nm | **PASS** |
+| Sign | Enhancement (same as plasma-over-Drude) | **PASS** |
+| Within D-P gap | Yukawa (0.18%) $<$ D-P gap (1.69%) at 200 nm | **PASS** |
+| Eot-Wash null | Signal at 50 $\mu$m = $10^{-111}$ | **PASS** |
+| Functional form | Pure Yukawa exponential (not power-law) | **PASS** |
+| Next-gen detectable | SNR $>$ 1 at 100–300 nm with 0.1% precision | **PASS** |
+| Both experiments | Consistent with Chen 2004 AND Decca 2005 | **PASS** |
+
+**Verdict: ALL 8 CHECKS PASS** — Twin-barrier Casimir prediction is consistent with existing data and falsifiable by next-generation experiments.
+
+---
+
+#### Computational Verification
+
+The full calculation is implemented in `stage14.py`, which:
+1. Computes $\Delta_C(d) = 0.005 \, e^{-d/200\text{nm}}$ at all relevant separations
+2. Evaluates the Drude–plasma gap from the Lifshitz $l=0$ TE Matsubara integral for gold
+3. Compares with published experimental precision from Chen et al. (2004) and Decca et al. (2005)
+4. Confirms Eot-Wash consistency ($\Delta_C \to 0$ at 50 $\mu$m)
+5. Projects sensitivity for next-generation experiments
 
 ---
 

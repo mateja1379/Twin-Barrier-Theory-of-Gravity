@@ -12,7 +12,7 @@ import sys
 import time
 import os
 
-STAGES = list(range(1, 14))
+STAGES = list(range(1, 15))
 
 
 def run_stage(n, results_dir):

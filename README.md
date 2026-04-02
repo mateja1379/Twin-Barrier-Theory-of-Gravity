@@ -21,9 +21,9 @@ To verify: `sha256sum Twin-Barrier-Theory.pdf`
 
 ---
 
-# Thirteen-Stage Computational Validation Suite
+# Fourteen-Stage Computational Validation Suite
 
-**13-stage numerical validation of the Randall-Sundrum braneworld — graviton spectrum (Stages 1-7, JAX), vacuum tunneling instanton (Stage 8, SciPy), microscopic closure derivation (Stage 9, SciPy), QCD route to G (Stage 10), bootstrap mass proof (Stage 11), Coleman-Weinberg quantum correction (Stage 12), and NLO error budget (Stage 13).**
+**14-stage numerical validation of the Randall-Sundrum braneworld — graviton spectrum (Stages 1-7, JAX), vacuum tunneling instanton (Stage 8, SciPy), microscopic closure derivation (Stage 9, SciPy), QCD route to G (Stage 10), bootstrap mass proof (Stage 11), Coleman-Weinberg quantum correction (Stage 12), NLO error budget (Stage 13), and Casimir prediction vs experiment (Stage 14).**
 
 This repository provides a complete, self-contained validation pipeline for the 5D Einstein-DeTurck formulation of the Randall-Sundrum braneworld model. The final result is a zero-hypothesis, zero-free-parameter derivation of Newton's constant from three collider measurements.
 
@@ -471,13 +471,48 @@ $$\boxed{G_{\text{pred}} = G_{\text{obs}} \times (1 + 0.0188) \quad \Longrightar
 
 ---
 
+### Stage 14 — Casimir Prediction vs Experiment
+**File:** `stage14.py`
+
+Confronts the twin-barrier Casimir prediction with two precision experiments:
+- **Chen et al.** (2004, Phys. Rev. A 69, 022117) — AFM, 62–350 nm, precision ~1.75%
+- **Decca et al.** (2005, Int. J. Mod. Phys. A 20, 2205) — torsional oscillator, 162–750 nm, precision ~0.5%
+
+**Formulas used:**
+
+Twin-barrier Yukawa enhancement from twin-photon kinetic mixing:
+
+$$\Delta_C(d) = \varepsilon \, e^{-d/\lambda_t}$$
+
+with $\lambda_t = 200$ nm and $\varepsilon = 0.005$.
+
+Drude–plasma gap from the Lifshitz zero-frequency TE Matsubara contribution:
+
+$$\Delta P_{\text{D-P}}(d) = \frac{k_B T}{4\pi} \int_0^\infty q \, dq \; \frac{2q \, r_{\text{TE}}^2(0,q) \, e^{-2qd}}{1 - r_{\text{TE}}^2(0,q) \, e^{-2qd}}$$
+
+for gold ($\omega_p = 9.0$ eV, $\gamma = 0.035$ eV) at $T = 300$ K.
+
+**Key results:**
+
+| $d$ (nm) | D-P gap (%) | Yukawa (%) | Exp. precision (%) | Hidden? |
+|:--|:--|:--|:--|:--|
+| 100 | 0.52 | 0.30 | 2.50 (Chen) | YES |
+| 200 | 1.69 | 0.18 | 0.50 (Decca) | YES |
+| 300 | 3.04 | 0.11 | 0.50 (Decca) | YES |
+
+The signal is below current experimental precision at all separations (consistent, not ruled out), has the correct sign (enhancement), and lies within the Drude–plasma gap. At $d = 50\;\mu$m (Eot-Wash), the signal is $\sim 10^{-111}$ (null). Next-gen experiments with 0.1% precision would detect it at SNR $\sim$ 3 at 100 nm.
+
+**PASS criteria:** All 8 checks pass — consistent with both experiments, correct sign, within D-P gap, Eot-Wash null, detectable by next-gen.
+
+---
+
 ## Repository Structure
 
 ```
 README.md                  # This file
 Twin-Barrier-Theory.pdf    # Complete theory (PDF)
 Twin-Barrier-Theory.md     # Complete theory (Markdown source)
-run_all.py                 # One-command full validation (all 13 stages)
+run_all.py                 # One-command full validation (all 14 stages)
 stage1.py                  # Stage 1: Background metric verification
 stage2.py                  # Stage 2: Linearized brane graviton
 stage3.py                  # Stage 3: KK zero mode verification
@@ -491,6 +526,7 @@ stage10.py                 # Stage 10: QCD route to Newton's constant
 stage11.py                 # Stage 11: Bootstrap proof m = b0 * vEW
 stage12.py                 # Stage 12: Coleman-Weinberg proof c = 1
 stage13.py                 # Stage 13: NLO precision and error budget
+stage14.py                 # Stage 14: Casimir prediction vs experiment
 ```
 
 ## Requirements
@@ -498,14 +534,14 @@ stage13.py                 # Stage 13: NLO precision and error budget
 - **Python** >= 3.10
 - **JAX** >= 0.4.20 (Stages 1-7; works on CPU, GPU optional)
 - **NumPy**, **SciPy**, **Matplotlib** (standard scientific stack)
-- Stages 8-13 run on CPU only (no GPU needed)
+- Stages 8-14 run on CPU only (no GPU needed)
 
 ## Running the Validation
 
 ### Full Pipeline
 
 ```bash
-# Run all 13 stages sequentially
+# Run all 14 stages sequentially
 python run_all.py
 ```
 
@@ -516,7 +552,7 @@ python run_all.py
 python stage1.py
 python stage2.py
 # ...
-python stage13.py
+python stage14.py
 
 # Specific stages via run_all.py
 python run_all.py 1 2 3
