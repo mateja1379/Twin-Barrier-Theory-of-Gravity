@@ -3436,7 +3436,7 @@ The full path from the 5D action to Newton's constant:
 
 | Stage | Result | Free Parameters | Source |
 |-------|--------|:-:|--------|
-| 1. 5D warped action | $ds^2 = e^{-2k\vert y\vert}\eta_{\mu\nu}dx^\mu dx^\nu + dy^2$ | $(k, L, M_5)$ | RS framework |
+| 1. 5D warped action | $ds^2 = e^{-2ky}\,\eta_{\mu\nu}\,dx^\mu dx^\nu + dy^2$ | $(k, L, M_5)$ | RS framework |
 | 2. Dimensional reduction | $G = L^2/[8\pi\alpha^2 e^{3\alpha}(1-e^{-2\alpha})]$ | $(\alpha, L)$ | Stages 1–3 |
 | 3. GW stabilization | $L = \beta/m$, $\alpha = \ln(1/\varepsilon_c)$ | $(m, \varepsilon_c)$ | Stage 9 |
 | 4. Closure formula | $G = \varepsilon_c^3/[8\pi m^2\ln^2(1/\varepsilon_c)(1-\varepsilon_c^2)]$ | $(m, \varepsilon_c)$ | Stage 9 |
