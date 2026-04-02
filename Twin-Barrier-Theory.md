@@ -261,7 +261,7 @@ where the $\mathbb{Z}_2$ identification acts as $y \mapsto -y$. The two fixed po
 
 **Definition 1.3 (Warped background metric).** The background metric on $\mathcal{M}_5$ is given by the Randall–Sundrum warped ansatz:
 
-$$ds^2 = e^{-2k|y|}\,\eta_{\mu\nu}\,dx^\mu dx^\nu + dy^2$$
+$$ds^2 = e^{-2k|y|}\,\eta_{\mu\nu}\,dx^\mu dx^\nu + dy^2 \tag{1}$$
 
 where:
 - $\eta_{\mu\nu} = \mathrm{diag}(-1, +1, +1, +1)$ is the four-dimensional Minkowski metric,
@@ -280,7 +280,7 @@ where:
 
 **Definition 2.2 (Factorized 5D field).** The five-dimensional wave function of a particle is written in the separable form:
 
-$$\Psi(x, y) = \psi(x)\,\chi(y)$$
+$$\Psi(x, y) = \psi(x)\,\chi(y) \tag{2}$$
 
 where:
 - $\psi(x)$ is the four-dimensional field on $\mathcal{M}_4$, encoding the particle's spacetime dynamics,
@@ -288,7 +288,7 @@ where:
 
 **Property 2.3 (Normalization).** The extra-dimensional profile satisfies the normalization condition:
 
-$$\int_0^L dy\;\chi(y)^2 = 1$$
+$$\int_0^L dy\;\chi(y)^2 = 1 \tag{3}$$
 
 ensuring that the total probability of finding the particle somewhere in the extra dimension is unity.
 
@@ -300,15 +300,15 @@ ensuring that the total probability of finding the particle somewhere in the ext
 
 **Definition 3.1 (Bulk-brane action).** The total gravitational action of the model consists of a bulk term and brane terms:
 
-$$S = S_{\text{bulk}} + S_{\text{vis}} + S_{\text{twin}}$$
+$$S = S_{\text{bulk}} + S_{\text{vis}} + S_{\text{twin}} \tag{4}$$
 
 where:
 
-$$S_{\text{bulk}} = M_5^3 \int d^4x \int_0^L dy\;\sqrt{-g_5}\;\bigl(R_5 - 2\Lambda_5\bigr)$$
+$$S_{\text{bulk}} = M_5^3 \int d^4x \int_0^L dy\;\sqrt{-g_5}\;\bigl(R_5 - 2\Lambda_5\bigr) \tag{5}$$
 
-$$S_{\text{vis}} = \int d^4x\;\sqrt{-g_{\text{vis}}}\;\bigl(-\sigma_{\text{vis}} + \mathcal{L}_m\bigr)$$
+$$S_{\text{vis}} = \int d^4x\;\sqrt{-g_{\text{vis}}}\;\bigl(-\sigma_{\text{vis}} + \mathcal{L}_m\bigr) \tag{6a}$$
 
-$$S_{\text{twin}} = \int d^4x\;\sqrt{-g_{\text{twin}}}\;\bigl(-\sigma_{\text{twin}}\bigr)$$
+$$S_{\text{twin}} = \int d^4x\;\sqrt{-g_{\text{twin}}}\;\bigl(-\sigma_{\text{twin}}\bigr) \tag{6b}$$
 
 Here:
 - $M_5$ is the fundamental five-dimensional gravitational mass scale (units: GeV),
@@ -328,9 +328,9 @@ Here:
 
 **Theorem 4.1 (Warped background consistency).** The warped metric (1) is an exact solution of the 5D Einstein equations derived from the action (4)–(6b) if and only if the bulk cosmological constant and brane tensions satisfy:
 
-$$\Lambda_5 = -6\,k^2\,M_5^3$$
+$$\Lambda_5 = -6\,k^2\,M_5^3 \tag{7}$$
 
-$$\sigma_{\text{vis}} = 6\,k\,M_5^3, \qquad \sigma_{\text{twin}} = -6\,k\,M_5^3$$
+$$\sigma_{\text{vis}} = 6\,k\,M_5^3, \qquad \sigma_{\text{twin}} = -6\,k\,M_5^3 \tag{8}$$
 
 *Proof sketch.* Substituting the ansatz (1) into the 5D Einstein equations $G_{AB} + \Lambda_5\,g_{AB} = 0$ (in the bulk) yields the conditions:
 
@@ -358,13 +358,13 @@ which requires $\sigma_{\text{twin}} = -6\,k\,M_5^3$, confirming Eq. (8). $\squa
 
 **Definition 5.1 (Static point mass on the visible brane).** We consider a massive static source of mass $M$ localized at the origin of the visible brane. Its four-dimensional energy-momentum tensor is:
 
-$$T^{00}(x) = M\,\delta^{(3)}(\mathbf{r})$$
+$$T^{00}(x) = M\,\delta^{(3)}(\mathbf{r}) \tag{9}$$
 
 with all other components vanishing, where $\mathbf{r} = (x^1, x^2, x^3)$.
 
 **Definition 5.2 (5D energy-momentum tensor).** The localization of matter on the visible brane is encoded by projecting the 4D energy-momentum tensor into 5D via a delta function in the extra dimension:
 
-$$T_{AB}(x, y) = \delta(y)\;\delta_A^{\;\mu}\,\delta_B^{\;\nu}\;T_{\mu\nu}(x)$$
+$$T_{AB}(x, y) = \delta(y)\;\delta_A^{\;\mu}\,\delta_B^{\;\nu}\;T_{\mu\nu}(x) \tag{10}$$
 
 **Remark 5.3.** The factor $\delta(y)$ expresses the physical statement that ordinary matter fields (electromagnetic, weak, strong interactions) are confined to the visible brane at $y = 0$. Only gravity propagates into the bulk. This is the key asymmetry of brane-world models: gauge fields are brane-localized, while gravity is a bulk phenomenon.
 
@@ -374,17 +374,17 @@ $$T_{AB}(x, y) = \delta(y)\;\delta_A^{\;\mu}\,\delta_B^{\;\nu}\;T_{\mu\nu}(x)$$
 
 **Definition 6.1 (Perturbation ansatz).** We perturb the 5D metric around the warped background (1):
 
-$$g_{AB} = g_{AB}^{(0)} + h_{AB}$$
+$$g_{AB} = g_{AB}^{(0)} + h_{AB} \tag{11}$$
 
 In the transverse-traceless (TT) gauge for the 4D components, the perturbed line element takes the form:
 
-$$ds^2 = e^{-2k|y|}\bigl(\eta_{\mu\nu} + h_{\mu\nu}(x, y)\bigr)\,dx^\mu\,dx^\nu + dy^2$$
+$$ds^2 = e^{-2k|y|}\bigl(\eta_{\mu\nu} + h_{\mu\nu}(x, y)\bigr)\,dx^\mu\,dx^\nu + dy^2 \tag{12}$$
 
 where $h_{\mu\nu}$ satisfies the gauge conditions $\partial^\mu h_{\mu\nu} = 0$ and $\eta^{\mu\nu}h_{\mu\nu} = 0$.
 
 **Theorem 6.2 (Linearized bulk equation).** Inserting the perturbation (12) into the 5D Einstein equations and linearizing to first order in $h_{\mu\nu}$ yields the following equation in the bulk:
 
-$$\left[e^{2k|y|}\,\Box_4 + \frac{\partial^2}{\partial y^2} - 4k^2 + 4k\,\delta(y)\right] h_{\mu\nu} = -\frac{1}{M_5^3}\,\delta(y)\left[T_{\mu\nu} - \frac{1}{3}\,\eta_{\mu\nu}\,T\right]$$
+$$\left[e^{2k|y|}\,\Box_4 + \frac{\partial^2}{\partial y^2} - 4k^2 + 4k\,\delta(y)\right] h_{\mu\nu} = -\frac{1}{M_5^3}\,\delta(y)\left[T_{\mu\nu} - \frac{1}{3}\,\eta_{\mu\nu}\,T\right] \tag{13}$$
 
 where $\Box_4 = \eta^{\mu\nu}\partial_\mu\partial_\nu$ is the four-dimensional d'Alembertian and $T = \eta^{\mu\nu}T_{\mu\nu}$ is the trace of the 4D energy-momentum tensor.
 
@@ -396,23 +396,23 @@ where $\Box_4 = \eta^{\mu\nu}\partial_\mu\partial_\nu$ is the four-dimensional d
 
 **Definition 7.1 (Mode expansion).** We decompose the 5D perturbation into Kaluza–Klein (KK) modes by separation of variables:
 
-$$h_{\mu\nu}(x, y) = \psi_0(y)\,h_{\mu\nu}^{(0)}(x) + \sum_{n=1}^{\infty} \psi_n(y)\,h_{\mu\nu}^{(n)}(x)$$
+$$h_{\mu\nu}(x, y) = \psi_0(y)\,h_{\mu\nu}^{(0)}(x) + \sum_{n=1}^{\infty} \psi_n(y)\,h_{\mu\nu}^{(n)}(x) \tag{14}$$
 
 where each 4D mode $h_{\mu\nu}^{(n)}(x)$ satisfies a massive Klein–Gordon equation:
 
-$$\Box_4\,h_{\mu\nu}^{(n)} = m_n^2\,h_{\mu\nu}^{(n)}$$
+$$\Box_4\,h_{\mu\nu}^{(n)} = m_n^2\,h_{\mu\nu}^{(n)} \tag{15}$$
 
 with $m_0 = 0$ for the zero mode and $m_n > 0$ for the massive KK tower.
 
 **Theorem 7.2 (Graviton zero-mode profile).** The zero-mode extra-dimensional wave function satisfying the linearized equation (13) with $m_0 = 0$ is:
 
-$$\psi_0(y) = N_0\,e^{-2k|y|}$$
+$$\psi_0(y) = N_0\,e^{-2k|y|} \tag{16}$$
 
 where $N_0$ is a normalization constant.
 
 *Proof.* Setting $m_0 = 0$ in Eq. (13) (homogeneous part), the zero-mode equation reduces to:
 
-$$\frac{d^2\psi_0}{dy^2} - 4k^2\,\psi_0 + 4k\,\delta(y)\,\psi_0 = 0$$
+$$\frac{d^2\psi_0}{dy^2} - 4k^2\,\psi_0 + 4k\,\delta(y)\,\psi_0 = 0 \tag{17}$$
 
 In the bulk ($y \neq 0$), this becomes $\psi_0'' - 4k^2\,\psi_0 = 0$, with the general solution $\psi_0 = A\,e^{-2ky} + B\,e^{+2ky}$.
 
@@ -432,11 +432,11 @@ This confirms that $\psi_0(y) = N_0\,e^{-2k|y|}$ is the unique normalizable zero
 
 **Theorem 8.1 (Effective Planck mass).** The effective four-dimensional Planck mass $M_{\text{Pl}}$ is obtained by integrating the zero-mode profile over the extra dimension. On the $S^1/\mathbb{Z}_2$ orbifold, the graviton propagates through the full circle $y \in [-L, L]$, so the effective action involves:
 
-$$M_{\text{Pl}}^2 = M_5^3 \int_{-L}^{L} dy\;e^{-2k|y|} = 2\,M_5^3 \int_0^L dy\;e^{-2ky}$$
+$$M_{\text{Pl}}^2 = M_5^3 \int_{-L}^{L} dy\;e^{-2k|y|} = 2\,M_5^3 \int_0^L dy\;e^{-2ky} \tag{18}$$
 
 Evaluating the half-interval integral and applying the orbifold factor of 2:
 
-$$M_{\text{Pl}}^2 = 2\,M_5^3\left[-\frac{1}{2k}\,e^{-2ky}\right]_0^L = \frac{M_5^3}{k}\;\left(1 - e^{-2kL}\right)$$
+$$M_{\text{Pl}}^2 = 2\,M_5^3\left[-\frac{1}{2k}\,e^{-2ky}\right]_0^L = \frac{M_5^3}{k}\;\left(1 - e^{-2kL}\right) \tag{19}$$
 
 *Proof.* The effective 4D gravitational action is obtained by substituting the zero-mode ansatz $h_{\mu\nu}(x,y) = \psi_0(y)\,h_{\mu\nu}^{(0)}(x)$ into the 5D Einstein–Hilbert action and integrating over the full orbifold:
 
@@ -450,7 +450,7 @@ $$M_{\text{Pl}}^2 = M_5^3 \cdot \frac{1}{k}\left(1 - e^{-2kL}\right) \;\square$$
 
 **Remark 8.2.** Introducing the dimensionless warp parameter $\alpha \equiv kL$, Eq. (19) can be written as:
 
-$$M_{\text{Pl}}^2 = \frac{M_5^3}{k}\left(1 - e^{-2\alpha}\right)$$
+$$M_{\text{Pl}}^2 = \frac{M_5^3}{k}\left(1 - e^{-2\alpha}\right) \tag{20}$$
 
 For $\alpha \gg 1$ (strong warping), $e^{-2\alpha} \to 0$ and $M_{\text{Pl}}^2 \approx M_5^3/k$. For illustrative comparison: if one were to set $\alpha = 1$, the correction factor would be $(1 - e^{-2}) \approx 0.8647$, an $\mathcal{O}(1)$ number. (This case is experimentally excluded — see §12, Remark 12.2.)
 
@@ -460,11 +460,11 @@ For $\alpha \gg 1$ (strong warping), $e^{-2\alpha} \to 0$ and $M_{\text{Pl}}^2 \
 
 **Theorem 9.1 (Newton's constant from extra-dimensional geometry).** The four-dimensional Newton's gravitational constant is:
 
-$$\boxed{G = \frac{k}{8\pi\,M_5^3\left(1 - e^{-2kL}\right)}}$$
+$$\boxed{G = \frac{k}{8\pi\,M_5^3\left(1 - e^{-2kL}\right)}} \tag{21}$$
 
 *Proof.* Newton's constant is defined in terms of the Planck mass by the standard relation:
 
-$$G = \frac{1}{8\pi\,M_{\text{Pl}}^2}$$
+$$G = \frac{1}{8\pi\,M_{\text{Pl}}^2} \tag{22}$$
 
 Substituting the expression for $M_{\text{Pl}}^2$ from Eq. (19):
 
@@ -488,17 +488,17 @@ This is the central result of the model: gravity is not an independently postula
 
 **Theorem 10.1 (Brane gravitational potential).** For a static point mass $M$ on the visible brane, the gravitational potential at distances $r \gg 1/k$ reduces to the standard Newtonian form:
 
-$$\Phi(r) = -\frac{GM}{r}$$
+$$\Phi(r) = -\frac{GM}{r} \tag{23}$$
 
 *Proof.* On the brane ($y = 0$), the 4D Green's function for the linearized equation (13) receives contributions from the zero mode and the KK tower:
 
-$$\Phi(r) = -\frac{GM}{r}\left[1 + \sum_{n=1}^{\infty} c_n\,e^{-m_n r}\right]$$
+$$\Phi(r) = -\frac{GM}{r}\left[1 + \sum_{n=1}^{\infty} c_n\,e^{-m_n r}\right] \tag{24}$$
 
 where $c_n$ are order-unity coefficients and $m_n$ are the KK masses. The zero-mode contribution gives the $-GM/r$ term directly: substituting the zero-mode coupling into the static Green's function yields $\Phi_0(r) = -GM/r$ by construction of the effective Planck mass.
 
 The KK modes have masses $m_n \sim k$ (for the lightest modes), so at distances $r \gg 1/k$, the Yukawa exponentials $e^{-m_n r}$ are exponentially suppressed. The leading correction is:
 
-$$\frac{\Delta\Phi}{\Phi} \sim \frac{1}{k^2 r^2}$$
+$$\frac{\Delta\Phi}{\Phi} \sim \frac{1}{k^2 r^2} \tag{25}$$
 
 which is negligible for macroscopic distances. Therefore, $\Phi(r) \to -GM/r$ in the long-range limit. $\square$
 
@@ -510,7 +510,7 @@ which is negligible for macroscopic distances. Therefore, $\Phi(r) \to -GM/r$ in
 
 **Theorem 11.1 (Weak-field metric).** In the weak-field, slow-motion limit, the effective 4D metric on the visible brane for a mass $M$ takes the form:
 
-$$g_{00} = -\left(1 + \frac{2\Phi}{c^2}\right) = -\left(1 - \frac{2GM}{rc^2}\right)$$
+$$g_{00} = -\left(1 + \frac{2\Phi}{c^2}\right) = -\left(1 - \frac{2GM}{rc^2}\right) \tag{26}$$
 
 *Proof.* The standard weak-field expansion of the metric around Minkowski space is:
 
@@ -522,7 +522,7 @@ $$g_{00} = -1 + h_{00}^{(0)} = -1 - \frac{2\Phi}{c^2} = -\left(1 - \frac{2GM}{rc
 
 **Theorem 11.2 (Schwarzschild exterior).** The full spherically symmetric vacuum solution on the brane, outside the source, is the Schwarzschild metric:
 
-$$ds^2 = -\left(1 - \frac{2GM}{rc^2}\right)c^2\,dt^2 + \frac{dr^2}{1 - \dfrac{2GM}{rc^2}} + r^2\,d\Omega^2$$
+$$ds^2 = -\left(1 - \frac{2GM}{rc^2}\right)c^2\,dt^2 + \frac{dr^2}{1 - \dfrac{2GM}{rc^2}} + r^2\,d\Omega^2 \tag{27}$$
 
 where $d\Omega^2 = d\theta^2 + \sin^2\theta\,d\varphi^2$ is the metric on the unit 2-sphere.
 
@@ -540,15 +540,15 @@ The higher KK modes introduce corrections that scale as $\mathcal{O}(1/(k^2 r^2)
 
 **(a)** The extra dimension must be small enough not to conflict with known physics, yet large enough for the twin component to exist as a physical degree of freedom:
 
-$$L = 10^{-19}\;\text{m}$$
+$$L = 10^{-19}\;\text{m} \tag{28}$$
 
 **(b)** The curvature scale is set by requiring the energy barrier $E_{\text{barrier}} = \hbar\,c\,k$ to exceed the LHC center-of-mass energy ($\sqrt{s} = 13.6\;\text{TeV}$), ensuring consistency with the absence of extra-dimensional signatures in collider data:
 
-$$k = 12 \times L^{-1} = 1.2 \times 10^{20}\;\text{m}^{-1}$$
+$$k = 12 \times L^{-1} = 1.2 \times 10^{20}\;\text{m}^{-1} \tag{29}$$
 
 **(c)** This yields the dimensionless warp parameter:
 
-$$\alpha \equiv kL = 12$$
+$$\alpha \equiv kL = 12 \tag{30}$$
 
 **Remark 12.2.** The choice $\alpha = 12$ is not a fit to observational data, but a physically motivated intermediate value. It satisfies two requirements: (i) the energy barrier $E_{\text{barrier}} \approx \hbar\,c\,k \approx 24\;\text{TeV}$ exceeds the LHC center-of-mass energy, consistent with the absence of extra-dimensional signatures; (ii) the warp factor $e^{-\alpha} = e^{-12} \approx 6.1 \times 10^{-6}$ produces a significant hierarchy between branes. The dynamically stabilized value $\alpha \approx 21$ is derived from first principles in the extended analysis (Proof 1, Stage 8, Stage 10).
 
@@ -558,7 +558,7 @@ $$\alpha \equiv kL = 12$$
 
 From Eq. (19) with $\alpha = 12$:
 
-$$M_5^3 = \frac{M_{\text{Pl}}^2\,k}{1 - e^{-24}} = \frac{M_{\text{Pl}}^2\,k}{1.0000}$$
+$$M_5^3 = \frac{M_{\text{Pl}}^2\,k}{1 - e^{-24}} = \frac{M_{\text{Pl}}^2\,k}{1.0000} \tag{31}$$
 
 (Since $e^{-24} \approx 3.8 \times 10^{-11}$, the correction is negligible.)
 
@@ -568,7 +568,7 @@ $$k = 1.2 \times 10^{20}\;\text{m}^{-1} = 1.2 \times 10^{20} \times 1.973 \times
 
 $$M_5^3 = \frac{(2.435 \times 10^{18})^2 \times 2.368 \times 10^{4}}{1.0}\;\text{GeV}^3 \approx 1.40 \times 10^{41}\;\text{GeV}^3$$
 
-$$\boxed{M_5 \approx 5.2 \times 10^{13}\;\text{GeV}}$$
+$$\boxed{M_5 \approx 5.2 \times 10^{13}\;\text{GeV}} \tag{32}$$
 
 **Remark 12.4.** Note that this is a **fit**: $M_5$ is determined by requiring the model to reproduce the observed $G$, rather than being predicted from first principles. The fundamental 5D scale lies in the range $10^{13}$–$10^{14}\;\text{GeV}$. This is:
 
@@ -580,7 +580,7 @@ For a closed derivation of $G$ without fitting $M_5$, see Proposition 12.5 below
 
 **Proposition 12.5 (Closed derivation of $G$).** *Under the UV closure relation $M_5^3 = M_{\text{UV}}^4\,L$ and the IR self-consistency condition $M_5\,e^{-\alpha} = k$, Newton's constant is fully determined by the geometry:*
 
-$$\boxed{G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}}$$
+$$\boxed{G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}} \tag{32a}$$
 
 *No mass scale ($M_5$, $M_{\text{UV}}$, $M_{\text{Pl}}$) enters as a free parameter.*
 
@@ -628,7 +628,7 @@ The weakness of 4D gravity is traced to the exponential warp suppression $e^{-3\
 
 **Theorem 13.1 (Single-particle barrier energy).** The energy required for a single particle to undergo complete transition from the visible brane to the twin brane is:
 
-$$E_{\text{barrier}} \approx \hbar\,c\,k$$
+$$E_{\text{barrier}} \approx \hbar\,c\,k \tag{33}$$
 
 *Proof.* The warp factor $e^{-k|y|}$ generates a potential barrier in the extra-dimensional direction. The characteristic energy scale of this barrier is set by the curvature parameter $k$ through the uncertainty relation. A particle localized within the well of width $\sim 1/k$ has minimum kinetic energy $\sim \hbar c k$ in the extra-dimensional direction. To escape the potential well and transition fully to the twin brane, the particle must overcome this energy scale. $\square$
 
@@ -636,7 +636,7 @@ $$E_{\text{barrier}} \approx \hbar\,c\,k$$
 
 $$E_{\text{barrier}} = \hbar\,c\,k = \bigl(1.055 \times 10^{-34}\;\text{J}{\cdot}\text{s}\bigr)\bigl(2.998 \times 10^{8}\;\text{m/s}\bigr)\bigl(1.2 \times 10^{20}\;\text{m}^{-1}\bigr)$$
 
-$$\boxed{E_{\text{barrier}} \approx 24\;\text{TeV per particle}}$$
+$$\boxed{E_{\text{barrier}} \approx 24\;\text{TeV per particle}} \tag{34}$$
 
 This exceeds the LHC center-of-mass energy ($\sqrt{s} = 13.6\;\text{TeV}$), consistent with the absence of extra-dimensional signatures in collider data.
 
@@ -644,7 +644,7 @@ This exceeds the LHC center-of-mass energy ($\sqrt{s} = 13.6\;\text{TeV}$), cons
 
 $$N \approx N_A = 6.022 \times 10^{23}$$
 
-$$E_{\text{total}} = N \times E_{\text{barrier}} \approx 6 \times 10^{23} \times 24\;\text{TeV} \approx 2.3 \times 10^{18}\;\text{J}$$
+$$E_{\text{total}} = N \times E_{\text{barrier}} \approx 6 \times 10^{23} \times 24\;\text{TeV} \approx 2.3 \times 10^{18}\;\text{J} \tag{35}$$
 
 **Remark 13.4 (Prohibition of macroscopic coherent transition).** The decisive physical consequence of Eq. (35) is not merely that the energy is "large," but that *coherent macroscopic transition is effectively forbidden under all ordinary conditions*. This yields three sharp conclusions:
 
@@ -2390,7 +2390,7 @@ $$M_{\text{Pl}}^2 = M_5^3 \int_{-L}^{L} dy\;e^{-2k|y|} = \frac{M_5^3}{k}\left(1 
 
 Newton's constant follows from the standard relation $G = 1/(8\pi M_{\text{Pl}}^2)$:
 
-$$G = \frac{k}{8\pi\,M_5^3\left(1 - e^{-2kL}\right)}$$
+$$G = \frac{k}{8\pi\,M_5^3\left(1 - e^{-2kL}\right)} \tag{1}$$
 
 This is exact, but $M_5$ remains a free parameter. The goal is to eliminate $M_5$.
 
@@ -2404,7 +2404,7 @@ Two independent closure conditions fix all mass scales in terms of the geometry:
 
 The redshifted 5D gravitational scale at the IR end of the warped interval must equal the local curvature:
 
-$$M_5\,e^{-\alpha} = k$$
+$$M_5\,e^{-\alpha} = k \tag{2}$$
 
 where $\alpha \equiv kL$ is the dimensionless warp parameter. This gives:
 
@@ -2414,11 +2414,11 @@ $$M_5 = k\,e^{\alpha} = \frac{\alpha\,e^{\alpha}}{L}$$
 
 The 5D gravitational scale relates to a bulk UV scale by the dimensionally natural relation:
 
-$$M_5^3 = M_{\text{UV}}^4\,L$$
+$$M_5^3 = M_{\text{UV}}^4\,L \tag{3}$$
 
 This eliminates $M_{\text{UV}}$ as independent. Together with Eq. (2):
 
-$$M_5^3 = \frac{\alpha^3\,e^{3\alpha}}{L^3}$$
+$$M_5^3 = \frac{\alpha^3\,e^{3\alpha}}{L^3} \tag{4}$$
 
 ---
 
@@ -2428,7 +2428,7 @@ Substituting Eq. (4) into Eq. (1):
 
 $$G = \frac{k}{8\pi\,M_5^3\,(1 - e^{-2\alpha})} = \frac{\alpha/L}{8\pi\,(\alpha^3 e^{3\alpha}/L^3)\,(1 - e^{-2\alpha})}$$
 
-$$\boxed{G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}}$$
+$$\boxed{G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}} \tag{5}$$
 
 **No mass scale** ($M_5$, $M_{\text{UV}}$, $M_{\text{Pl}}$) **enters as a free parameter.** $G$ is fully determined by the geometry $(L, \alpha)$.
 
@@ -2440,7 +2440,7 @@ $$\boxed{G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}}$$
 
 The radion stabilization mechanism (see Section 2, Proof 1; Section 3, Stage 9) yields:
 
-$$L = \frac{1}{m}$$
+$$L = \frac{1}{m} \tag{6}$$
 
 where $m$ is the bulk scalar mass. (More precisely, $L = \beta/m$ with $\beta = \mathcal{O}(1)$; we use $\beta = 1$ for the minimal case.)
 
@@ -2448,7 +2448,7 @@ where $m$ is the bulk scalar mass. (More precisely, $L = \beta/m$ with $\beta = 
 
 The critical decoherence threshold $\varepsilon_c$ determines the warp factor (see Section 1, §12):
 
-$$\alpha = \ln\!\left(\frac{1}{\varepsilon_c}\right)$$
+$$\alpha = \ln\!\left(\frac{1}{\varepsilon_c}\right) \tag{7}$$
 
 ---
 
@@ -2460,7 +2460,7 @@ $$e^{3\alpha} = e^{3\ln(1/\varepsilon_c)} = \varepsilon_c^{-3}, \qquad e^{-2\alp
 
 we obtain the **deepest closed form**:
 
-$$\boxed{G = \frac{\varepsilon_c^3}{8\pi\,m^2\,\ln^2(1/\varepsilon_c)\,(1 - \varepsilon_c^2)}}$$
+$$\boxed{G = \frac{\varepsilon_c^3}{8\pi\,m^2\,\ln^2(1/\varepsilon_c)\,(1 - \varepsilon_c^2)}} \tag{8}$$
 
 Newton's constant depends on exactly **two microscopic parameters**: the bulk scalar mass $m$ and the decoherence threshold $\varepsilon_c$.
 
@@ -2550,7 +2550,7 @@ $$k = \frac{\alpha}{L_*} = \frac{\alpha\,m}{\beta}$$
 
 Hence the barrier energy becomes
 
-$$\boxed{E_{\text{barrier}}^{\text{theory}} = \frac{\alpha}{\beta}\,m}$$
+$$\boxed{E_{\text{barrier}}^{\text{theory}} = \frac{\alpha}{\beta}\,m} \tag{9}$$
 
 in natural units.
 
