@@ -1,8 +1,4 @@
-# Twin Barrier Theory of Gravity
 
-**Author:** Mateja Radojičić  
-**Affiliation:** Independent Researcher, Belgrade, Serbia  
-**Release:** 1.0 — April 2026
 
 ---
 
@@ -150,6 +146,7 @@ dimensional mechanism.
 - **Baryon asymmetry prediction $\eta_B = 6.124 \times 10^{-10}$** — derived from the twin-barrier QCD sector, matching the Planck CMB measurement to 0.32%
 - **Radion at $m_\Phi = 1723.5$ GeV** — diboson resonance ($WW/ZZ/hh$) searchable at HL-LHC with $3000\;\text{fb}^{-1}$
 - **Exponential sensitivity to new colored fermions** — a single vector-like generation would shift $G$ by $-99.5\%$, making this framework more sensitive than direct collider searches
+- **Four predictions already confirmed** — $\alpha_s$ tension at $0.05\sigma$ (Stage 13), baryon asymmetry $\eta_B$ to 0.32% (Stage 10), no exotic colored fermions below 1.7 TeV consistent with LHC Run 2 (Stage 11), and Casimir residual compatible with all existing data (Stage 14)
 - **Fourteen-stage computational validation** — every prediction verified numerically with zero free parameters; full code publicly available (see Section 3)
 
 > **Structure of the derivation.** The paper develops the gravitational constant in three progressive stages of rigor: (1) Section 4 derives $G$ from two fitted microscopic parameters ($m$, $\varepsilon_c$), achieving 1.0% agreement; (2) Section 5 eliminates both parameters via physical identifications, reducing the error to 0.39%; (3) Stages 10–13 derive $G$ entirely from first principles using only collider inputs ($\alpha_s(M_Z)$, $m_t$, $v_{\text{EW}}$), with no free parameters and no hypotheses remaining after Stage 12.
