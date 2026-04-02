@@ -2215,8 +2215,8 @@ The full calculation is implemented in `stage13_nlo_precision.py`.
 
 Stage 14 confronts the twin-barrier Casimir prediction with precision measurements from two independent experiments:
 
-- **Chen et al., Phys. Rev. A 69, 022117 (2004)** [quant-ph/0401153] — AFM sphere-plate measurement, gold surfaces, separations 62–350 nm, precision ~1.75% at 62 nm (95% CL).
-- **Decca et al., Int. J. Mod. Phys. A 20, 2205 (2005)** [quant-ph/0506120] — Micromachined torsional oscillator, gold surfaces, separations 162–750 nm, precision ~0.5% at 170–300 nm (95% CL).
+- **Chen et al., Phys. Rev. A 69, 022117 (2004)** [[quant-ph/0401153](https://arxiv.org/abs/quant-ph/0401153)] — AFM sphere-plate measurement, gold surfaces, separations 62–350 nm, precision ~1.75% at 62 nm (95% CL).
+- **Decca et al., Int. J. Mod. Phys. A 20, 2205 (2005)** [[quant-ph/0506120](https://arxiv.org/abs/quant-ph/0506120)] — Micromachined torsional oscillator, gold surfaces, separations 162–750 nm, precision ~0.5% at 170–300 nm (95% CL).
 
 The twin-barrier model predicts a Yukawa-type enhancement of the Casimir force from kinetic mixing between the SM photon and the twin-sector photon:
 
