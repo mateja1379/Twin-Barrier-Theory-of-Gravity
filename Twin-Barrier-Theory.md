@@ -181,7 +181,7 @@ We begin from five foundational postulates of the twin-component gravity framewo
 1. **Dual matter structure.** Every particle possesses a visible brane-localized component and a twin extra-dimensional component, described by a factorized 5D field $\Psi(x,y) = \psi(x)\,\chi(y)$.
 
 2. **Warped geometric barrier.** The two components are separated across a single warped extra dimension with metric
-$$ds^2 = e^{-2k|y|}\,\eta_{\mu\nu}\,dx^\mu dx^\nu + dy^2$$
+$$ds^2 = e^{-2k|y|}\,\eta_{\mu\nu}\,dx^\mu dx^\nu + dy^2 \tag{1}$$
 where $y \in [0, L]$ on an $S^1/\mathbb{Z}_2$ orbifold interval.
 
 3. **Gravitational zero-mode dominance.** Only gravity leaks efficiently through the warp barrier; the shared localized zero mode dominates macroscopic gravitational interactions.
@@ -200,13 +200,13 @@ where $y \in [0, L]$ on an $S^1/\mathbb{Z}_2$ orbifold interval.
 
 The starting point is a five-dimensional anti-de Sitter (AdS$_5$) bulk bounded by two branes at $y = 0$ (UV/visible) and $y = L$ (IR/twin). The 5D gravitational action is
 
-$$S_5 = M_5^3 \int d^5x \sqrt{-g_5}\,(R_5 - 2\Lambda_5) + \text{brane terms}$$
+$$S_5 = M_5^3 \int d^5x \sqrt{-g_5}\,(R_5 - 2\Lambda_5) + \text{brane terms} \tag{2}$$
 
 where $M_5$ is the fundamental 5D gravitational scale and $\Lambda_5 = -6k^2$ is the bulk cosmological constant. The warp factor $e^{-2k|y|}$ creates an exponential hierarchy between the UV and IR branes.
 
 In the twin-mass interpretation, the visible matter component $\chi_0(y)$ is localized near $y = 0$ with an exponentially suppressed tail $\chi_0(y) \sim e^{-ky}$, while the twin component $\chi_L(y)$ is localized near $y = L$ with tail $\chi_L(y) \sim e^{-k(L-y)}$. Their overlap integral
 
-$$\mathcal{O}(L) = \int_0^L dy\;\chi_0(y)\,\chi_L(y) \;\sim\; L\,e^{-kL}$$
+$$\mathcal{O}(L) = \int_0^L dy\;\chi_0(y)\,\chi_L(y) \;\sim\; L\,e^{-kL} \tag{3}$$
 
 is exponentially suppressed by the warp factor, with leading behavior $\mathcal{O}(L) \sim e^{-\alpha}$ where $\alpha = kL$.
 
@@ -251,7 +251,7 @@ A useful physical analogy: two strong magnets separated by a glass plate. The ma
 
 **Definition 1.2 (Orbifold interval).** The extra dimension has the topology of an $S^1/\mathbb{Z}_2$ orbifold:
 
-$$y \in [0, L]$$
+$$y \in [0, L] \tag{4}$$
 
 where the $\mathbb{Z}_2$ identification acts as $y \mapsto -y$. The two fixed points of this identification are located at $y = 0$ and $y = L$. We refer to these as the *visible brane* (at $y = 0$) and the *twin brane* (at $y = L$), respectively.
 
@@ -261,7 +261,7 @@ where the $\mathbb{Z}_2$ identification acts as $y \mapsto -y$. The two fixed po
 
 **Definition 1.3 (Warped background metric).** The background metric on $\mathcal{M}_5$ is given by the Randall–Sundrum warped ansatz:
 
-$$ds^2 = e^{-2k|y|}\,\eta_{\mu\nu}\,dx^\mu dx^\nu + dy^2 \tag{1}$$
+$$ds^2 = e^{-2k|y|}\,\eta_{\mu\nu}\,dx^\mu dx^\nu + dy^2 \tag{5}$$
 
 where:
 - $\eta_{\mu\nu} = \mathrm{diag}(-1, +1, +1, +1)$ is the four-dimensional Minkowski metric,
@@ -280,7 +280,7 @@ where:
 
 **Definition 2.2 (Factorized 5D field).** The five-dimensional wave function of a particle is written in the separable form:
 
-$$\Psi(x, y) = \psi(x)\,\chi(y) \tag{2}$$
+$$\Psi(x, y) = \psi(x)\,\chi(y) \tag{6}$$
 
 where:
 - $\psi(x)$ is the four-dimensional field on $\mathcal{M}_4$, encoding the particle's spacetime dynamics,
@@ -288,7 +288,7 @@ where:
 
 **Property 2.3 (Normalization).** The extra-dimensional profile satisfies the normalization condition:
 
-$$\int_0^L dy\;\chi(y)^2 = 1 \tag{3}$$
+$$\int_0^L dy\;\chi(y)^2 = 1 \tag{7}$$
 
 ensuring that the total probability of finding the particle somewhere in the extra dimension is unity.
 
@@ -300,15 +300,15 @@ ensuring that the total probability of finding the particle somewhere in the ext
 
 **Definition 3.1 (Bulk-brane action).** The total gravitational action of the model consists of a bulk term and brane terms:
 
-$$S = S_{\text{bulk}} + S_{\text{vis}} + S_{\text{twin}} \tag{4}$$
+$$S = S_{\text{bulk}} + S_{\text{vis}} + S_{\text{twin}} \tag{8}$$
 
 where:
 
-$$S_{\text{bulk}} = M_5^3 \int d^4x \int_0^L dy\;\sqrt{-g_5}\;\bigl(R_5 - 2\Lambda_5\bigr) \tag{5}$$
+$$S_{\text{bulk}} = M_5^3 \int d^4x \int_0^L dy\;\sqrt{-g_5}\;\bigl(R_5 - 2\Lambda_5\bigr) \tag{9}$$
 
-$$S_{\text{vis}} = \int d^4x\;\sqrt{-g_{\text{vis}}}\;\bigl(-\sigma_{\text{vis}} + \mathcal{L}_m\bigr) \tag{6a}$$
+$$S_{\text{vis}} = \int d^4x\;\sqrt{-g_{\text{vis}}}\;\bigl(-\sigma_{\text{vis}} + \mathcal{L}_m\bigr) \tag{10}$$
 
-$$S_{\text{twin}} = \int d^4x\;\sqrt{-g_{\text{twin}}}\;\bigl(-\sigma_{\text{twin}}\bigr) \tag{6b}$$
+$$S_{\text{twin}} = \int d^4x\;\sqrt{-g_{\text{twin}}}\;\bigl(-\sigma_{\text{twin}}\bigr) \tag{11}$$
 
 Here:
 - $M_5$ is the fundamental five-dimensional gravitational mass scale (units: GeV),
@@ -326,29 +326,29 @@ Here:
 
 ## 1.4. Background Solution and Fine-Tuning Relations
 
-**Theorem 4.1 (Warped background consistency).** The warped metric (1) is an exact solution of the 5D Einstein equations derived from the action (4)–(6b) if and only if the bulk cosmological constant and brane tensions satisfy:
+**Theorem 4.1 (Warped background consistency).** The warped metric (5) is an exact solution of the 5D Einstein equations derived from the action (13)–(11) if and only if the bulk cosmological constant and brane tensions satisfy:
 
-$$\Lambda_5 = -6\,k^2\,M_5^3 \tag{7}$$
+$$\Lambda_5 = -6\,k^2\,M_5^3 \tag{12}$$
 
-$$\sigma_{\text{vis}} = 6\,k\,M_5^3, \qquad \sigma_{\text{twin}} = -6\,k\,M_5^3 \tag{8}$$
+$$\sigma_{\text{vis}} = 6\,k\,M_5^3, \qquad \sigma_{\text{twin}} = -6\,k\,M_5^3 \tag{13}$$
 
-*Proof sketch.* Substituting the ansatz (1) into the 5D Einstein equations $G_{AB} + \Lambda_5\,g_{AB} = 0$ (in the bulk) yields the conditions:
+*Proof sketch.* Substituting the ansatz (5) into the 5D Einstein equations $G_{AB} + \Lambda_5\,g_{AB} = 0$ (in the bulk) yields the conditions:
 
 For the $({\mu\nu})$ components: writing $A(y) \equiv k|y|$ so that the warp factor is $a(y) = e^{-A}$, the bulk equations require $A'' = 0$ and $(A')^2 = k^2$ away from the branes. Both conditions hold identically for $A = k|y|$ on the open interval $0 < y < L$.
 
-For the $(55)$ component: one obtains $6\,k^2 = -\Lambda_5 / M_5^3$, giving Eq. (7).
+For the $(55)$ component: one obtains $6\,k^2 = -\Lambda_5 / M_5^3$, giving Eq. (12).
 
 The Israel junction conditions at $y = 0$ (visible brane) yield:
 
-$$[K_{\mu\nu}]_{y=0} = -\frac{\sigma_{\text{vis}}}{6\,M_5^3}\,g_{\mu\nu}^{\text{vis}}$$
+$$[K_{\mu\nu}]_{y=0} = -\frac{\sigma_{\text{vis}}}{6\,M_5^3}\,g_{\mu\nu}^{\text{vis}} \tag{14}$$
 
 Evaluating the left-hand side from the warp factor gives $[K_{\mu\nu}] = -2k\,g_{\mu\nu}^{\text{vis}}$, which matches when $\sigma_{\text{vis}} = 6\,k\,M_5^3$.
 
 At $y = L$ (twin brane), the sign of the extrinsic curvature discontinuity is reversed, giving the junction condition:
 
-$$[K_{\mu\nu}]_{y=L} = +\frac{\sigma_{\text{twin}}}{6\,M_5^3}\,g_{\mu\nu}^{\text{twin}}$$
+$$[K_{\mu\nu}]_{y=L} = +\frac{\sigma_{\text{twin}}}{6\,M_5^3}\,g_{\mu\nu}^{\text{twin}} \tag{15}$$
 
-which requires $\sigma_{\text{twin}} = -6\,k\,M_5^3$, confirming Eq. (8). $\square$
+which requires $\sigma_{\text{twin}} = -6\,k\,M_5^3$, confirming Eq. (13). $\square$
 
 **Remark 4.2.** Equations (7) and (8) represent the fine-tuning relations of the Randall–Sundrum background. The opposite signs of $\sigma_{\text{vis}}$ and $\sigma_{\text{twin}}$ are a necessary consequence of the $\mathbb{Z}_2$ orbifold symmetry: the visible brane has positive tension and the twin brane has negative tension. These are not free parameters but are fixed by the requirement of 5D Poincaré invariance on each brane.
 
@@ -358,13 +358,13 @@ which requires $\sigma_{\text{twin}} = -6\,k\,M_5^3$, confirming Eq. (8). $\squa
 
 **Definition 5.1 (Static point mass on the visible brane).** We consider a massive static source of mass $M$ localized at the origin of the visible brane. Its four-dimensional energy-momentum tensor is:
 
-$$T^{00}(x) = M\,\delta^{(3)}(\mathbf{r}) \tag{9}$$
+$$T^{00}(x) = M\,\delta^{(3)}(\mathbf{r}) \tag{16}$$
 
 with all other components vanishing, where $\mathbf{r} = (x^1, x^2, x^3)$.
 
 **Definition 5.2 (5D energy-momentum tensor).** The localization of matter on the visible brane is encoded by projecting the 4D energy-momentum tensor into 5D via a delta function in the extra dimension:
 
-$$T_{AB}(x, y) = \delta(y)\;\delta_A^{\;\mu}\,\delta_B^{\;\nu}\;T_{\mu\nu}(x) \tag{10}$$
+$$T_{AB}(x, y) = \delta(y)\;\delta_A^{\;\mu}\,\delta_B^{\;\nu}\;T_{\mu\nu}(x) \tag{17}$$
 
 **Remark 5.3.** The factor $\delta(y)$ expresses the physical statement that ordinary matter fields (electromagnetic, weak, strong interactions) are confined to the visible brane at $y = 0$. Only gravity propagates into the bulk. This is the key asymmetry of brane-world models: gauge fields are brane-localized, while gravity is a bulk phenomenon.
 
@@ -374,21 +374,21 @@ $$T_{AB}(x, y) = \delta(y)\;\delta_A^{\;\mu}\,\delta_B^{\;\nu}\;T_{\mu\nu}(x) \t
 
 **Definition 6.1 (Perturbation ansatz).** We perturb the 5D metric around the warped background (1):
 
-$$g_{AB} = g_{AB}^{(0)} + h_{AB} \tag{11}$$
+$$g_{AB} = g_{AB}^{(0)} + h_{AB} \tag{18}$$
 
 In the transverse-traceless (TT) gauge for the 4D components, the perturbed line element takes the form:
 
-$$ds^2 = e^{-2k|y|}\bigl(\eta_{\mu\nu} + h_{\mu\nu}(x, y)\bigr)\,dx^\mu\,dx^\nu + dy^2 \tag{12}$$
+$$ds^2 = e^{-2k|y|}\bigl(\eta_{\mu\nu} + h_{\mu\nu}(x, y)\bigr)\,dx^\mu\,dx^\nu + dy^2 \tag{19}$$
 
 where $h_{\mu\nu}$ satisfies the gauge conditions $\partial^\mu h_{\mu\nu} = 0$ and $\eta^{\mu\nu}h_{\mu\nu} = 0$.
 
-**Theorem 6.2 (Linearized bulk equation).** Inserting the perturbation (12) into the 5D Einstein equations and linearizing to first order in $h_{\mu\nu}$ yields the following equation in the bulk:
+**Theorem 6.2 (Linearized bulk equation).** Inserting the perturbation (19) into the 5D Einstein equations and linearizing to first order in $h_{\mu\nu}$ yields the following equation in the bulk:
 
-$$\left[e^{2k|y|}\,\Box_4 + \frac{\partial^2}{\partial y^2} - 4k^2 + 4k\,\delta(y)\right] h_{\mu\nu} = -\frac{1}{M_5^3}\,\delta(y)\left[T_{\mu\nu} - \frac{1}{3}\,\eta_{\mu\nu}\,T\right] \tag{13}$$
+$$\left[e^{2k|y|}\,\Box_4 + \frac{\partial^2}{\partial y^2} - 4k^2 + 4k\,\delta(y)\right] h_{\mu\nu} = -\frac{1}{M_5^3}\,\delta(y)\left[T_{\mu\nu} - \frac{1}{3}\,\eta_{\mu\nu}\,T\right] \tag{20}$$
 
 where $\Box_4 = \eta^{\mu\nu}\partial_\mu\partial_\nu$ is the four-dimensional d'Alembertian and $T = \eta^{\mu\nu}T_{\mu\nu}$ is the trace of the 4D energy-momentum tensor.
 
-*Proof sketch.* The 5D Ricci tensor for the perturbed metric (12) receives contributions from both the warp factor and the perturbation $h_{\mu\nu}$. The second derivative $\partial_y^2 h$ comes from the $(55)$-dependence. The factor $e^{2k|y|}$ multiplying $\Box_4$ arises from the inverse warp factor converting coordinate derivatives to physical derivatives. The $-4k^2$ term arises from the background curvature, and the $4k\,\delta(y)$ term is the linearized Israel junction condition at the brane. The right-hand side is the linearized stress-energy source, where the factor $1/3$ (rather than $1/2$) reflects the five-dimensional trace-reversal. $\square$
+*Proof sketch.* The 5D Ricci tensor for the perturbed metric (19) receives contributions from both the warp factor and the perturbation $h_{\mu\nu}$. The second derivative $\partial_y^2 h$ comes from the $(55)$-dependence. The factor $e^{2k|y|}$ multiplying $\Box_4$ arises from the inverse warp factor converting coordinate derivatives to physical derivatives. The $-4k^2$ term arises from the background curvature, and the $4k\,\delta(y)$ term is the linearized Israel junction condition at the brane. The right-hand side is the linearized stress-energy source, where the factor $1/3$ (rather than $1/2$) reflects the five-dimensional trace-reversal. $\square$
 
 ---
 
@@ -396,31 +396,31 @@ where $\Box_4 = \eta^{\mu\nu}\partial_\mu\partial_\nu$ is the four-dimensional d
 
 **Definition 7.1 (Mode expansion).** We decompose the 5D perturbation into Kaluza–Klein (KK) modes by separation of variables:
 
-$$h_{\mu\nu}(x, y) = \psi_0(y)\,h_{\mu\nu}^{(0)}(x) + \sum_{n=1}^{\infty} \psi_n(y)\,h_{\mu\nu}^{(n)}(x) \tag{14}$$
+$$h_{\mu\nu}(x, y) = \psi_0(y)\,h_{\mu\nu}^{(0)}(x) + \sum_{n=1}^{\infty} \psi_n(y)\,h_{\mu\nu}^{(n)}(x) \tag{21}$$
 
 where each 4D mode $h_{\mu\nu}^{(n)}(x)$ satisfies a massive Klein–Gordon equation:
 
-$$\Box_4\,h_{\mu\nu}^{(n)} = m_n^2\,h_{\mu\nu}^{(n)} \tag{15}$$
+$$\Box_4\,h_{\mu\nu}^{(n)} = m_n^2\,h_{\mu\nu}^{(n)} \tag{22}$$
 
 with $m_0 = 0$ for the zero mode and $m_n > 0$ for the massive KK tower.
 
-**Theorem 7.2 (Graviton zero-mode profile).** The zero-mode extra-dimensional wave function satisfying the linearized equation (13) with $m_0 = 0$ is:
+**Theorem 7.2 (Graviton zero-mode profile).** The zero-mode extra-dimensional wave function satisfying the linearized equation (20) with $m_0 = 0$ is:
 
-$$\psi_0(y) = N_0\,e^{-2k|y|} \tag{16}$$
+$$\psi_0(y) = N_0\,e^{-2k|y|} \tag{23}$$
 
 where $N_0$ is a normalization constant.
 
-*Proof.* Setting $m_0 = 0$ in Eq. (13) (homogeneous part), the zero-mode equation reduces to:
+*Proof.* Setting $m_0 = 0$ in Eq. (20) (homogeneous part), the zero-mode equation reduces to:
 
-$$\frac{d^2\psi_0}{dy^2} - 4k^2\,\psi_0 + 4k\,\delta(y)\,\psi_0 = 0 \tag{17}$$
+$$\frac{d^2\psi_0}{dy^2} - 4k^2\,\psi_0 + 4k\,\delta(y)\,\psi_0 = 0 \tag{24}$$
 
 In the bulk ($y \neq 0$), this becomes $\psi_0'' - 4k^2\,\psi_0 = 0$, with the general solution $\psi_0 = A\,e^{-2ky} + B\,e^{+2ky}$.
 
 The orbifold symmetry $\psi_0(y) = \psi_0(-y)$ and the normalizability requirement $\int_0^L dy\;\psi_0^2 < \infty$ select $B = 0$, yielding $\psi_0(y) = A\,e^{-2k|y|}$.
 
-Integrating Eq. (17) across $y = 0$ over a small interval $[-\epsilon, +\epsilon]$ verifies the junction condition:
+Integrating Eq. (24) across $y = 0$ over a small interval $[-\epsilon, +\epsilon]$ verifies the junction condition:
 
-$$\lim_{\epsilon \to 0}\left[\psi_0'(\epsilon) - \psi_0'(-\epsilon)\right] = -4k\,\psi_0(0) \implies -2k\cdot A - (+2k\cdot A) = -4k\cdot A \;\checkmark$$
+$$\lim_{\epsilon \to 0}\left[\psi_0'(\epsilon) - \psi_0'(-\epsilon)\right] = -4k\,\psi_0(0) \implies -2k\cdot A - (+2k\cdot A) = -4k\cdot A \;\checkmark \tag{25}$$
 
 This confirms that $\psi_0(y) = N_0\,e^{-2k|y|}$ is the unique normalizable zero mode. $\square$
 
@@ -432,25 +432,25 @@ This confirms that $\psi_0(y) = N_0\,e^{-2k|y|}$ is the unique normalizable zero
 
 **Theorem 8.1 (Effective Planck mass).** The effective four-dimensional Planck mass $M_{\text{Pl}}$ is obtained by integrating the zero-mode profile over the extra dimension. On the $S^1/\mathbb{Z}_2$ orbifold, the graviton propagates through the full circle $y \in [-L, L]$, so the effective action involves:
 
-$$M_{\text{Pl}}^2 = M_5^3 \int_{-L}^{L} dy\;e^{-2k|y|} = 2\,M_5^3 \int_0^L dy\;e^{-2ky} \tag{18}$$
+$$M_{\text{Pl}}^2 = M_5^3 \int_{-L}^{L} dy\;e^{-2k|y|} = 2\,M_5^3 \int_0^L dy\;e^{-2ky} \tag{26}$$
 
 Evaluating the half-interval integral and applying the orbifold factor of 2:
 
-$$M_{\text{Pl}}^2 = 2\,M_5^3\left[-\frac{1}{2k}\,e^{-2ky}\right]_0^L = \frac{M_5^3}{k}\;\left(1 - e^{-2kL}\right) \tag{19}$$
+$$M_{\text{Pl}}^2 = 2\,M_5^3\left[-\frac{1}{2k}\,e^{-2ky}\right]_0^L = \frac{M_5^3}{k}\;\left(1 - e^{-2kL}\right) \tag{27}$$
 
 *Proof.* The effective 4D gravitational action is obtained by substituting the zero-mode ansatz $h_{\mu\nu}(x,y) = \psi_0(y)\,h_{\mu\nu}^{(0)}(x)$ into the 5D Einstein–Hilbert action and integrating over the full orbifold:
 
-$$S_{\text{eff}}^{(4D)} = M_5^3 \int d^4x \int_{-L}^{L} dy\;\sqrt{-g_5}\;R_5 \supset M_5^3\left(\int_{-L}^{L} dy\;e^{-2k|y|}\right)\int d^4x\;\sqrt{-\eta}\;R_4[h^{(0)}]$$
+$$S_{\text{eff}}^{(4D)} = M_5^3 \int d^4x \int_{-L}^{L} dy\;\sqrt{-g_5}\;R_5 \supset M_5^3\left(\int_{-L}^{L} dy\;e^{-2k|y|}\right)\int d^4x\;\sqrt{-\eta}\;R_4[h^{(0)}] \tag{28}$$
 
 By $\mathbb{Z}_2$ symmetry, $\int_{-L}^{L} e^{-2k|y|}dy = 2\int_0^L e^{-2ky}dy = 2 \cdot \frac{1}{2k}(1 - e^{-2kL}) = \frac{1}{k}(1 - e^{-2kL})$.
 
 Comparing with the standard 4D Einstein–Hilbert action $S = M_{\text{Pl}}^2\int d^4x\;\sqrt{-g}\;R_4$, one identifies:
 
-$$M_{\text{Pl}}^2 = M_5^3 \cdot \frac{1}{k}\left(1 - e^{-2kL}\right) \;\square$$
+$$M_{\text{Pl}}^2 = M_5^3 \cdot \frac{1}{k}\left(1 - e^{-2kL}\right) \;\square \tag{29}$$
 
-**Remark 8.2.** Introducing the dimensionless warp parameter $\alpha \equiv kL$, Eq. (19) can be written as:
+**Remark 8.2.** Introducing the dimensionless warp parameter $\alpha \equiv kL$, Eq. (27) can be written as:
 
-$$M_{\text{Pl}}^2 = \frac{M_5^3}{k}\left(1 - e^{-2\alpha}\right) \tag{20}$$
+$$M_{\text{Pl}}^2 = \frac{M_5^3}{k}\left(1 - e^{-2\alpha}\right) \tag{30}$$
 
 For $\alpha \gg 1$ (strong warping), $e^{-2\alpha} \to 0$ and $M_{\text{Pl}}^2 \approx M_5^3/k$. For illustrative comparison: if one were to set $\alpha = 1$, the correction factor would be $(1 - e^{-2}) \approx 0.8647$, an $\mathcal{O}(1)$ number. (This case is experimentally excluded — see §12, Remark 12.2.)
 
@@ -460,15 +460,15 @@ For $\alpha \gg 1$ (strong warping), $e^{-2\alpha} \to 0$ and $M_{\text{Pl}}^2 \
 
 **Theorem 9.1 (Newton's constant from extra-dimensional geometry).** The four-dimensional Newton's gravitational constant is:
 
-$$\boxed{G = \frac{k}{8\pi\,M_5^3\left(1 - e^{-2kL}\right)}} \tag{21}$$
+$$\boxed{G = \frac{k}{8\pi\,M_5^3\left(1 - e^{-2kL}\right)}} \tag{31}$$
 
 *Proof.* Newton's constant is defined in terms of the Planck mass by the standard relation:
 
-$$G = \frac{1}{8\pi\,M_{\text{Pl}}^2} \tag{22}$$
+$$G = \frac{1}{8\pi\,M_{\text{Pl}}^2} \tag{32}$$
 
-Substituting the expression for $M_{\text{Pl}}^2$ from Eq. (19):
+Substituting the expression for $M_{\text{Pl}}^2$ from Eq. (27):
 
-$$G = \frac{1}{8\pi\;\dfrac{M_5^3}{k}\left(1 - e^{-2kL}\right)} = \frac{k}{8\pi\,M_5^3\left(1 - e^{-2kL}\right)} \;\square$$
+$$G = \frac{1}{8\pi\;\dfrac{M_5^3}{k}\left(1 - e^{-2kL}\right)} = \frac{k}{8\pi\,M_5^3\left(1 - e^{-2kL}\right)} \;\square \tag{33}$$
 
 **Corollary 9.2.** Newton's constant depends on three geometric quantities of the extra-dimensional geometry:
 
@@ -488,17 +488,17 @@ This is the central result of the model: gravity is not an independently postula
 
 **Theorem 10.1 (Brane gravitational potential).** For a static point mass $M$ on the visible brane, the gravitational potential at distances $r \gg 1/k$ reduces to the standard Newtonian form:
 
-$$\Phi(r) = -\frac{GM}{r} \tag{23}$$
+$$\Phi(r) = -\frac{GM}{r} \tag{34}$$
 
-*Proof.* On the brane ($y = 0$), the 4D Green's function for the linearized equation (13) receives contributions from the zero mode and the KK tower:
+*Proof.* On the brane ($y = 0$), the 4D Green's function for the linearized equation (20) receives contributions from the zero mode and the KK tower:
 
-$$\Phi(r) = -\frac{GM}{r}\left[1 + \sum_{n=1}^{\infty} c_n\,e^{-m_n r}\right] \tag{24}$$
+$$\Phi(r) = -\frac{GM}{r}\left[1 + \sum_{n=1}^{\infty} c_n\,e^{-m_n r}\right] \tag{35}$$
 
 where $c_n$ are order-unity coefficients and $m_n$ are the KK masses. The zero-mode contribution gives the $-GM/r$ term directly: substituting the zero-mode coupling into the static Green's function yields $\Phi_0(r) = -GM/r$ by construction of the effective Planck mass.
 
 The KK modes have masses $m_n \sim k$ (for the lightest modes), so at distances $r \gg 1/k$, the Yukawa exponentials $e^{-m_n r}$ are exponentially suppressed. The leading correction is:
 
-$$\frac{\Delta\Phi}{\Phi} \sim \frac{1}{k^2 r^2} \tag{25}$$
+$$\frac{\Delta\Phi}{\Phi} \sim \frac{1}{k^2 r^2} \tag{36}$$
 
 which is negligible for macroscopic distances. Therefore, $\Phi(r) \to -GM/r$ in the long-range limit. $\square$
 
@@ -510,23 +510,23 @@ which is negligible for macroscopic distances. Therefore, $\Phi(r) \to -GM/r$ in
 
 **Theorem 11.1 (Weak-field metric).** In the weak-field, slow-motion limit, the effective 4D metric on the visible brane for a mass $M$ takes the form:
 
-$$g_{00} = -\left(1 + \frac{2\Phi}{c^2}\right) = -\left(1 - \frac{2GM}{rc^2}\right) \tag{26}$$
+$$g_{00} = -\left(1 + \frac{2\Phi}{c^2}\right) = -\left(1 - \frac{2GM}{rc^2}\right) \tag{37}$$
 
 *Proof.* The standard weak-field expansion of the metric around Minkowski space is:
 
-$$g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}^{(0)}$$
+$$g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}^{(0)} \tag{38}$$
 
 For a static source, the only relevant component is $h_{00}^{(0)} = -2\Phi/c^2$, where $\Phi$ is the Newtonian potential. Substituting $\Phi = -GM/r$ from Theorem 10.1:
 
-$$g_{00} = -1 + h_{00}^{(0)} = -1 - \frac{2\Phi}{c^2} = -\left(1 - \frac{2GM}{rc^2}\right) \;\square$$
+$$g_{00} = -1 + h_{00}^{(0)} = -1 - \frac{2\Phi}{c^2} = -\left(1 - \frac{2GM}{rc^2}\right) \;\square \tag{39}$$
 
 **Theorem 11.2 (Schwarzschild exterior).** The full spherically symmetric vacuum solution on the brane, outside the source, is the Schwarzschild metric:
 
-$$ds^2 = -\left(1 - \frac{2GM}{rc^2}\right)c^2\,dt^2 + \frac{dr^2}{1 - \dfrac{2GM}{rc^2}} + r^2\,d\Omega^2 \tag{27}$$
+$$ds^2 = -\left(1 - \frac{2GM}{rc^2}\right)c^2\,dt^2 + \frac{dr^2}{1 - \dfrac{2GM}{rc^2}} + r^2\,d\Omega^2 \tag{40}$$
 
 where $d\Omega^2 = d\theta^2 + \sin^2\theta\,d\varphi^2$ is the metric on the unit 2-sphere.
 
-*Proof.* By Birkhoff's theorem, the unique spherically symmetric vacuum solution of the Einstein equations $R_{\mu\nu} = 0$ is the Schwarzschild metric. Since Theorems 8.1 and 10.1 establish that the effective 4D theory on the brane is standard general relativity (with Newton's constant given by Eq. (21)), Birkhoff's theorem applies directly. The weak-field limit (26) provides the boundary condition that fixes the mass parameter, confirming that the Schwarzschild mass equals the brane-localized mass $M$.
+*Proof.* By Birkhoff's theorem, the unique spherically symmetric vacuum solution of the Einstein equations $R_{\mu\nu} = 0$ is the Schwarzschild metric. Since Theorems 8.1 and 10.1 establish that the effective 4D theory on the brane is standard general relativity (with Newton's constant given by Eq. (31)), Birkhoff's theorem applies directly. The weak-field limit (37) provides the boundary condition that fixes the mass parameter, confirming that the Schwarzschild mass equals the brane-localized mass $M$.
 
 The higher KK modes introduce corrections that scale as $\mathcal{O}(1/(k^2 r^2))$ and vanish at distances $r \gg 1/k$, so the exterior metric asymptotically recovers the exact Schwarzschild form. $\square$
 
@@ -540,35 +540,35 @@ The higher KK modes introduce corrections that scale as $\mathcal{O}(1/(k^2 r^2)
 
 **(a)** The extra dimension must be small enough not to conflict with known physics, yet large enough for the twin component to exist as a physical degree of freedom:
 
-$$L = 10^{-19}\;\text{m} \tag{28}$$
+$$L = 10^{-19}\;\text{m} \tag{41}$$
 
 **(b)** The curvature scale is set by requiring the energy barrier $E_{\text{barrier}} = \hbar\,c\,k$ to exceed the LHC center-of-mass energy ($\sqrt{s} = 13.6\;\text{TeV}$), ensuring consistency with the absence of extra-dimensional signatures in collider data:
 
-$$k = 12 \times L^{-1} = 1.2 \times 10^{20}\;\text{m}^{-1} \tag{29}$$
+$$k = 12 \times L^{-1} = 1.2 \times 10^{20}\;\text{m}^{-1} \tag{42}$$
 
 **(c)** This yields the dimensionless warp parameter:
 
-$$\alpha \equiv kL = 12 \tag{30}$$
+$$\alpha \equiv kL = 12 \tag{43}$$
 
 **Remark 12.2.** The choice $\alpha = 12$ is not a fit to observational data, but a physically motivated intermediate value. It satisfies two requirements: (i) the energy barrier $E_{\text{barrier}} \approx \hbar\,c\,k \approx 24\;\text{TeV}$ exceeds the LHC center-of-mass energy, consistent with the absence of extra-dimensional signatures; (ii) the warp factor $e^{-\alpha} = e^{-12} \approx 6.1 \times 10^{-6}$ produces a significant hierarchy between branes. The dynamically stabilized value $\alpha \approx 21$ is derived from first principles in the extended analysis (Proof 1, Stage 8, Stage 10).
 
 *Note: The minimal choice $\alpha = 1$ would give $E_{\text{barrier}} \approx 2\;\text{TeV}$, which the LHC ($\sqrt{s} = 13.6\;\text{TeV}$) should have already probed. The absence of observed extra-dimensional signatures rules out $\alpha \lesssim 7$ and motivates $\alpha \geq 12$.*
 
-**Proposition 12.3 (Determination of $M_5$ — fit to observed $G$).** Given Eqs. (28)–(30) and the observed reduced Planck mass $M_{\text{Pl}} = 2.435 \times 10^{18}\;\text{GeV}$ (where $G = 1/(8\pi M_{\text{Pl}}^2)$), the fundamental 5D scale is uniquely determined.
+**Proposition 12.3 (Determination of $M_5$ — fit to observed $G$).** Given Eqs. (41)–(30) and the observed reduced Planck mass $M_{\text{Pl}} = 2.435 \times 10^{18}\;\text{GeV}$ (where $G = 1/(8\pi M_{\text{Pl}}^2)$), the fundamental 5D scale is uniquely determined.
 
-From Eq. (19) with $\alpha = 12$:
+From Eq. (27) with $\alpha = 12$:
 
-$$M_5^3 = \frac{M_{\text{Pl}}^2\,k}{1 - e^{-24}} = \frac{M_{\text{Pl}}^2\,k}{1.0000} \tag{31}$$
+$$M_5^3 = \frac{M_{\text{Pl}}^2\,k}{1 - e^{-24}} = \frac{M_{\text{Pl}}^2\,k}{1.0000} \tag{44}$$
 
 (Since $e^{-24} \approx 3.8 \times 10^{-11}$, the correction is negligible.)
 
 Evaluating numerically. In natural units, $1\;\text{m}^{-1} = 1.973 \times 10^{-16}\;\text{GeV}$, so:
 
-$$k = 1.2 \times 10^{20}\;\text{m}^{-1} = 1.2 \times 10^{20} \times 1.973 \times 10^{-16}\;\text{GeV} \approx 2.368 \times 10^{4}\;\text{GeV}$$
+$$k = 1.2 \times 10^{20}\;\text{m}^{-1} = 1.2 \times 10^{20} \times 1.973 \times 10^{-16}\;\text{GeV} \approx 2.368 \times 10^{4}\;\text{GeV} \tag{45}$$
 
-$$M_5^3 = \frac{(2.435 \times 10^{18})^2 \times 2.368 \times 10^{4}}{1.0}\;\text{GeV}^3 \approx 1.40 \times 10^{41}\;\text{GeV}^3$$
+$$M_5^3 = \frac{(2.435 \times 10^{18})^2 \times 2.368 \times 10^{4}}{1.0}\;\text{GeV}^3 \approx 1.40 \times 10^{41}\;\text{GeV}^3 \tag{46}$$
 
-$$\boxed{M_5 \approx 5.2 \times 10^{13}\;\text{GeV}} \tag{32}$$
+$$\boxed{M_5 \approx 5.2 \times 10^{13}\;\text{GeV}} \tag{47}$$
 
 **Remark 12.4.** Note that this is a **fit**: $M_5$ is determined by requiring the model to reproduce the observed $G$, rather than being predicted from first principles. The fundamental 5D scale lies in the range $10^{13}$–$10^{14}\;\text{GeV}$. This is:
 
@@ -580,21 +580,21 @@ For a closed derivation of $G$ without fitting $M_5$, see Proposition 12.5 below
 
 **Proposition 12.5 (Closed derivation of $G$).** *Under the UV closure relation $M_5^3 = M_{\text{UV}}^4\,L$ and the IR self-consistency condition $M_5\,e^{-\alpha} = k$, Newton's constant is fully determined by the geometry:*
 
-$$\boxed{G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}} \tag{32a}$$
+$$\boxed{G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}} \tag{48}$$
 
 *No mass scale ($M_5$, $M_{\text{UV}}$, $M_{\text{Pl}}$) enters as a free parameter.*
 
 *Proof.* From the definitions $\alpha = kL$ and the IR condition $M_5\,e^{-\alpha} = k$:
 
-$$k = \frac{\alpha}{L}, \quad M_5 = k\,e^{\alpha} = \frac{\alpha\,e^{\alpha}}{L}$$
+$$k = \frac{\alpha}{L}, \quad M_5 = k\,e^{\alpha} = \frac{\alpha\,e^{\alpha}}{L} \tag{49}$$
 
 Therefore:
 
-$$M_5^3 = \frac{\alpha^3\,e^{3\alpha}}{L^3}$$
+$$M_5^3 = \frac{\alpha^3\,e^{3\alpha}}{L^3} \tag{50}$$
 
-Substituting into Eq. (21):
+Substituting into Eq. (31):
 
-$$G = \frac{k}{8\pi\,M_5^3\,(1 - e^{-2\alpha})} = \frac{\alpha/L}{8\pi\,(\alpha^3 e^{3\alpha}/L^3)\,(1 - e^{-2\alpha})} = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})} \;\square$$
+$$G = \frac{k}{8\pi\,M_5^3\,(1 - e^{-2\alpha})} = \frac{\alpha/L}{8\pi\,(\alpha^3 e^{3\alpha}/L^3)\,(1 - e^{-2\alpha})} = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})} \;\square \tag{51}$$
 
 **Remark 12.6 (Physical meaning of the two closure conditions).**
 
@@ -606,7 +606,7 @@ Together, they close the system: all mass scales are derived from the geometry $
 
 **Numerical evaluation 12.7.** From radion stabilization (see Section 4 below), the warp parameter is $\alpha \approx 21.13$ and $L \approx 5.07 \times 10^{-4}\;\text{GeV}^{-1} \approx 10^{-19}\;\text{m}$. In the large-warp regime, $1 - e^{-2\alpha} \approx 1$, and:
 
-$$G \approx \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}}$$
+$$G \approx \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}} \tag{52}$$
 
 | Quantity | Value | Source |
 |:--|:--|:--|
@@ -615,7 +615,7 @@ $$G \approx \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}}$$
 | $k = \alpha/L$ | $4.17 \times 10^{4}\;\text{GeV} \approx 41.7\;\text{TeV}$ | Derived |
 | $M_5 = \alpha\,e^{\alpha}/L$ | $\approx 6.3 \times 10^{13}\;\text{GeV}$ | Derived (not fitted) |
 | $M_{\text{UV}} = \alpha^{3/4}\,e^{3\alpha/4}/L$ | $\approx 1.5 \times 10^{11}\;\text{GeV}$ | Derived |
-| $G_{\text{pred}}$ | $6.71 \times 10^{-39}\;\text{GeV}^{-2}$ | Eq. (32a) |
+| $G_{\text{pred}}$ | $6.71 \times 10^{-39}\;\text{GeV}^{-2}$ | Eq. (48) |
 | $G_{\text{obs}}$ | $6.71 \times 10^{-39}\;\text{GeV}^{-2}$ | $= 6.674 \times 10^{-11}\;\text{m}^3\,\text{kg}^{-1}\,\text{s}^{-2}$ |
 
 The weakness of 4D gravity is traced to the exponential warp suppression $e^{-3\alpha} \sim e^{-63} \sim 10^{-27}$, amplified by the polynomial factor $\alpha^{-2}$, acting on the geometric scale $L^2$.
@@ -628,25 +628,25 @@ The weakness of 4D gravity is traced to the exponential warp suppression $e^{-3\
 
 **Theorem 13.1 (Single-particle barrier energy).** The energy required for a single particle to undergo complete transition from the visible brane to the twin brane is:
 
-$$E_{\text{barrier}} \approx \hbar\,c\,k \tag{33}$$
+$$E_{\text{barrier}} \approx \hbar\,c\,k \tag{53}$$
 
 *Proof.* The warp factor $e^{-k|y|}$ generates a potential barrier in the extra-dimensional direction. The characteristic energy scale of this barrier is set by the curvature parameter $k$ through the uncertainty relation. A particle localized within the well of width $\sim 1/k$ has minimum kinetic energy $\sim \hbar c k$ in the extra-dimensional direction. To escape the potential well and transition fully to the twin brane, the particle must overcome this energy scale. $\square$
 
-**Evaluation 13.2.** For $k = 1.2 \times 10^{20}\;\text{m}^{-1}$ (from $\alpha = 12$, Eq. 29):
+**Evaluation 13.2.** For $k = 1.2 \times 10^{20}\;\text{m}^{-1}$ (from $\alpha = 12$, Eq. (42)):
 
-$$E_{\text{barrier}} = \hbar\,c\,k = \bigl(1.055 \times 10^{-34}\;\text{J}{\cdot}\text{s}\bigr)\bigl(2.998 \times 10^{8}\;\text{m/s}\bigr)\bigl(1.2 \times 10^{20}\;\text{m}^{-1}\bigr)$$
+$$E_{\text{barrier}} = \hbar\,c\,k = \bigl(1.055 \times 10^{-34}\;\text{J}{\cdot}\text{s}\bigr)\bigl(2.998 \times 10^{8}\;\text{m/s}\bigr)\bigl(1.2 \times 10^{20}\;\text{m}^{-1}\bigr) \tag{54}$$
 
-$$\boxed{E_{\text{barrier}} \approx 24\;\text{TeV per particle}} \tag{34}$$
+$$\boxed{E_{\text{barrier}} \approx 24\;\text{TeV per particle}} \tag{55}$$
 
 This exceeds the LHC center-of-mass energy ($\sqrt{s} = 13.6\;\text{TeV}$), consistent with the absence of extra-dimensional signatures in collider data.
 
 **Corollary 13.3 (Macroscopic transition energy).** For a macroscopic quantity of matter, the total energy required for coherent transition scales with the number of particles. For 1 gram of hydrogen:
 
-$$N \approx N_A = 6.022 \times 10^{23}$$
+$$N \approx N_A = 6.022 \times 10^{23} \tag{56}$$
 
-$$E_{\text{total}} = N \times E_{\text{barrier}} \approx 6 \times 10^{23} \times 24\;\text{TeV} \approx 2.3 \times 10^{18}\;\text{J} \tag{35}$$
+$$E_{\text{total}} = N \times E_{\text{barrier}} \approx 6 \times 10^{23} \times 24\;\text{TeV} \approx 2.3 \times 10^{18}\;\text{J} \tag{57}$$
 
-**Remark 13.4 (Prohibition of macroscopic coherent transition).** The decisive physical consequence of Eq. (35) is not merely that the energy is "large," but that *coherent macroscopic transition is effectively forbidden under all ordinary conditions*. This yields three sharp conclusions:
+**Remark 13.4 (Prohibition of macroscopic coherent transition).** The decisive physical consequence of Eq. (57) is not merely that the energy is "large," but that *coherent macroscopic transition is effectively forbidden under all ordinary conditions*. This yields three sharp conclusions:
 
 1. **Single-particle twin structure is allowed.** An individual particle can possess and maintain its dual brane profile at negligible energy cost. The twin structure is a ground-state property, not an excited state.
 
@@ -693,12 +693,12 @@ The following results have been established by explicit derivation:
 | # | Result | Equation |
 |---|--------|----------|
 | 1 | Warped background consistency | $\Lambda_5 = -6k^2 M_5^3$, $\;\sigma = 6kM_5^3$ |
-| 2 | Linearized 5D Einstein equation | Eq. (13) |
+| 2 | Linearized 5D Einstein equation | Eq. (20) |
 | 3 | Graviton zero-mode profile | $\psi_0(y) = N_0\,e^{-2k\|y\|}$ |
 | 4 | Effective 4D Planck mass | $M_{\text{Pl}}^2 = \dfrac{M_5^3}{k}\left(1 - e^{-2kL}\right)$ |
 | 5 | Newton's constant | $G = \dfrac{k}{8\pi M_5^3(1 - e^{-2kL})}$ |
 | 6 | Newtonian potential recovery | $\Phi(r) = -GM/r$ for $r \gg 1/k$ |
-| 7 | Schwarzschild metric recovery | Eq. (27) |
+| 7 | Schwarzschild metric recovery | Eq. (40) |
 | 8 | Fundamental 5D scale (fit, $\alpha = 12$) | $M_5 \approx 5.2 \times 10^{13}\;\text{GeV}$ |
 | 9 | Barrier energy per particle | $E_{\text{barrier}} \approx 24\;\text{TeV}$ |
 | 10 | KK corrections | $\Delta\Phi/\Phi \sim 1/(k^2 r^2)$ |
@@ -764,11 +764,11 @@ This section contains proofs and derivations that **extend** the foundational fr
 
 ## 2.1. Proof 1: Radion Stabilization via Effective Potential
 
-The closed formula $G = L^2/[8\pi\alpha^2 e^{3\alpha}(1-e^{-2\alpha})]$ (derived in Section 4, Eq. 5) contains $\alpha = kL$ as the controlling parameter. Here we show that $\alpha \approx 21$ is not imposed but arises as the minimum of a radion effective potential.
+The closed formula $G = L^2/[8\pi\alpha^2 e^{3\alpha}(1-e^{-2\alpha})]$ (derived in Eq. (181)) contains $\alpha = kL$ as the controlling parameter. Here we show that $\alpha \approx 21$ is not imposed but arises as the minimum of a radion effective potential.
 
 **Proposition E1.1 (Radion potential).** *The inter-brane modulus $\alpha$ is stabilized by an effective potential of the form*
 
-$$V_{\text{eff}}(\alpha) = \Lambda^4\left[A\,e^{-4\alpha} - B\,e^{-3\alpha} + C\,e^{-2\alpha}\right]$$
+$$V_{\text{eff}}(\alpha) = \Lambda^4\left[A\,e^{-4\alpha} - B\,e^{-3\alpha} + C\,e^{-2\alpha}\right] \tag{58}$$
 
 *where $A > 0$ is a UV/bulk contribution, $B > 0$ is the twin-overlap / barrier contribution, and $C > 0$ is a geometric junction contribution.*
 
@@ -782,27 +782,27 @@ These are the three leading exponential orders in the warped dimensional reducti
 
 **Theorem E1.2 (Equilibrium warp factor).** *The minimum of $V_{\text{eff}}$ satisfies*
 
-$$\alpha^* = \ln\!\left(\frac{3B \pm \sqrt{9B^2 - 32AC}}{4C}\right)$$
+$$\alpha^* = \ln\!\left(\frac{3B \pm \sqrt{9B^2 - 32AC}}{4C}\right) \tag{59}$$
 
 *In the regime $B/C \gg 1$, this simplifies to*
 
-$$\alpha^* \sim \ln\!\left(\frac{B}{C}\right)$$
+$$\alpha^* \sim \ln\!\left(\frac{B}{C}\right) \tag{60}$$
 
 *Proof.* Setting $dV_{\text{eff}}/d\alpha = 0$:
 
-$$-4A\,e^{-4\alpha} + 3B\,e^{-3\alpha} - 2C\,e^{-2\alpha} = 0$$
+$$-4A\,e^{-4\alpha} + 3B\,e^{-3\alpha} - 2C\,e^{-2\alpha} = 0 \tag{61}$$
 
 Multiplying through by $e^{4\alpha}$:
 
-$$-4A + 3B\,e^{\alpha} - 2C\,e^{2\alpha} = 0$$
+$$-4A + 3B\,e^{\alpha} - 2C\,e^{2\alpha} = 0 \tag{62}$$
 
 Substituting $x = e^{\alpha}$ yields the quadratic
 
-$$2C\,x^2 - 3B\,x + 4A = 0$$
+$$2C\,x^2 - 3B\,x + 4A = 0 \tag{63}$$
 
 with solution
 
-$$x = \frac{3B \pm \sqrt{9B^2 - 32AC}}{4C}$$
+$$x = \frac{3B \pm \sqrt{9B^2 - 32AC}}{4C} \tag{64}$$
 
 Taking the logarithm gives $\alpha^* = \ln(x)$. When $A/(BC) \ll 1$, the discriminant $\sqrt{9B^2 - 32AC} \approx 3B$ and the larger root gives $x \approx 3B/(2C)$, so $\alpha^* \approx \ln(3B/(2C)) \sim \ln(B/C)$. $\square$
 
@@ -818,17 +818,17 @@ The IR self-consistency condition $M_5\,e^{-\alpha} = k$ (used in Section 4, §2
 
 **Definition E2.1 (Local IR scale).** The warped image of the 5D gravitational scale at the IR end of the interval is
 
-$$M_{\text{loc}} = M_5\,e^{-\alpha}$$
+$$M_{\text{loc}} = M_5\,e^{-\alpha} \tag{65}$$
 
 **Definition E2.2 (Mismatch ratio).** Define
 
-$$z \equiv \frac{M_5\,e^{-\alpha}}{k} = \frac{M_{\text{loc}}}{k}$$
+$$z \equiv \frac{M_5\,e^{-\alpha}}{k} = \frac{M_{\text{loc}}}{k} \tag{66}$$
 
 This measures the ratio of the local gravitational scale to the local curvature scale at the IR brane.
 
 **Proposition E2.3 (IR self-consistency as variational minimum).** *Consider the IR mismatch energy*
 
-$$V_{\text{IR}} = \Lambda_{\text{IR}}^4\,F(z), \quad F(z) = (z - 1)^2$$
+$$V_{\text{IR}} = \Lambda_{\text{IR}}^4\,F(z), \quad F(z) = (z - 1)^2 \tag{67}$$
 
 *The condition $M_5\,e^{-\alpha} = k$ is equivalent to the statement that $V_{\text{IR}}$ is at its global minimum.*
 
@@ -844,21 +844,21 @@ The decoherence threshold postulate $\mathcal{O}(L) = \epsilon_c$ (used in Secti
 
 **Theorem E3.1 (Overlap integral).** *Let the two twin components have exponentially localized profiles*
 
-$$\chi_0(y) \sim e^{-ky}, \quad \chi_L(y) \sim e^{-k(L-y)}$$
+$$\chi_0(y) \sim e^{-ky}, \quad \chi_L(y) \sim e^{-k(L-y)} \tag{68}$$
 
 *Then their overlap integral satisfies*
 
-$$\mathcal{O}(L) = \int_0^L dy\;\chi_0(y)\,\chi_L(y) \sim L\,e^{-kL}$$
+$$\mathcal{O}(L) = \int_0^L dy\;\chi_0(y)\,\chi_L(y) \sim L\,e^{-kL} \tag{69}$$
 
 *with leading behavior $\mathcal{O}(L) \propto e^{-\alpha}$.*
 
 *Proof.* Direct computation:
 
-$$\mathcal{O}(L) = \int_0^L dy\;e^{-ky}\,e^{-k(L-y)} = \int_0^L dy\;e^{-kL} = L\,e^{-kL}$$
+$$\mathcal{O}(L) = \int_0^L dy\;e^{-ky}\,e^{-k(L-y)} = \int_0^L dy\;e^{-kL} = L\,e^{-kL} \tag{70}$$
 
 The integral is trivial because the $y$-dependent exponents cancel: $e^{-ky} \cdot e^{-k(L-y)} = e^{-kL}$ is constant. The prefactor $L$ is polynomial and subdominant compared to the exponential, so the leading behavior is
 
-$$\mathcal{O}(L) = L\,e^{-kL} = \frac{\alpha}{k}\,e^{-\alpha}$$
+$$\mathcal{O}(L) = L\,e^{-kL} = \frac{\alpha}{k}\,e^{-\alpha} \tag{71}$$
 
 For $\alpha \gg 1$, the polynomial prefactor is negligible and $\mathcal{O}(L) \sim e^{-\alpha}$. $\square$
 
@@ -868,25 +868,25 @@ For $\alpha \gg 1$, the polynomial prefactor is negligible and $\mathcal{O}(L) \
 
 ## 2.4. Proof 4: Bulk Scalar Mass Links Bounce Parameters to Stabilization
 
-The closed formula uses $L = \beta/m_\Phi$ (Section 4, Eq. 6), and the bounce uses $V(\Phi) = (\lambda/4)(\Phi^2 - u^2)^2 - \eta u^3 \Phi$ (Section 1, §6.1). Here we show these are connected through the curvature of the bounce potential.
+The closed formula uses $L = \beta/m_\Phi$ (Eq. (182)), and the bounce uses $V(\Phi) = (\lambda/4)(\Phi^2 - u^2)^2 - \eta u^3 \Phi$ (Section 1, §6.1). Here we show these are connected through the curvature of the bounce potential.
 
 **Proposition E4.1 (Bulk scalar mass from bounce potential).** *The mass of small oscillations around the vacuum $\Phi = u$ is*
 
-$$m_\Phi^2 = V''(u) = 2\lambda\,u^2$$
+$$m_\Phi^2 = V''(u) = 2\lambda\,u^2 \tag{72}$$
 
 *so that $m_\Phi = \sqrt{2\lambda}\;u$.*
 
 *Proof.* From $V(\Phi) = (\lambda/4)(\Phi^2 - u^2)^2 - \eta u^3 \Phi$:
 
-$$V'(\Phi) = \lambda\,\Phi(\Phi^2 - u^2) - \eta u^3$$
+$$V'(\Phi) = \lambda\,\Phi(\Phi^2 - u^2) - \eta u^3 \tag{73}$$
 
-$$V''(\Phi) = \lambda(3\Phi^2 - u^2)$$
+$$V''(\Phi) = \lambda(3\Phi^2 - u^2) \tag{74}$$
 
 At $\Phi = u$: $V''(u) = \lambda(3u^2 - u^2) = 2\lambda u^2$. $\square$
 
 **Corollary E4.2 (Self-consistent chain).** *The stabilization length, the bounce domain-wall thickness, and the bulk correlation length are all controlled by the same mass:*
 
-$$L^* = \frac{\beta}{m_\Phi}, \quad \delta_{\text{wall}} \sim \frac{1}{\sqrt{\lambda}\,u} = \frac{\sqrt{2}}{m_\Phi}, \quad \xi_{\text{bulk}} \sim \frac{1}{m_\Phi}$$
+$$L^* = \frac{\beta}{m_\Phi}, \quad \delta_{\text{wall}} \sim \frac{1}{\sqrt{\lambda}\,u} = \frac{\sqrt{2}}{m_\Phi}, \quad \xi_{\text{bulk}} \sim \frac{1}{m_\Phi} \tag{75}$$
 
 *These are all of order $1/m_\Phi$, confirming that the bounce physics and the stabilization physics share a single characteristic scale.*
 
@@ -898,23 +898,23 @@ The closure chain in Section 4 expresses $G$ in terms of $\alpha$, $L$, and inte
 
 **Theorem E5.1 (Two-parameter determination of $G$).** *Under the closure conditions $\alpha = \ln(1/\epsilon_c)$ and $L = 1/m$, Newton's constant is*
 
-$$G = \frac{1}{8\pi\,m^2\,\ln^2(1/\epsilon_c)\;\epsilon_c^{-3}\;\bigl(1 - \epsilon_c^2\bigr)}$$
+$$G = \frac{1}{8\pi\,m^2\,\ln^2(1/\epsilon_c)\;\epsilon_c^{-3}\;\bigl(1 - \epsilon_c^2\bigr)} \tag{76}$$
 
-*Proof.* Start from the closed formula (Section 4, Eq. 8):
+*Proof.* Start from the closed formula (Eq. (185)):
 
-$$G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}$$
+$$G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})} \tag{77}$$
 
 Substitute $L = 1/m$ and $\alpha = \ln(1/\epsilon_c)$:
 
-$$L^2 = \frac{1}{m^2}, \quad \alpha^2 = \ln^2(1/\epsilon_c)$$
+$$L^2 = \frac{1}{m^2}, \quad \alpha^2 = \ln^2(1/\epsilon_c) \tag{78}$$
 
-$$e^{3\alpha} = e^{3\ln(1/\epsilon_c)} = \epsilon_c^{-3}$$
+$$e^{3\alpha} = e^{3\ln(1/\epsilon_c)} = \epsilon_c^{-3} \tag{79}$$
 
-$$e^{-2\alpha} = e^{-2\ln(1/\epsilon_c)} = \epsilon_c^{2}$$
+$$e^{-2\alpha} = e^{-2\ln(1/\epsilon_c)} = \epsilon_c^{2} \tag{80}$$
 
 Assembling:
 
-$$G = \frac{1/m^2}{8\pi\,\ln^2(1/\epsilon_c)\;\epsilon_c^{-3}\;\bigl(1 - \epsilon_c^{2}\bigr)} = \frac{1}{8\pi\,m^2\,\ln^2(1/\epsilon_c)\;\epsilon_c^{-3}\;\bigl(1 - \epsilon_c^{2}\bigr)} \;\square$$
+$$G = \frac{1/m^2}{8\pi\,\ln^2(1/\epsilon_c)\;\epsilon_c^{-3}\;\bigl(1 - \epsilon_c^{2}\bigr)} = \frac{1}{8\pi\,m^2\,\ln^2(1/\epsilon_c)\;\epsilon_c^{-3}\;\bigl(1 - \epsilon_c^{2}\bigr)} \;\square \tag{81}$$
 
 **Remark E5.2.** This is the deepest form of the closure. The weakness of gravity is encoded in:
 
@@ -936,7 +936,7 @@ Here we assemble the full chain from the bounce potential parameters $(\lambda, 
 
 **Theorem E6.1 (Bounce-to-$G$ chain).** *Given the bounce potential $V(\Phi) = (\lambda/4)(\Phi^2 - u^2)^2 - \eta u^3 \Phi$ and the closure conditions, Newton's constant is*
 
-$$G = \frac{\beta^2}{8\pi\,m_\Phi^2\;\left(\dfrac{S_B}{2\nu+2}\right)^2\;\exp\!\left(\dfrac{3\,S_B}{2\nu+2}\right)\;\left(1 - \exp\!\left[\dfrac{-2\,S_B}{2\nu+2}\right]\right)}$$
+$$G = \frac{\beta^2}{8\pi\,m_\Phi^2\;\left(\dfrac{S_B}{2\nu+2}\right)^2\;\exp\!\left(\dfrac{3\,S_B}{2\nu+2}\right)\;\left(1 - \exp\!\left[\dfrac{-2\,S_B}{2\nu+2}\right]\right)} \tag{82}$$
 
 *where $m_\Phi = \sqrt{2\lambda}\,u$, $S_B = (27\pi^2/16)\,\lambda^2/\eta^3$, $\nu = \sqrt{4 + m^2/k^2}$, and $\beta \approx 1.15$.*
 
@@ -944,23 +944,23 @@ $$G = \frac{\beta^2}{8\pi\,m_\Phi^2\;\left(\dfrac{S_B}{2\nu+2}\right)^2\;\exp\!\
 
 **Step 1.** Bounce action (Section 1, §13):
 
-$$S_B = \frac{27\pi^2}{16}\;\frac{\lambda^2}{\eta^3}$$
+$$S_B = \frac{27\pi^2}{16}\;\frac{\lambda^2}{\eta^3} \tag{83}$$
 
-**Step 2.** Warp factor (Section 4, Eq. 7):
+**Step 2.** Warp factor (Eq. (183)):
 
-$$\alpha^* = \frac{S_B}{2\nu + 2}$$
+$$\alpha^* = \frac{S_B}{2\nu + 2} \tag{84}$$
 
 **Step 3.** Bulk scalar mass (Proof 4 above):
 
-$$m_\Phi = \sqrt{2\lambda}\;u$$
+$$m_\Phi = \sqrt{2\lambda}\;u \tag{85}$$
 
-**Step 4.** Compactification length (Section 4, Eq. 6):
+**Step 4.** Compactification length (Eq. (182)):
 
-$$L^* = \frac{\beta}{m_\Phi}$$
+$$L^* = \frac{\beta}{m_\Phi} \tag{86}$$
 
-**Step 5.** Closed $G$ formula (Section 4, Eq. 8) with $L = \beta/m_\Phi$ and $\alpha = S_B/(2\nu+2)$:
+**Step 5.** Closed $G$ formula (Eq. (185)) with $L = \beta/m_\Phi$ and $\alpha = S_B/(2\nu+2)$:
 
-$$G = \frac{(\beta/m_\Phi)^2}{8\pi\;\left(\frac{S_B}{2\nu+2}\right)^2\;\exp\!\left(\frac{3S_B}{2\nu+2}\right)\;\left(1 - \exp\!\left[-\frac{2S_B}{2\nu+2}\right]\right)} \;\square$$
+$$G = \frac{(\beta/m_\Phi)^2}{8\pi\;\left(\frac{S_B}{2\nu+2}\right)^2\;\exp\!\left(\frac{3S_B}{2\nu+2}\right)\;\left(1 - \exp\!\left[-\frac{2S_B}{2\nu+2}\right]\right)} \;\square \tag{87}$$
 
 **Numerical verification.** For $\lambda = 0.1$, $\eta = 0.1$, $\nu = 2.85$, $\beta = 1.15$, $u$ chosen such that $m_\Phi \approx 1.97 \times 10^3$ GeV:
 
@@ -982,19 +982,19 @@ The KK tower of the warped extra dimension introduces Yukawa corrections to the 
 
 **Proposition E7.1 (Yukawa Casimir excess).** *The twin-barrier KK contribution to the Casimir force between two parallel plates separated by distance $d$ produces a fractional enhancement*
 
-$$\Delta_C(d) = \epsilon\;e^{-d/\lambda_t}$$
+$$\Delta_C(d) = \epsilon\;e^{-d/\lambda_t} \tag{88}$$
 
 *where $\lambda_t$ is the lightest KK Compton wavelength and $\epsilon$ is the coupling overlap strength.*
 
 **Theorem E7.2 (Numerical prediction).** *For $\lambda_t \sim 200$ nm and $\epsilon \sim 0.005$, the predicted excess at $d = 100$ nm is*
 
-$$\Delta_C(100\;\text{nm}) = 0.005\;e^{-100/200} = 0.005 \times 0.607 = 0.00303$$
+$$\Delta_C(100\;\text{nm}) = 0.005\;e^{-100/200} = 0.005 \times 0.607 = 0.00303 \tag{89}$$
 
 *i.e., a $0.3\%$ enhancement.*
 
 **Connection to the Drude-plasma Casimir puzzle.** The long-standing discrepancy between the Drude model and the plasma model predictions for the Casimir force leaves a residual unresolved correction of order
 
-$$0.1\%\text{--}0.3\%$$
+$$0.1\%\text{--}0.3\% \tag{90}$$
 
 in the 100–300 nm range, even after accounting for spatial nonlocality and anomalous skin effects [see reviews by Klimchitskaya, Mohideen, Mostepanenko].
 
@@ -1017,19 +1017,19 @@ The twin-brane prediction:
 
 The closure chain now derives $G$ from microscopic inputs:
 
-$$\boxed{S_B \;\longrightarrow\; \alpha = \frac{S_B}{2\nu+2} \;\longrightarrow\; L = \frac{\beta}{m_\Phi} \;\longrightarrow\; G = \frac{L^2}{8\pi\alpha^2 e^{3\alpha}(1-e^{-2\alpha})}}$$
+$$\boxed{S_B \;\longrightarrow\; \alpha = \frac{S_B}{2\nu+2} \;\longrightarrow\; L = \frac{\beta}{m_\Phi} \;\longrightarrow\; G = \frac{L^2}{8\pi\alpha^2 e^{3\alpha}(1-e^{-2\alpha})}} \tag{91}$$
 
 with $S_B = (27\pi^2/16)\,\lambda^2/\eta^3$ determined by O(1) coupling constants.
 
 Equivalently, in the two-parameter form:
 
-$$G = \frac{1}{8\pi\,m^2\,\ln^2(1/\epsilon_c)\;\epsilon_c^{-3}\;(1 - \epsilon_c^2)}$$
+$$G = \frac{1}{8\pi\,m^2\,\ln^2(1/\epsilon_c)\;\epsilon_c^{-3}\;(1 - \epsilon_c^2)} \tag{92}$$
 
 ### 2.8.2. What remains
 
 The deepest input is the brane VEV ratio:
 
-$$\frac{v_L}{v_0} \sim e^{-S_B}$$
+$$\frac{v_L}{v_0} \sim e^{-S_B} \tag{93}$$
 
 This is identified with the tunneling suppression factor of a nearly-degenerate vacuum transition, with $S_B \sim 160$ arising from O(1) couplings $(\lambda \sim 0.1, \eta \sim 0.1)$. However, the ultimate origin of the VEV ratio itself — i.e., *why* the IR brane VEV is tunneling-suppressed relative to the UV brane — is not yet derived from a deeper principle.
 
@@ -1071,19 +1071,19 @@ The closure chain above produces the correct order of magnitude for $G$ but stil
 
 Consider a bulk scalar with a nearly degenerate double-well potential:
 
-$$V(\Phi) = \frac{\lambda}{4}(\Phi^2 - u^2)^2 - \eta\,u^3\,\Phi$$
+$$V(\Phi) = \frac{\lambda}{4}(\Phi^2 - u^2)^2 - \eta\,u^3\,\Phi \tag{94}$$
 
 In the thin-wall regime, the domain-wall tension and vacuum energy splitting are
 
-$$\sigma = \frac{2\sqrt{2}}{3}\sqrt{\lambda}\,u^3, \qquad \Delta V \sim 2\eta\,u^4$$
+$$\sigma = \frac{2\sqrt{2}}{3}\sqrt{\lambda}\,u^3, \qquad \Delta V \sim 2\eta\,u^4 \tag{95}$$
 
 The Coleman bounce action in 4D Euclidean space is:
 
-$$S_B = \frac{27\pi^2 \sigma^4}{2(\Delta V)^3}$$
+$$S_B = \frac{27\pi^2 \sigma^4}{2(\Delta V)^3} \tag{96}$$
 
 Substituting the above expressions, the $u^{12}$ dependence cancels exactly, leaving
 
-$$\boxed{S_B = \frac{27\pi^2}{16}\,\frac{\lambda^2}{\eta^3} \;\approx\; 16.65\,\frac{\lambda^2}{\eta^3}}$$
+$$\boxed{S_B = \frac{27\pi^2}{16}\,\frac{\lambda^2}{\eta^3} \;\approx\; 16.65\,\frac{\lambda^2}{\eta^3}} \tag{97}$$
 
 For moderate values $\lambda \sim 0.1$ and $\eta \sim 0.1$, one obtains $S_B \sim 166.5$.
 
@@ -1091,7 +1091,7 @@ For moderate values $\lambda \sim 0.1$ and $\eta \sim 0.1$, one obtains $S_B \si
 
 Identifying the VEV transfer as tunneling-suppressed, $v_L/v_0 \sim e^{-S_B}$, and using the stabilization relation $\alpha^* = S_B/(2\nu + 2)$, one obtains:
 
-$$\boxed{\alpha^* = \frac{S_B}{2\nu + 2}}$$
+$$\boxed{\alpha^* = \frac{S_B}{2\nu + 2}} \tag{98}$$
 
 For $\alpha^* \sim 21.13$ and $\nu \sim 2.85$, the required bounce action is $S_B \sim 163$, which is precisely the thin-wall result.
 
@@ -1128,7 +1128,7 @@ Stage 1 validates that the 5D warped Randall-Sundrum background metric is an exa
 
 The Einstein-DeTurck formulation transforms the Einstein equations into a well-posed elliptic system by introducing a gauge-fixing vector $\xi^A$:
 
-$$E_{AB} = R_{AB} - \nabla_{(A}\xi_{B)} + \frac{2}{3}|\Lambda_5| g_{AB} = 0$$
+$$E_{AB} = R_{AB} - \nabla_{(A}\xi_{B)} + \frac{2}{3}|\Lambda_5| g_{AB} = 0 \tag{99}$$
 
 For the exact RS background, both $\xi^A$ and $E_{AB}$ must vanish identically.
 
@@ -1138,7 +1138,7 @@ For the exact RS background, both $\xi^A$ and $E_{AB}$ must vanish identically.
 
 In the Twin-Barrier Theory of Gravity, the background metric
 
-$$ds^2 = e^{-2k|y|}\eta_{\mu\nu}dx^\mu dx^\nu + dy^2$$
+$$ds^2 = e^{-2k|y|}\eta_{\mu\nu}dx^\mu dx^\nu + dy^2 \tag{100}$$
 
 defines the geometric "barrier" between the visible barrier ($y = 0$) and the twin barrier ($y = L$). The warp factor $e^{-2k|y|}$ is the mathematical expression of the inter-barrier separation that prevents the two mass components $\chi_0(y)$ and $\chi_L(y)$ from spontaneously merging.
 
@@ -1152,7 +1152,7 @@ defines the geometric "barrier" between the visible barrier ($y = 0$) and the tw
 
 Without this stage passing, the entire chain
 
-$$\text{warp factor} \to \alpha \to G = \frac{L^2}{8\pi\alpha^2 e^{3\alpha}(1 - e^{-2\alpha})}$$
+$$\text{warp factor} \to \alpha \to G = \frac{L^2}{8\pi\alpha^2 e^{3\alpha}(1 - e^{-2\alpha})} \tag{101}$$
 
 would rest on an unverified geometric foundation.
 
@@ -1161,16 +1161,16 @@ would rest on an unverified geometric foundation.
 #### Formulas Used
 
 **5D warped metric:**
-$$ds^2 = e^{-2k|y|}\eta_{\mu\nu}dx^\mu dx^\nu + dy^2$$
+$$ds^2 = e^{-2k|y|}\eta_{\mu\nu}dx^\mu dx^\nu + dy^2 \tag{102}$$
 
 **DeTurck vector norm:**
-$$|\xi|^2 = g_{AB}\xi^A\xi^B$$
+$$|\xi|^2 = g_{AB}\xi^A\xi^B \tag{103}$$
 
 **Einstein-DeTurck residual (component matrix):**
-$$E_{AB} = R_{AB} - \nabla_{(A}\xi_{B)} + \frac{2}{3}|\Lambda_5| g_{AB}$$
+$$E_{AB} = R_{AB} - \nabla_{(A}\xi_{B)} + \frac{2}{3}|\Lambda_5| g_{AB} \tag{104}$$
 
 **Ricci scalar (exact for AdS$_5$ warped background):**
-$$R = -20k^2$$
+$$R = -20k^2 \tag{105}$$
 
 **Christoffel symbols:** computed both analytically and via autodiff, cross-validated component by component.
 
@@ -1211,7 +1211,7 @@ Stage 2 solves the linearized graviton equation for a static point mass $M$ loca
 
 The 5D linearized graviton equation on the warped background is:
 
-$$\left[\partial_r^2 + \frac{2}{r}\partial_r + \partial_y^2 - 4k\partial_y\right]\Phi = S(r,y)$$
+$$\left[\partial_r^2 + \frac{2}{r}\partial_r + \partial_y^2 - 4k\partial_y\right]\Phi = S(r,y) \tag{106}$$
 
 where $S(r,y)$ is a regularized Gaussian approximation to a barrier-localized delta-function source.
 
@@ -1221,7 +1221,7 @@ where $S(r,y)$ is a regularized Gaussian approximation to a barrier-localized de
 
 The Twin-Barrier Theory proposes that gravity is not a fundamental force but an effective interaction arising from the tendency of a particle's visible and twin components to re-align. The central prediction is:
 
-$$G = \frac{k}{8\pi M_5^3(1 - e^{-2kL})}$$
+$$G = \frac{k}{8\pi M_5^3(1 - e^{-2kL})} \tag{107}$$
 
 Stage 2 directly tests the first observable consequence of this prediction: **does a point mass on the visible barrier produce the correct Newtonian potential?**
 
@@ -1238,13 +1238,13 @@ Stage 2 directly tests the first observable consequence of this prediction: **do
 #### Formulas Used
 
 **5D linearized graviton equation:**
-$$\left[\partial_r^2 + \frac{2}{r}\partial_r + \partial_y^2 - 4k\partial_y\right]\Phi = S_\text{eff}(r,y)$$
+$$\left[\partial_r^2 + \frac{2}{r}\partial_r + \partial_y^2 - 4k\partial_y\right]\Phi = S_\text{eff}(r,y) \tag{108}$$
 
 **Regularized source (barrier-localized):**
-$$S(r,y) = -\frac{M}{4\pi M_5^3} \cdot \frac{1}{\sigma_r^3(2\pi)^{3/2}} e^{-r^2/(2\sigma_r^2)} \cdot \frac{1}{\sigma_y\sqrt{2\pi}} e^{-y^2/(2\sigma_y^2)}$$
+$$S(r,y) = -\frac{M}{4\pi M_5^3} \cdot \frac{1}{\sigma_r^3(2\pi)^{3/2}} e^{-r^2/(2\sigma_r^2)} \cdot \frac{1}{\sigma_y\sqrt{2\pi}} e^{-y^2/(2\sigma_y^2)} \tag{109}$$
 
 **Barrier potential (reconstructed):**
-$$V(r) = -\frac{\Phi(r, y=0)}{2}$$
+$$V(r) = -\frac{\Phi(r, y=0)}{2} \tag{110}$$
 
 **Boundary conditions:**
 
@@ -1294,7 +1294,7 @@ Stage 3 validates the existence and properties of the graviton zero mode — the
 
 The 1D eigenvalue problem in the extra dimension is the Sturm-Liouville system:
 
-$$-\frac{d}{dy}\left[e^{-4ky}\frac{d\psi}{dy}\right] = m^2 e^{-4ky}\psi$$
+$$-\frac{d}{dy}\left[e^{-4ky}\frac{d\psi}{dy}\right] = m^2 e^{-4ky}\psi \tag{111}$$
 
 Discretized using piecewise-linear finite elements with lumped mass matrix and solved by `jnp.linalg.eigh`.
 
@@ -1313,7 +1313,7 @@ The zero mode ($m_0^2 = 0$) is special: it corresponds to the massless 4D gravit
 2. **Gravity is barrier-localized.** The zero mode profile $\psi_0(y) \approx \text{const}$ combined with the warp-factor weight $e^{-4ky}$ concentrates the graviton's probability near $y = 0$. The weighted norm $\int e^{-4ky}|\psi_0|^2 dy$ is dominated by the barrier region — gravity is "stuck" on the visible barrier, exactly as predicted by the twin-barrier picture where the observable gravitational interaction arises from barrier-localized mass profiles.
 
 3. **The Planck mass formula holds.** The normalization of the zero mode directly determines the 4D Planck mass:
-$$M_\text{Pl}^2 = M_5^3 \int_0^L e^{-2ky} dy = \frac{M_5^3}{k}(1 - e^{-2kL})$$
+$$M_\text{Pl}^2 = M_5^3 \int_0^L e^{-2ky} dy = \frac{M_5^3}{k}(1 - e^{-2kL}) \tag{112}$$
 This is the fundamental bridge between 5D geometry and the Newton's constant formula $G = 1/(8\pi M_\text{Pl}^2)$.
 
 4. **Domain stability confirms no fine-tuning.** The zero mode eigenvalue remains $m_0^2 \ll 10^{-6}$ when the computational domain is doubled ($y_\text{max} \to 2y_\text{max}$), proving this is a genuine physical mode and not a numerical artifact.
@@ -1323,17 +1323,17 @@ This is the fundamental bridge between 5D geometry and the Newton's constant for
 #### Formulas Used
 
 **Sturm-Liouville eigenvalue problem:**
-$$-\frac{d}{dy}\left[e^{-4ky}\frac{d\psi}{dy}\right] = m^2 e^{-4ky}\psi$$
+$$-\frac{d}{dy}\left[e^{-4ky}\frac{d\psi}{dy}\right] = m^2 e^{-4ky}\psi \tag{113}$$
 
 **Weighted inner product:**
-$$\langle f, g \rangle_w = \int_0^{y_\text{max}} f(y)g(y) e^{-4ky}\,dy$$
+$$\langle f, g \rangle_w = \int_0^{y_\text{max}} f(y)g(y) e^{-4ky}\,dy \tag{114}$$
 
 **Standard eigenvalue form:**
-$$S = M^{-1/2}HM^{-1/2}$$
+$$S = M^{-1/2}HM^{-1/2} \tag{115}$$
 where $H$ = stiffness matrix, $M$ = lumped mass matrix with warp-factor weights.
 
 **4D Planck mass (from zero mode normalization):**
-$$M_\text{Pl}^2 = M_5^3 \int_0^L e^{-2ky}\,dy = \frac{M_5^3}{k}(1 - e^{-2kL})$$
+$$M_\text{Pl}^2 = M_5^3 \int_0^L e^{-2ky}\,dy = \frac{M_5^3}{k}(1 - e^{-2kL}) \tag{116}$$
 
 ---
 
@@ -1395,16 +1395,16 @@ The Twin-Barrier Theory predicts that the warped extra dimension produces an exp
 #### Formulas Used
 
 **KK decomposition:**
-$$h(x, y) = \sum_{n=0}^{\infty} h_n(x)\psi_n(y)$$
+$$h(x, y) = \sum_{n=0}^{\infty} h_n(x)\psi_n(y) \tag{117}$$
 
 **Eigenvalue problem (from Sturm-Liouville):**
-$$-\frac{d}{dy}\left[e^{-4ky}\frac{d\psi_n}{dy}\right] = m_n^2 e^{-4ky}\psi_n$$
+$$-\frac{d}{dy}\left[e^{-4ky}\frac{d\psi_n}{dy}\right] = m_n^2 e^{-4ky}\psi_n \tag{118}$$
 
 **KK mass gap:**
-$$\Delta m^2 = m_1^2 - m_0^2$$
+$$\Delta m^2 = m_1^2 - m_0^2 \tag{119}$$
 
 **Convergence measure:**
-$$\delta_n = \frac{|m_n^2(2N) - m_n^2(4N)|}{m_n^2(4N)}$$
+$$\delta_n = \frac{|m_n^2(2N) - m_n^2(4N)|}{m_n^2(4N)} \tag{120}$$
 
 ---
 
@@ -1472,19 +1472,19 @@ This is a **fatal gate**: if Stage 5 fails, Stages 6-9 are meaningless.
 #### Formulas Used
 
 **Kinetic energy functional:**
-$$K[\chi] = \int (\chi')^2\,dy \geq 0$$
+$$K[\chi] = \int (\chi')^2\,dy \geq 0 \tag{121}$$
 
 **Potential energy (warped Schrödinger picture):**
-$$V = \int 4k^2\chi^2\,dy \geq 0$$
+$$V = \int 4k^2\chi^2\,dy \geq 0 \tag{122}$$
 
 **Hamiltonian (manifestly positive semi-definite):**
-$$H = -\frac{d^2}{dy^2} + 4k^2$$
+$$H = -\frac{d^2}{dy^2} + 4k^2 \tag{123}$$
 
 **Ghost criterion:**
-$$\lambda_\text{min}(K) \geq -10^{-10}$$
+$$\lambda_\text{min}(K) \geq -10^{-10} \tag{124}$$
 
 **Tachyon criterion:**
-$$m_\text{min}^2 \geq -10^{-6}$$
+$$m_\text{min}^2 \geq -10^{-6} \tag{125}$$
 
 ---
 
@@ -1544,22 +1544,22 @@ The Twin-Barrier Theory requires that the gravitational barrier between the visi
 #### Formulas Used
 
 **Linearized wave equation on RS background:**
-$$\partial_t^2 h(y,t) + L_y\, h(y,t) = 0$$
+$$\partial_t^2 h(y,t) + L_y\, h(y,t) = 0 \tag{126}$$
 
 where $L_y$ is the Sturm-Liouville operator from Stage 3–4.
 
 **Symplectic leapfrog (Störmer-Verlet) integrator:**
-$$v_{n+1/2} = v_n - \frac{dt}{2}\,A\,h_n$$
-$$h_{n+1} = h_n + dt\,v_{n+1/2}$$
-$$v_{n+1} = v_{n+1/2} - \frac{dt}{2}\,A\,h_{n+1}$$
+$$v_{n+1/2} = v_n - \frac{dt}{2}\,A\,h_n \tag{127}$$
+$$h_{n+1} = h_n + dt\,v_{n+1/2} \tag{128}$$
+$$v_{n+1} = v_{n+1/2} - \frac{dt}{2}\,A\,h_{n+1} \tag{129}$$
 
 where $A = M^{-1}H$ is the discretized operator.
 
 **Conserved energy:**
-$$E = \frac{1}{2}v^T M v + \frac{1}{2}h^T H h$$
+$$E = \frac{1}{2}v^T M v + \frac{1}{2}h^T H h \tag{130}$$
 
 **Growth rate:**
-$$\omega_{\max} = \max_t \frac{d}{dt}\ln\|h(t)\|$$
+$$\omega_{\max} = \max_t \frac{d}{dt}\ln\|h(t)\| \tag{131}$$
 
 ---
 
@@ -1619,16 +1619,16 @@ The Twin-Barrier Theory claims that 4D gravity on the visible barrier is indisti
 #### Formulas Used
 
 **Barrier potential fit:**
-$$V(r) = \frac{A}{r} + B$$
+$$V(r) = \frac{A}{r} + B \tag{132}$$
 
 **PPN extraction:**
-$$\gamma = 1 \quad \Leftrightarrow \quad V(r) \propto \frac{1}{r} \text{ (pure Newtonian)}$$
+$$\gamma = 1 \quad \Leftrightarrow \quad V(r) \propto \frac{1}{r} \text{ (pure Newtonian)} \tag{133}$$
 
 **Light bending ratio (GR prediction):**
-$$\frac{\delta\phi}{\delta\phi_{\text{GR}}} = \frac{1+\gamma}{2} = 1.0$$
+$$\frac{\delta\phi}{\delta\phi_{\text{GR}}} = \frac{1+\gamma}{2} = 1.0 \tag{134}$$
 
 **Plateau test:**
-$$r \cdot V(r) \to \text{const} \quad \text{for } r \gg 1/k$$
+$$r \cdot V(r) \to \text{const} \quad \text{for } r \gg 1/k \tag{135}$$
 
 ---
 
@@ -1667,7 +1667,7 @@ Stage 8 solves for the Euclidean bounce instanton in the 5D warped geometry and 
 
 The key novelty is the warped extra dimension: the 5D bounce action differs from the 4D result because the warp factor introduces effective kinetic and potential lengths that modify the tunneling rate. The scalar field $\Phi$ lives in the bulk potential
 
-$$V(\Phi) = \frac{\lambda}{4}(\Phi^2 - u^2)^2 - \eta u^3 \Phi$$
+$$V(\Phi) = \frac{\lambda}{4}(\Phi^2 - u^2)^2 - \eta u^3 \Phi \tag{136}$$
 
 which has a false vacuum, a true vacuum, and a barrier between them. The bounce is the $O(4)$-symmetric solution $\Phi(\rho)$ that interpolates between the two vacua.
 
@@ -1692,21 +1692,21 @@ The Twin-Barrier Theory requires a mechanism for the early universe to transitio
 #### Formulas Used
 
 **Bulk potential:**
-$$V(\Phi) = \frac{\lambda}{4}(\Phi^2 - u^2)^2 - \eta u^3 \Phi$$
+$$V(\Phi) = \frac{\lambda}{4}(\Phi^2 - u^2)^2 - \eta u^3 \Phi \tag{137}$$
 
 **4D bounce action ($O(4)$-symmetric):**
-$$S_B^{4D} = 2\pi^2 \int_0^\infty \rho^3 \left[\frac{1}{2}\left(\frac{d\Phi}{d\rho}\right)^2 + V(\Phi) - V_{\text{false}}\right] d\rho$$
+$$S_B^{4D} = 2\pi^2 \int_0^\infty \rho^3 \left[\frac{1}{2}\left(\frac{d\Phi}{d\rho}\right)^2 + V(\Phi) - V_{\text{false}}\right] d\rho \tag{138}$$
 
 **Warped effective lengths:**
-$$L_{\text{eff}}^{\text{kin}} = \frac{1 - e^{-2kL}}{2k}, \quad L_{\text{eff}}^{\text{pot}} = \frac{1 - e^{-4kL}}{4k}$$
+$$L_{\text{eff}}^{\text{kin}} = \frac{1 - e^{-2kL}}{2k}, \quad L_{\text{eff}}^{\text{pot}} = \frac{1 - e^{-4kL}}{4k} \tag{139}$$
 
 **5D bounce action:**
-$$S_B^{5D} = S_{\text{kin}} \cdot L_{\text{eff}}^{\text{kin}} + S_{\text{pot}} \cdot L_{\text{eff}}^{\text{pot}}$$
+$$S_B^{5D} = S_{\text{kin}} \cdot L_{\text{eff}}^{\text{kin}} + S_{\text{pot}} \cdot L_{\text{eff}}^{\text{pot}} \tag{140}$$
 
 where $S_{\text{kin}}$ and $S_{\text{pot}}$ are the kinetic and potential contributions from the 4D profile.
 
 **Thin-wall approximation:**
-$$S_B^{\text{thin}} \approx \frac{27\pi^2\sigma^4}{2\varepsilon^3}, \quad \sigma = \frac{2\sqrt{2}\,u^3}{3}, \quad \varepsilon = \Delta V$$
+$$S_B^{\text{thin}} \approx \frac{27\pi^2\sigma^4}{2\varepsilon^3}, \quad \sigma = \frac{2\sqrt{2}\,u^3}{3}, \quad \varepsilon = \Delta V \tag{141}$$
 
 ---
 
@@ -1750,7 +1750,7 @@ ________________________________________________________________________________
 
 We derive — rather than assume — the two closure relations of the Randall-Sundrum (RS) barrierworld from a single 5D warped action with Goldberger-Wise (GW) stabilization. Starting from
 
-$$S = \int d^5x\,\sqrt{-g}\left[\frac{M_5^3}{2}R - \frac{1}{2}(\partial\Phi)^2 - \frac{1}{2}m^2\Phi^2\right] - \sum_{i=0,L}\int d^4x\,\sqrt{-g_i}\;\lambda_i(\Phi - v_i)^2$$
+$$S = \int d^5x\,\sqrt{-g}\left[\frac{M_5^3}{2}R - \frac{1}{2}(\partial\Phi)^2 - \frac{1}{2}m^2\Phi^2\right] - \sum_{i=0,L}\int d^4x\,\sqrt{-g_i}\;\lambda_i(\Phi - v_i)^2 \tag{142}$$
 
 with metric $ds^2 = e^{-2\sigma(y)}\eta_{\mu\nu}dx^\mu dx^\nu + dy^2$ and $y \in [0,L]$, we establish three results.
 
@@ -1784,7 +1784,7 @@ A Latin hypercube scan over 1000 parameter points — $m/k \in [0.01, 0.5]$, $\l
 
 The observable hierarchy between UV and IR scales is controlled by $\mathcal{O}(L) = e^{-\sigma(L)}$. At leading order $\sigma(y) = ky$, but the GW scalar backreacts on the warp function at $\mathcal{O}(\kappa^2)$:
 
-$$\sigma(y) = ky + \frac{\kappa^2}{12}\int_0^y (\Phi')^2\,dy' + \mathcal{O}(\kappa^4)$$
+$$\sigma(y) = ky + \frac{\kappa^2}{12}\int_0^y (\Phi')^2\,dy' + \mathcal{O}(\kappa^4) \tag{143}$$
 
 We evaluate the backreaction analytically using the exact bulk profile, obtaining an effective decay constant $c_\text{eff} = \sigma(L)/(kL)$. By construction, $c_\text{eff} = 1 + \mathcal{O}(\kappa^2)$, so the exponential suppression $\mathcal{O}(L) \sim e^{-kL}$ is preserved under GW stabilization.
 
@@ -1796,7 +1796,7 @@ A fit of $\log\mathcal{O}$ vs. $kL$ to the model $\log\mathcal{O} = a + p\log(kL
 
 The 4D Planck mass is determined by the zero-mode normalization over the $S^1/\mathbb{Z}_2$ orbifold:
 
-$$M_\text{Pl}^2 = 2\,M_5^3\int_0^L e^{-2ky}\,dy = \frac{M_5^3}{k}\left(1 - e^{-2kL}\right)$$
+$$M_\text{Pl}^2 = 2\,M_5^3\int_0^L e^{-2ky}\,dy = \frac{M_5^3}{k}\left(1 - e^{-2kL}\right) \tag{144}$$
 
 For $kL \gg 1$, $M_\text{Pl}^2 \approx M_5^3/k$, which is independent of $L$. Consequently, Newton's constant $G_4 = 1/(8\pi M_\text{Pl}^2)$ is insensitive to the $\mathcal{O}(1)$ corrections in $\beta$ and $c$ derived in Modules A and B. We find $\Delta G/G < 10^{-6}$, confirming that the closure corrections do not destabilize 4D gravity.
 
@@ -1867,35 +1867,35 @@ The QCD route resolves Hypothesis A by deriving $\alpha$ independently, reducing
 
 Starting from $\alpha_s(M_Z) = 0.1180 \pm 0.0009$ (PDG 2022), we run the strong coupling using the 1-loop $\beta$-function:
 
-$$\alpha_s(\mu) = \frac{\alpha_s(\mu_0)}{1 + \frac{b_0}{2\pi}\,\alpha_s(\mu_0)\,\ln\frac{\mu}{\mu_0}}$$
+$$\alpha_s(\mu) = \frac{\alpha_s(\mu_0)}{1 + \frac{b_0}{2\pi}\,\alpha_s(\mu_0)\,\ln\frac{\mu}{\mu_0}} \tag{145}$$
 
 - $M_Z \to m_t$ with $N_f = 5$, $b_0^{(5)} = 11 - \tfrac{2}{3}\times 5 = \tfrac{23}{3}$:
 
-$$\alpha_s(m_t) = \frac{0.1180}{1 + \frac{23/3}{2\pi}\times 0.1180 \times \ln\frac{172.76}{91.19}} = 0.10806$$
+$$\alpha_s(m_t) = \frac{0.1180}{1 + \frac{23/3}{2\pi}\times 0.1180 \times \ln\frac{172.76}{91.19}} = 0.10806 \tag{146}$$
 
 - Threshold matching at $m_t$: switch to $N_f = 6$, $b_0^{(6)} = 11 - \tfrac{2}{3}\times 6 = 7$.
 
 - $m_t \to m_\Phi = b_0 v_\text{EW} = 7 \times 246.22 = 1723.5$ GeV:
 
-$$\alpha_s(m_\Phi) = \frac{0.10806}{1 + \frac{7}{2\pi}\times 0.10806 \times \ln\frac{1723.5}{172.76}} = 0.08462$$
+$$\alpha_s(m_\Phi) = \frac{0.10806}{1 + \frac{7}{2\pi}\times 0.10806 \times \ln\frac{1723.5}{172.76}} = 0.08462 \tag{147}$$
 
 **Step 2: $\alpha$ from dimensional transmutation.**
 
 In the twin-barrier geometry, both barrier profiles ($\chi_0$ and $\chi_L$) contribute to the decoherence integral, giving a double suppression factor $4\pi$ (vs. $2\pi$ in single-brane RS1):
 
-$$\alpha = \frac{4\pi}{b_0 \, \alpha_s(m_\Phi)} = \frac{4\pi}{7 \times 0.08462} = 21.214$$
+$$\alpha = \frac{4\pi}{b_0 \, \alpha_s(m_\Phi)} = \frac{4\pi}{7 \times 0.08462} = 21.214 \tag{148}$$
 
 **Step 3: Predict $\eta_B$ from collider data.**
 
 Using $\varepsilon_c = e^{-\alpha}$ (derived in Section 4) and identifying $\varepsilon_c = \eta_B$:
 
-$$\eta_B^\text{pred} = e^{-21.214} = 6.124 \times 10^{-10}$$
+$$\eta_B^\text{pred} = e^{-21.214} = 6.124 \times 10^{-10} \tag{149}$$
 
 Compared with the Planck 2018 measurement $\eta_B^\text{obs} = (6.104 \pm 0.058) \times 10^{-10}$, this gives **0.32% accuracy (0.3$\sigma$)**.
 
 **Step 4: Compute $G$ from QCD-only inputs.**
 
-$$G = \frac{e^{-3\alpha}}{8\pi\,m_\Phi^2\,\alpha^2\,(1 - e^{-2\alpha})} = \frac{e^{-63.64}}{8\pi \times (1723.5)^2 \times (21.21)^2 \times 1} = 6.84 \times 10^{-39}\;\text{GeV}^{-2}$$
+$$G = \frac{e^{-3\alpha}}{8\pi\,m_\Phi^2\,\alpha^2\,(1 - e^{-2\alpha})} = \frac{e^{-63.64}}{8\pi \times (1723.5)^2 \times (21.21)^2 \times 1} = 6.84 \times 10^{-39}\;\text{GeV}^{-2} \tag{150}$$
 
 This agrees with $G_\text{obs} = 6.709 \times 10^{-39}\;\text{GeV}^{-2}$ to **1.88%**.
 
@@ -1967,7 +1967,7 @@ This stage proves that $m_\Phi = b_0 v_\text{EW}$ is not an assumption but a **t
 
 The modulus $\Phi$ couples to brane-localized SM matter through the energy-momentum trace:
 
-$$\mathcal{L}_\text{int} = \frac{\Phi}{\Lambda_\Phi}\,T^\mu_\mu$$
+$$\mathcal{L}_\text{int} = \frac{\Phi}{\Lambda_\Phi}\,T^\mu_\mu \tag{151}$$
 
 This is the unique coupling allowed by 5D diffeomorphism invariance. On the IR brane, conformal symmetry is broken by exactly two sources:
 
@@ -1980,11 +1980,11 @@ By dimensional analysis, the modulus mass must be $m_\Phi = c \times b_0 \times 
 
 The modulus mass runs under the renormalization group:
 
-$$\beta(m_\Phi) = \gamma_m\,m_\Phi + \frac{b_0\,\alpha_s\,v_\text{EW}}{4\pi}\,c_1$$
+$$\beta(m_\Phi) = \gamma_m\,m_\Phi + \frac{b_0\,\alpha_s\,v_\text{EW}}{4\pi}\,c_1 \tag{152}$$
 
 At the IR fixed point $\beta(m_\Phi^*) = 0$, with the conformal compensator giving $c_1 = 4\pi/\alpha_s$ and $\gamma_m = -1$:
 
-$$m_\Phi^* = b_0 \times v_\text{EW}$$
+$$m_\Phi^* = b_0 \times v_\text{EW} \tag{153}$$
 
 The coefficient $c = 1$ is **selected dynamically** by the RG flow, not chosen by hand.
 
@@ -1992,9 +1992,9 @@ The coefficient $c = 1$ is **selected dynamically** by the RG flow, not chosen b
 
 Solving the closure formula for $m_\Phi$ using the observed $G$ and $\eta_B$:
 
-$$m_\Phi^\text{(req)} = \sqrt{\frac{e^{-3\alpha}}{8\pi\,G_\text{obs}\,\alpha^2\,(1 - e^{-2\alpha})}} = 1731.0\;\text{GeV}$$
+$$m_\Phi^\text{(req)} = \sqrt{\frac{e^{-3\alpha}}{8\pi\,G_\text{obs}\,\alpha^2\,(1 - e^{-2\alpha})}} = 1731.0\;\text{GeV} \tag{154}$$
 
-$$c_\text{empirical} = \frac{1731.0}{7 \times 246.22} = 1.0043 \quad (\text{deviation } 0.43\%)$$
+$$c_\text{empirical} = \frac{1731.0}{7 \times 246.22} = 1.0043 \quad (\text{deviation } 0.43\%) \tag{155}$$
 
 ---
 
@@ -2019,7 +2019,7 @@ With $m_\Phi = b_0 v_\text{EW}$ proven, the complete derivation chain uses **0 h
 | 7 | $G$ | $6.84 \times 10^{-39}$ GeV$^{-2}$ | Closure formula | **Predicted** |
 | 8 | $\eta_B$ | $6.124 \times 10^{-10}$ | $e^{-\alpha}$ | **Predicted** |
 
-$$\boxed{G = \frac{e^{-3\alpha}}{8\pi\,(b_0 v_\text{EW})^2\,\alpha^2\,(1 - e^{-2\alpha})} = 6.84 \times 10^{-39}\;\text{GeV}^{-2} \quad (\text{error } 1.88\%)}$$
+$$\boxed{G = \frac{e^{-3\alpha}}{8\pi\,(b_0 v_\text{EW})^2\,\alpha^2\,(1 - e^{-2\alpha})} = 6.84 \times 10^{-39}\;\text{GeV}^{-2} \quad (\text{error } 1.88\%)} \tag{156}$$
 
 The prediction chain: **Higgs** ($v_\text{EW}$) $\to$ **top mass** $\to$ **QCD running** $\to$ $\alpha$ $\to$ $G$.
 
@@ -2069,7 +2069,7 @@ With this result, the derivation chain from Higgs $\to$ QCD $\to$ Gravity is **c
 
 The modulus $\Phi$ couples to brane-localized SM matter through $T^\mu_\mu$ (conformal compensator). The RG $\beta$-function has a fixed point:
 
-$$\beta(m_\Phi) = 0 \implies m_\Phi^* = b_0 \times v_\text{EW} = 7 \times 246.22 = 1723.54\;\text{GeV}$$
+$$\beta(m_\Phi) = 0 \implies m_\Phi^* = b_0 \times v_\text{EW} = 7 \times 246.22 = 1723.54\;\text{GeV} \tag{157}$$
 
 This gives $c = 1$ **exactly** at tree level.
 
@@ -2077,7 +2077,7 @@ This gives $c = 1$ **exactly** at tree level.
 
 The 5D Coleman-Weinberg effective potential from all SM fields generates a correction to the modulus mass:
 
-$$\delta m_\Phi^2 = \frac{1}{\Lambda_r^2} \frac{d^2 V_\text{CW}}{d\xi^2}\bigg|_{\xi=0}$$
+$$\delta m_\Phi^2 = \frac{1}{\Lambda_r^2} \frac{d^2 V_\text{CW}}{d\xi^2}\bigg|_{\xi=0} \tag{158}$$
 
 where $\xi = \phi/\Lambda_r$ and $V_\text{CW}$ includes contributions from all SM fields (top, bottom, $\tau$, $W$, $Z$, Higgs). The top quark dominates ($\sim$97% of total).
 
@@ -2090,7 +2090,7 @@ where $\xi = \phi/\Lambda_r$ and $V_\text{CW}$ includes contributions from all S
 
 For all physically motivated values of $\Lambda_r$:
 
-$$|\delta c|_\text{CW} < 0.6\% \quad \Longrightarrow \quad c = 1 + \mathcal{O}\!\left(\frac{y_t^2}{16\pi^2}\right)$$
+$$|\delta c|_\text{CW} < 0.6\% \quad \Longrightarrow \quad c = 1 + \mathcal{O}\!\left(\frac{y_t^2}{16\pi^2}\right) \tag{159}$$
 
 The CW correction is perturbatively negligible.
 
@@ -2098,16 +2098,16 @@ The CW correction is perturbatively negligible.
 
 Using LO QCD (1-loop running, self-consistent), the implied $c$ from $G_\text{obs}$:
 
-$$c_\text{implied}^{(\text{LO})} = 1.0094 \quad (\text{deviation } 0.94\%)$$
+$$c_\text{implied}^{(\text{LO})} = 1.0094 \quad (\text{deviation } 0.94\%) \tag{160}$$
 
 The NLO perturbative uncertainty in $c$ is:
 
-$$\Delta c_\text{NLO} \sim \frac{b_1\,\alpha_s(m_\Phi)}{4\pi\,b_0} \approx \pm 0.025 \quad (2.5\%)$$
+$$\Delta c_\text{NLO} \sim \frac{b_1\,\alpha_s(m_\Phi)}{4\pi\,b_0} \approx \pm 0.025 \quad (2.5\%) \tag{161}$$
 
 Both deviations $|c - 1|$ are well within the NLO uncertainty band:
 
-$$|c_\text{1L} - 1| = 0.009 < 2\Delta c = 0.050 \quad \checkmark$$
-$$|c_\text{cosm} - 1| = 0.004 < 2\Delta c = 0.050 \quad \checkmark$$
+$$|c_\text{1L} - 1| = 0.009 < 2\Delta c = 0.050 \quad \checkmark \tag{162}$$
+$$|c_\text{cosm} - 1| = 0.004 < 2\Delta c = 0.050 \quad \checkmark \tag{163}$$
 
 $c = 1$ is **proven** within the perturbative precision of the calculation.
 
@@ -2136,7 +2136,7 @@ With $c = 1$ now proven (not assumed), using LO QCD:
 | $G$ | $6.835 \times 10^{-39}\;\text{GeV}^{-2}$ | $6.709 \times 10^{-39}\;\text{GeV}^{-2}$ | 1.88% |
 | $\eta_B$ | $6.124 \times 10^{-10}$ | $6.104 \times 10^{-10}$ | 0.32% |
 
-$$\boxed{G = \frac{e^{-3\alpha}}{8\pi\,(b_0 v_\text{EW})^2\,\alpha^2\,(1 - e^{-2\alpha})} = 6.835 \times 10^{-39}\;\text{GeV}^{-2}}$$
+$$\boxed{G = \frac{e^{-3\alpha}}{8\pi\,(b_0 v_\text{EW})^2\,\alpha^2\,(1 - e^{-2\alpha})} = 6.835 \times 10^{-39}\;\text{GeV}^{-2}} \tag{164}$$
 
 **Inputs:** $\alpha_s(M_Z) = 0.1180$, $m_t = 172.76$ GeV, $v_\text{EW} = 246.22$ GeV (all collider-measured).
 
@@ -2181,11 +2181,11 @@ Stage 13 provides the complete error budget for the $G$ prediction, answering: *
 
 $G$ depends **exponentially** on the warp parameter $\alpha \approx 21.2$:
 
-$$\frac{\delta G}{G} \approx -3.094 \times \delta\alpha$$
+$$\frac{\delta G}{G} \approx -3.094 \times \delta\alpha \tag{165}$$
 
 The 1.88% error in $G$ maps to a shift of only $\delta\alpha = 0.006$ in $\alpha$:
 
-$$\frac{|\delta\alpha|}{\alpha} = 0.029\% \quad (\text{287 parts per million})$$
+$$\frac{|\delta\alpha|}{\alpha} = 0.029\% \quad (\text{287 parts per million}) \tag{166}$$
 
 This is extraordinary precision for a leading-order QCD formula.
 
@@ -2207,11 +2207,11 @@ The 2-loop result gives a **worse** $G$ ($-43.8\%$ error) because the relation $
 
 To match $G = G_\text{obs}$ exactly requires:
 
-$$\alpha_s(M_Z)_\text{exact} = 0.11795$$
+$$\alpha_s(M_Z)_\text{exact} = 0.11795 \tag{167}$$
 
 Compared to the PDG world average:
 
-$$\alpha_s(M_Z)_\text{PDG} = 0.11800 \pm 0.00090$$
+$$\alpha_s(M_Z)_\text{PDG} = 0.11800 \pm 0.00090 \tag{168}$$
 
 The tension is **$-0.05\sigma$** — essentially zero. The needed shift in $\alpha_s(M_Z)$ is only $4.7 \times 10^{-5}$, well within the measurement uncertainty.
 
@@ -2235,7 +2235,7 @@ The $\alpha_s(M_Z)$ uncertainty alone spans 19× the required $\delta\alpha$. $G
 | $\delta\alpha/\alpha$ precision | 0.029% |
 | Threshold variation spans $G_\text{obs}$ | YES |
 
-$$\boxed{G_\text{pred} = G_\text{obs} \times (1 + 0.0188) \quad \Longrightarrow \quad \text{Tension: } 0.05\sigma \text{ in } \alpha_s(M_Z)}$$
+$$\boxed{G_\text{pred} = G_\text{obs} \times (1 + 0.0188) \quad \Longrightarrow \quad \text{Tension: } 0.05\sigma \text{ in } \alpha_s(M_Z)} \tag{169}$$
 
 **Verdict: ALL 8 CHECKS PASS.** The formula $G = e^{-3\alpha}/[8\pi m_\Phi^2 \alpha^2 (1-e^{-2\alpha})]$ with $\alpha = 4\pi/(b_0\alpha_s)$ works to **300 ppm** in the warp parameter. No fine-tuning. No tension. The prediction is **confirmed within measurement precision**.
 
@@ -2254,7 +2254,7 @@ Stage 14 confronts the twin-barrier Casimir prediction with precision measuremen
 
 The twin-barrier model predicts a Yukawa-type enhancement of the Casimir force from kinetic mixing between the SM photon and the twin-sector photon:
 
-$$\Delta_C(d) = \varepsilon \, e^{-d/\lambda_t}$$
+$$\Delta_C(d) = \varepsilon \, e^{-d/\lambda_t} \tag{170}$$
 
 where $\lambda_t \sim 200$ nm (twin-photon Compton wavelength) and $\varepsilon \sim 0.005$ (effective mixing-overlap coupling).
 
@@ -2264,7 +2264,7 @@ where $\lambda_t \sim 200$ nm (twin-photon Compton wavelength) and $\varepsilon 
 
 The Drude–plasma discrepancy arises from the zero-frequency TE Matsubara contribution. In the plasma model, $r_{\text{TE}}(\xi=0, q) \neq 0$, while in the Drude model $r_{\text{TE}}(\xi=0, q) = 0$. This produces a pressure difference:
 
-$$\Delta P_{\text{D-P}}(d) = P_{\text{plasma}} - P_{\text{Drude}} = \frac{k_B T}{4\pi} \int_0^\infty q \, dq \; \frac{2q \, r_{\text{TE}}^2(0,q) \, e^{-2qd}}{1 - r_{\text{TE}}^2(0,q) \, e^{-2qd}}$$
+$$\Delta P_{\text{D-P}}(d) = P_{\text{plasma}} - P_{\text{Drude}} = \frac{k_B T}{4\pi} \int_0^\infty q \, dq \; \frac{2q \, r_{\text{TE}}^2(0,q) \, e^{-2qd}}{1 - r_{\text{TE}}^2(0,q) \, e^{-2qd}} \tag{171}$$
 
 Computed for gold ($\omega_p = 9.0$ eV, $\gamma = 0.035$ eV) at $T = 300$ K:
 
@@ -2372,7 +2372,7 @@ This document derives the exact value of Newton's gravitational constant $G$ fro
 
 The result is:
 
-$$\boxed{G_{\text{theory}} = 6.64 \times 10^{-39}\;\text{GeV}^{-2}}$$
+$$\boxed{G_{\text{theory}} = 6.64 \times 10^{-39}\;\text{GeV}^{-2}} \tag{172}$$
 
 compared to the observed value $G_{\text{obs}} = 6.71 \times 10^{-39}\;\text{GeV}^{-2}$. **Agreement: 1.0%.**
 
@@ -2382,15 +2382,15 @@ compared to the observed value $G_{\text{obs}} = 6.71 \times 10^{-39}\;\text{GeV
 
 The Twin-Brane model is defined on an $S^1/\mathbb{Z}_2$ orbifold with warped metric
 
-$$ds^2 = e^{-2k|y|}\,\eta_{\mu\nu}\,dx^\mu dx^\nu + dy^2, \qquad y \in [0, L]$$
+$$ds^2 = e^{-2k|y|}\,\eta_{\mu\nu}\,dx^\mu dx^\nu + dy^2, \qquad y \in [0, L] \tag{173}$$
 
 The effective 4D Planck mass is obtained by integrating the graviton zero-mode profile over the full orbifold circle (see Section 1, Theorem 8.1):
 
-$$M_{\text{Pl}}^2 = M_5^3 \int_{-L}^{L} dy\;e^{-2k|y|} = \frac{M_5^3}{k}\left(1 - e^{-2kL}\right)$$
+$$M_{\text{Pl}}^2 = M_5^3 \int_{-L}^{L} dy\;e^{-2k|y|} = \frac{M_5^3}{k}\left(1 - e^{-2kL}\right) \tag{174}$$
 
 Newton's constant follows from the standard relation $G = 1/(8\pi M_{\text{Pl}}^2)$:
 
-$$G = \frac{k}{8\pi\,M_5^3\left(1 - e^{-2kL}\right)} \tag{1}$$
+$$G = \frac{k}{8\pi\,M_5^3\left(1 - e^{-2kL}\right)} \tag{175}$$
 
 This is exact, but $M_5$ remains a free parameter. The goal is to eliminate $M_5$.
 
@@ -2404,31 +2404,31 @@ Two independent closure conditions fix all mass scales in terms of the geometry:
 
 The redshifted 5D gravitational scale at the IR end of the warped interval must equal the local curvature:
 
-$$M_5\,e^{-\alpha} = k \tag{2}$$
+$$M_5\,e^{-\alpha} = k \tag{176}$$
 
 where $\alpha \equiv kL$ is the dimensionless warp parameter. This gives:
 
-$$M_5 = k\,e^{\alpha} = \frac{\alpha\,e^{\alpha}}{L}$$
+$$M_5 = k\,e^{\alpha} = \frac{\alpha\,e^{\alpha}}{L} \tag{177}$$
 
 ### 4.2.2. UV Closure
 
 The 5D gravitational scale relates to a bulk UV scale by the dimensionally natural relation:
 
-$$M_5^3 = M_{\text{UV}}^4\,L \tag{3}$$
+$$M_5^3 = M_{\text{UV}}^4\,L \tag{178}$$
 
-This eliminates $M_{\text{UV}}$ as independent. Together with Eq. (2):
+This eliminates $M_{\text{UV}}$ as independent. Together with Eq. (176):
 
-$$M_5^3 = \frac{\alpha^3\,e^{3\alpha}}{L^3} \tag{4}$$
+$$M_5^3 = \frac{\alpha^3\,e^{3\alpha}}{L^3} \tag{179}$$
 
 ---
 
 ## 4.3. Closed Formula for $G$
 
-Substituting Eq. (4) into Eq. (1):
+Substituting Eq. (179) into Eq. (175):
 
-$$G = \frac{k}{8\pi\,M_5^3\,(1 - e^{-2\alpha})} = \frac{\alpha/L}{8\pi\,(\alpha^3 e^{3\alpha}/L^3)\,(1 - e^{-2\alpha})}$$
+$$G = \frac{k}{8\pi\,M_5^3\,(1 - e^{-2\alpha})} = \frac{\alpha/L}{8\pi\,(\alpha^3 e^{3\alpha}/L^3)\,(1 - e^{-2\alpha})} \tag{180}$$
 
-$$\boxed{G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}} \tag{5}$$
+$$\boxed{G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}} \tag{181}$$
 
 **No mass scale** ($M_5$, $M_{\text{UV}}$, $M_{\text{Pl}}$) **enters as a free parameter.** $G$ is fully determined by the geometry $(L, \alpha)$.
 
@@ -2440,7 +2440,7 @@ $$\boxed{G = \frac{L^2}{8\pi\,\alpha^2\,e^{3\alpha}\,(1 - e^{-2\alpha})}} \tag{5
 
 The radion stabilization mechanism (see Section 2, Proof 1; Section 3, Stage 9) yields:
 
-$$L = \frac{1}{m} \tag{6}$$
+$$L = \frac{1}{m} \tag{182}$$
 
 where $m$ is the bulk scalar mass. (More precisely, $L = \beta/m$ with $\beta = \mathcal{O}(1)$; we use $\beta = 1$ for the minimal case.)
 
@@ -2448,19 +2448,19 @@ where $m$ is the bulk scalar mass. (More precisely, $L = \beta/m$ with $\beta = 
 
 The critical decoherence threshold $\varepsilon_c$ determines the warp factor (see Section 1, §12):
 
-$$\alpha = \ln\!\left(\frac{1}{\varepsilon_c}\right) \tag{7}$$
+$$\alpha = \ln\!\left(\frac{1}{\varepsilon_c}\right) \tag{183}$$
 
 ---
 
 ## 4.5. Two-Parameter Form
 
-Substituting Eqs. (6) and (7) into Eq. (5), and using:
+Substituting Eqs. (182) and (183) into Eq. (181), and using:
 
-$$e^{3\alpha} = e^{3\ln(1/\varepsilon_c)} = \varepsilon_c^{-3}, \qquad e^{-2\alpha} = e^{-2\ln(1/\varepsilon_c)} = \varepsilon_c^{2}$$
+$$e^{3\alpha} = e^{3\ln(1/\varepsilon_c)} = \varepsilon_c^{-3}, \qquad e^{-2\alpha} = e^{-2\ln(1/\varepsilon_c)} = \varepsilon_c^{2} \tag{184}$$
 
 we obtain the **deepest closed form**:
 
-$$\boxed{G = \frac{\varepsilon_c^3}{8\pi\,m^2\,\ln^2(1/\varepsilon_c)\,(1 - \varepsilon_c^2)}} \tag{8}$$
+$$\boxed{G = \frac{\varepsilon_c^3}{8\pi\,m^2\,\ln^2(1/\varepsilon_c)\,(1 - \varepsilon_c^2)}} \tag{185}$$
 
 Newton's constant depends on exactly **two microscopic parameters**: the bulk scalar mass $m$ and the decoherence threshold $\varepsilon_c$.
 
@@ -2470,15 +2470,15 @@ Newton's constant depends on exactly **two microscopic parameters**: the bulk sc
 
 ### 4.6.1. Step 1: Input values
 
-$$m = 2000\;\text{GeV}, \qquad \varepsilon_c = 6.68 \times 10^{-10}$$
+$$m = 2000\;\text{GeV}, \qquad \varepsilon_c = 6.68 \times 10^{-10} \tag{186}$$
 
 ### 4.6.2. Step 2: Derived quantities
 
-$$\alpha = \ln\!\left(\frac{1}{6.68 \times 10^{-10}}\right) = 21.1267$$
+$$\alpha = \ln\!\left(\frac{1}{6.68 \times 10^{-10}}\right) = 21.1267 \tag{187}$$
 
-$$L = \frac{1}{m} = \frac{1}{2000\;\text{GeV}} = 5.000 \times 10^{-4}\;\text{GeV}^{-1}$$
+$$L = \frac{1}{m} = \frac{1}{2000\;\text{GeV}} = 5.000 \times 10^{-4}\;\text{GeV}^{-1} \tag{188}$$
 
-$$k = \frac{\alpha}{L} = \alpha \cdot m = 21.1267 \times 2000 = 42{,}253\;\text{GeV} \approx 42.3\;\text{TeV}$$
+$$k = \frac{\alpha}{L} = \alpha \cdot m = 21.1267 \times 2000 = 42{,}253\;\text{GeV} \approx 42.3\;\text{TeV} \tag{189}$$
 
 ### 4.6.3. Step 3: Intermediate factors
 
@@ -2492,17 +2492,17 @@ $$k = \frac{\alpha}{L} = \alpha \cdot m = 21.1267 \times 2000 = 42{,}253\;\text{
 
 ### 4.6.4. Step 4: Assembly
 
-$$G = \frac{L^2}{8\pi \cdot \alpha^2 \cdot e^{3\alpha} \cdot (1 - e^{-2\alpha})} = \frac{2.500 \times 10^{-7}}{25.133 \times 446.34 \times 3.355 \times 10^{27} \times 1.000}$$
+$$G = \frac{L^2}{8\pi \cdot \alpha^2 \cdot e^{3\alpha} \cdot (1 - e^{-2\alpha})} = \frac{2.500 \times 10^{-7}}{25.133 \times 446.34 \times 3.355 \times 10^{27} \times 1.000} \tag{190}$$
 
-$$= \frac{2.500 \times 10^{-7}}{3.763 \times 10^{31}}$$
+$$= \frac{2.500 \times 10^{-7}}{3.763 \times 10^{31}} \tag{191}$$
 
-$$\boxed{G_{\text{theory}} = 6.643 \times 10^{-39}\;\text{GeV}^{-2}}$$
+$$\boxed{G_{\text{theory}} = 6.643 \times 10^{-39}\;\text{GeV}^{-2}} \tag{192}$$
 
 ### 4.6.5. Step 5: Comparison with observation
 
-$$G_{\text{obs}} = \frac{1}{8\pi\,M_{\text{Pl}}^2} = \frac{1}{8\pi \times (2.435 \times 10^{18})^2} = 6.711 \times 10^{-39}\;\text{GeV}^{-2}$$
+$$G_{\text{obs}} = \frac{1}{8\pi\,M_{\text{Pl}}^2} = \frac{1}{8\pi \times (2.435 \times 10^{18})^2} = 6.711 \times 10^{-39}\;\text{GeV}^{-2} \tag{193}$$
 
-$$\frac{|G_{\text{theory}} - G_{\text{obs}}|}{G_{\text{obs}}} = \frac{|6.643 - 6.711|}{6.711} \times 100\% = 1.0\%$$
+$$\frac{|G_{\text{theory}} - G_{\text{obs}}|}{G_{\text{obs}}} = \frac{|6.643 - 6.711|}{6.711} \times 100\% = 1.0\% \tag{194}$$
 
 ---
 
@@ -2510,7 +2510,7 @@ $$\frac{|G_{\text{theory}} - G_{\text{obs}}|}{G_{\text{obs}}} = \frac{|6.643 - 6
 
 The result can be factored to expose the hierarchy mechanism:
 
-$$G = \underbrace{\frac{1}{m^2}}_{\text{dim. scale}} \times \underbrace{\frac{1}{8\pi}}_{\text{geometry}} \times \underbrace{\frac{1}{\alpha^2}}_{\text{poly. supp.}} \times \underbrace{\varepsilon_c^3}_{\text{exp. weakness}} \times \underbrace{\frac{1}{1 - \varepsilon_c^2}}_{\approx\,1}$$
+$$G = \underbrace{\frac{1}{m^2}}_{\text{dim. scale}} \times \underbrace{\frac{1}{8\pi}}_{\text{geometry}} \times \underbrace{\frac{1}{\alpha^2}}_{\text{poly. supp.}} \times \underbrace{\varepsilon_c^3}_{\text{exp. weakness}} \times \underbrace{\frac{1}{1 - \varepsilon_c^2}}_{\approx\,1} \tag{195}$$
 
 | Factor | Value | Role |
 |--------|-------|------|
@@ -2526,13 +2526,13 @@ The extreme weakness of four-dimensional gravity ($G \sim 10^{-39}\;\text{GeV}^{
 
 ## 4.8. Consistency Check: $M_5$
 
-From the IR condition (Eq. 2):
+From the IR condition (Eq. (176)):
 
-$$M_5 = k\,e^{\alpha} = 42{,}253 \times e^{21.127} = 6.33 \times 10^{13}\;\text{GeV}$$
+$$M_5 = k\,e^{\alpha} = 42{,}253 \times e^{21.127} = 6.33 \times 10^{13}\;\text{GeV} \tag{196}$$
 
 Cross-check from the orbifold Planck mass formula:
 
-$$M_5 = \left[\frac{k\,M_{\text{Pl}}^2}{1 - e^{-2\alpha}}\right]^{1/3} = \left[\frac{42{,}253 \times (2.435 \times 10^{18})^2}{1.000}\right]^{1/3} = 6.30 \times 10^{13}\;\text{GeV}$$
+$$M_5 = \left[\frac{k\,M_{\text{Pl}}^2}{1 - e^{-2\alpha}}\right]^{1/3} = \left[\frac{42{,}253 \times (2.435 \times 10^{18})^2}{1.000}\right]^{1/3} = 6.30 \times 10^{13}\;\text{GeV} \tag{197}$$
 
 Ratio: $M_5^{(\text{IR})}/M_5^{(M_{\text{Pl}})} = 1.003$ — consistent to 0.3%.
 
@@ -2542,15 +2542,15 @@ Ratio: $M_5^{(\text{IR})}/M_5^{(M_{\text{Pl}})} = 1.003$ — consistent to 0.3%.
 
 A fully closed microscopic prediction of the Twin-Brane framework is the energy threshold required for complete visible-to-twin transfer of a localized excitation. The transition barrier is controlled by the warped extra-dimensional curvature scale,
 
-$$E_{\text{barrier}} \sim \hbar\,c\,k$$
+$$E_{\text{barrier}} \sim \hbar\,c\,k \tag{198}$$
 
 Using the stabilized modulus relation $L_* = \beta/m$ together with the dynamically generated warp exponent $\alpha \equiv kL_*$, one obtains
 
-$$k = \frac{\alpha}{L_*} = \frac{\alpha\,m}{\beta}$$
+$$k = \frac{\alpha}{L_*} = \frac{\alpha\,m}{\beta} \tag{199}$$
 
 Hence the barrier energy becomes
 
-$$\boxed{E_{\text{barrier}}^{\text{theory}} = \frac{\alpha}{\beta}\,m} \tag{9}$$
+$$\boxed{E_{\text{barrier}}^{\text{theory}} = \frac{\alpha}{\beta}\,m} \tag{200}$$
 
 in natural units.
 
@@ -2558,21 +2558,21 @@ in natural units.
 
 For the values derived in the microscopic closure sector:
 
-$$\alpha = \ln(1/\varepsilon_c) \approx 21.13, \qquad \beta \approx 1.14\;\text{(Stage 9 median)}, \qquad m \approx 2\;\text{TeV}$$
+$$\alpha = \ln(1/\varepsilon_c) \approx 21.13, \qquad \beta \approx 1.14\;\text{(Stage 9 median)}, \qquad m \approx 2\;\text{TeV} \tag{201}$$
 
 this yields:
 
-$$E_{\text{barrier}}^{\text{theory}} = \frac{21.13}{1.14} \times 2000\;\text{GeV} = 37{,}064\;\text{GeV}$$
+$$E_{\text{barrier}}^{\text{theory}} = \frac{21.13}{1.14} \times 2000\;\text{GeV} = 37{,}064\;\text{GeV} \tag{202}$$
 
-$$\boxed{E_{\text{barrier}}^{\text{theory}} \approx 37\;\text{TeV}}$$
+$$\boxed{E_{\text{barrier}}^{\text{theory}} \approx 37\;\text{TeV}} \tag{203}$$
 
 ### 4.9.2. Critical temperature
 
 Equivalently, the corresponding critical temperature is:
 
-$$T_c^{\text{theory}} = \frac{E_{\text{barrier}}}{k_B} = \frac{37{,}064\;\text{GeV}}{8.617 \times 10^{-14}\;\text{GeV/K}}$$
+$$T_c^{\text{theory}} = \frac{E_{\text{barrier}}}{k_B} = \frac{37{,}064\;\text{GeV}}{8.617 \times 10^{-14}\;\text{GeV/K}} \tag{204}$$
 
-$$\boxed{T_c^{\text{theory}} \approx 4.3 \times 10^{17}\;\text{K}}$$
+$$\boxed{T_c^{\text{theory}} \approx 4.3 \times 10^{17}\;\text{K}} \tag{205}$$
 
 ### 4.9.3. Physical interpretation
 
@@ -2607,13 +2607,13 @@ We show that, within the Twin-Brane warped-geometry framework, Newton's constant
 
 Under these two hypotheses, the resulting formula
 
-$$\boxed{G = \frac{\eta_B^3}{8\pi\,(10\,m_t)^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)}}$$
+$$\boxed{G = \frac{\eta_B^3}{8\pi\,(10\,m_t)^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)}} \tag{206}$$
 
 yields $G_{\text{pred}} = 6.735 \times 10^{-39}$ GeV$^{-2}$, matching the measured value $G_{\text{obs}} = 6.709 \times 10^{-39}$ GeV$^{-2}$ to **0.39%**.
 
 An equivalent formulation using the QCD trace anomaly,
 
-$$\boxed{G = \frac{\eta_B^3}{8\pi\,(b_0\,v_{\text{EW}})^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)}}$$
+$$\boxed{G = \frac{\eta_B^3}{8\pi\,(b_0\,v_{\text{EW}})^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)}} \tag{207}$$
 
 gives $G_{\text{pred}} = 6.767 \times 10^{-39}$ GeV$^{-2}$ (error 0.87%), confirming the same physics from a complementary direction.
 
@@ -2625,7 +2625,7 @@ gives $G_{\text{pred}} = 6.767 \times 10^{-39}$ GeV$^{-2}$ (error 0.87%), confir
 
 Within the Twin-Brane framework (Randall-Sundrum $S^1/\mathbb{Z}_2$ orbifold with Goldberger-Wise stabilization), Newton's constant emerges from dimensional reduction as:
 
-$$G = \frac{\varepsilon_c^3}{8\pi\,m^2\,\alpha^2\,(1 - \varepsilon_c^2)}$$
+$$G = \frac{\varepsilon_c^3}{8\pi\,m^2\,\alpha^2\,(1 - \varepsilon_c^2)} \tag{208}$$
 
 where:
 - $\varepsilon_c$: critical decoherence threshold (twin-sector overlap amplitude)
@@ -2642,15 +2642,15 @@ This formula contains **two free parameters** $(m, \varepsilon_c)$. The rest of 
 
 The baryon asymmetry of the Universe, measured by the Planck satellite from the CMB power spectrum:
 
-$$\eta_B = (6.104 \pm 0.058) \times 10^{-10} \quad \text{(Planck 2018, TT,TE,EE+lowE+lensing+BAO)}$$
+$$\eta_B = (6.104 \pm 0.058) \times 10^{-10} \quad \text{(Planck 2018, TT,TE,EE+lowE+lensing+BAO)} \tag{209}$$
 
 The originally fitted decoherence threshold in the Twin-Brane framework:
 
-$$\varepsilon_c = 6.68 \times 10^{-10}$$
+$$\varepsilon_c = 6.68 \times 10^{-10} \tag{210}$$
 
 The ratio:
 
-$$C_{BG} \equiv \frac{\varepsilon_c}{\eta_B} = 1.095$$
+$$C_{BG} \equiv \frac{\varepsilon_c}{\eta_B} = 1.095 \tag{211}$$
 
 A **9.5% deviation** from unity — suggestive of an underlying connection.
 
@@ -2658,13 +2658,13 @@ A **9.5% deviation** from unity — suggestive of an underlying connection.
 
 In the Twin-Brane framework, the twin phase transition occurs at temperature:
 
-$$T_c = \frac{E_{\text{barrier}}}{k_B} = \frac{m\,\alpha/\beta}{k_B} \sim 3.7 \times 10^{17}~\text{K}$$
+$$T_c = \frac{E_{\text{barrier}}}{k_B} = \frac{m\,\alpha/\beta}{k_B} \sim 3.7 \times 10^{17}~\text{K} \tag{212}$$
 
 At this epoch, all three Sakharov conditions for baryogenesis are realized:
 
 **1. Baryon number violation.** Inter-brane 5D sphaleron processes operate at $T > T_c$. The instanton action for B-violating transitions across the warp barrier scales as $S_{\text{sph}} \sim (4\pi/g^2) f(\alpha)$, giving a rate:
 
-$$\Gamma_{\text{sph}} \sim \kappa_{\text{sph}}\,\alpha_w^5\,T^4 \quad (T > T_c)$$
+$$\Gamma_{\text{sph}} \sim \kappa_{\text{sph}}\,\alpha_w^5\,T^4 \quad (T > T_c) \tag{213}$$
 
 Below $T_c$, exponential Boltzmann suppression $e^{-E_{\text{sph}}/T}$ freezes out these processes.
 
@@ -2676,7 +2676,7 @@ Below $T_c$, exponential Boltzmann suppression $e^{-E_{\text{sph}}/T}$ freezes o
 
 The baryon asymmetry $\eta(T)$ evolves as:
 
-$$\frac{d\eta}{dT} = -\frac{1}{HT}\left[\Gamma_{\text{washout}}(T)\,\eta - S_{\text{CP}}(T)\right]$$
+$$\frac{d\eta}{dT} = -\frac{1}{HT}\left[\Gamma_{\text{washout}}(T)\,\eta - S_{\text{CP}}(T)\right] \tag{214}$$
 
 where:
 - $S_{\text{CP}} \propto \varepsilon_c \times \Gamma_{\text{sph}}$ (CP source, **linear** in $\varepsilon_c$)
@@ -2689,13 +2689,13 @@ The quadratic washout scaling arises because erasing the asymmetry requires **tw
 
 The frozen-out asymmetry has the form:
 
-$$\eta_B = \varepsilon_c \times K(\alpha,\, m,\, g_*,\, M_{\text{Pl}})$$
+$$\eta_B = \varepsilon_c \times K(\alpha,\, m,\, g_*,\, M_{\text{Pl}}) \tag{215}$$
 
 where $K$ is the transport efficiency factor, independent of $\varepsilon_c$ to leading order in the small-$\varepsilon_c$ expansion (the $\varepsilon_c^2$ washout correction is negligible for $\varepsilon_c \sim 10^{-10}$).
 
 The **self-consistent fixed point** is:
 
-$$\boxed{\eta_B = \varepsilon_c \iff K(\alpha^*) = 1}$$
+$$\boxed{\eta_B = \varepsilon_c \iff K(\alpha^*) = 1} \tag{216}$$
 
 This transcendental equation selects $\alpha^* \approx 21.2$ given the known SM parameters ($g_* = 106.75$, $M_{\text{Pl}} = 1.22 \times 10^{19}$ GeV).
 
@@ -2707,11 +2707,11 @@ This transcendental equation selects $\alpha^* \approx 21.2$ given the known SM 
 
 The fixed-point identification $\varepsilon_c = \eta_B$ fixes:
 
-$$\alpha = \ln\!\left(\frac{1}{\eta_B}\right) = \ln\!\left(\frac{1}{6.104 \times 10^{-10}}\right) = 21.22$$
+$$\alpha = \ln\!\left(\frac{1}{\eta_B}\right) = \ln\!\left(\frac{1}{6.104 \times 10^{-10}}\right) = 21.22 \tag{217}$$
 
 This leaves the closure formula with **one remaining parameter** $m$:
 
-$$G = \frac{\eta_B^3}{8\pi\,m^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)}$$
+$$G = \frac{\eta_B^3}{8\pi\,m^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)} \tag{218}$$
 
 ---
 
@@ -2721,11 +2721,11 @@ $$G = \frac{\eta_B^3}{8\pi\,m^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)}$$
 
 If we set $\varepsilon_c = \eta_B$ and solve for the bulk mass $m$ that reproduces the observed $G$:
 
-$$m_{\text{required}} = \sqrt{\frac{\eta_B^3}{8\pi\,G_{\text{obs}}\,\ln^2(1/\eta_B)\,(1-\eta_B^2)}} = 1729.2~\text{GeV}$$
+$$m_{\text{required}} = \sqrt{\frac{\eta_B^3}{8\pi\,G_{\text{obs}}\,\ln^2(1/\eta_B)\,(1-\eta_B^2)}} = 1729.2~\text{GeV} \tag{219}$$
 
 The ratio to the top-quark mass:
 
-$$\frac{m_{\text{required}}}{m_t} = \frac{1729.2}{172.76} = \mathbf{10.009}$$
+$$\frac{m_{\text{required}}}{m_t} = \frac{1729.2}{172.76} = \mathbf{10.009} \tag{220}$$
 
 **Exactly 10, to 0.09%.**
 
@@ -2744,7 +2744,7 @@ We tested 20 hypotheses for the integer factor relating $m$ to Standard Model sc
 
 The bulk scalar $\Phi$ couples gravitationally to the UV-brane stress-energy. The top quark, as the heaviest SM fermion, dominates $T^\mu{}_\mu$ through its Yukawa coupling. The factor 10 counts the independent channels through which top-quark physics feeds into the bulk scalar effective mass:
 
-$$m_\Phi = (N_c^2 + 1)\,m_t = 10\,m_t$$
+$$m_\Phi = (N_c^2 + 1)\,m_t = 10\,m_t \tag{221}$$
 
 **Result**: $m = 1727.6$ GeV → $G$ error = **0.39%**
 
@@ -2752,15 +2752,15 @@ $$m_\Phi = (N_c^2 + 1)\,m_t = 10\,m_t$$
 
 The 1-loop QCD beta function coefficient for $N_f = 6$ active flavors:
 
-$$b_0 = 11 - \frac{2N_f}{3} = 11 - 4 = 7$$
+$$b_0 = 11 - \frac{2N_f}{3} = 11 - 4 = 7 \tag{222}$$
 
 The electroweak vacuum expectation value:
 
-$$v_{\text{EW}} = \frac{1}{\sqrt{\sqrt{2}\,G_F}} = 246.22~\text{GeV}$$
+$$v_{\text{EW}} = \frac{1}{\sqrt{\sqrt{2}\,G_F}} = 246.22~\text{GeV} \tag{223}$$
 
 Their product:
 
-$$m = b_0 \times v_{\text{EW}} = 7 \times 246.22 = 1723.5~\text{GeV}$$
+$$m = b_0 \times v_{\text{EW}} = 7 \times 246.22 = 1723.5~\text{GeV} \tag{224}$$
 
 **Result**: $m = 1723.5$ GeV → $G$ error = **0.87%**
 
@@ -2768,11 +2768,11 @@ $$m = b_0 \times v_{\text{EW}} = 7 \times 246.22 = 1723.5~\text{GeV}$$
 
 The two routes are equivalent because:
 
-$$\frac{m_t}{v_{\text{EW}}} = \frac{y_t}{\sqrt{2}} = 0.7016 \approx \frac{7}{10} \quad (\text{deviation: } 0.24\%)$$
+$$\frac{m_t}{v_{\text{EW}}} = \frac{y_t}{\sqrt{2}} = 0.7016 \approx \frac{7}{10} \quad (\text{deviation: } 0.24\%) \tag{225}$$
 
 Therefore:
 
-$$10\,m_t = 10 \times \frac{y_t}{\sqrt{2}}\,v_{\text{EW}} \approx 7\,v_{\text{EW}} = b_0\,v_{\text{EW}}$$
+$$10\,m_t = 10 \times \frac{y_t}{\sqrt{2}}\,v_{\text{EW}} \approx 7\,v_{\text{EW}} = b_0\,v_{\text{EW}} \tag{226}$$
 
 This is not a coincidence — it reflects the fact that the top Yukawa coupling $y_t \approx 1$ ties the fermionic (top mass) and bosonic (Higgs VEV) sectors together at the $\sim 0.2\%$ level.
 
@@ -2780,11 +2780,11 @@ This is not a coincidence — it reflects the fact that the top Yukawa coupling 
 
 The Goldberger-Wise scalar $\Phi$ is a 5D bulk field stabilizing the RS orbifold. On the UV brane ($y = 0$), it couples to the 4D stress-energy tensor through the gravitational interaction:
 
-$$\mathcal{L}_{\text{int}} = \frac{\Phi}{M_5^{3/2}}\,T^\mu{}_{\mu}\big|_{\text{UV}}$$
+$$\mathcal{L}_{\text{int}} = \frac{\Phi}{M_5^{3/2}}\,T^\mu{}_{\mu}\big|_{\text{UV}} \tag{227}$$
 
 The SM trace anomaly on the UV brane is dominated by QCD:
 
-$$\langle T^\mu{}_{\mu}\rangle_{\text{QCD}} = \frac{b_0\,\alpha_s}{8\pi}\,\langle G^a_{\mu\nu}G^{a\,\mu\nu}\rangle$$
+$$\langle T^\mu{}_{\mu}\rangle_{\text{QCD}} = \frac{b_0\,\alpha_s}{8\pi}\,\langle G^a_{\mu\nu}G^{a\,\mu\nu}\rangle \tag{228}$$
 
 where $b_0 = 11 - 2N_f/3$ is the 1-loop QCD beta function coefficient.
 
@@ -2792,17 +2792,17 @@ where $b_0 = 11 - 2N_f/3$ is the 1-loop QCD beta function coefficient.
 
 The key insight is that the GW scalar couples to $T^\mu{}_{\mu}$ through the **metric**, not through a perturbative loop. In the 5D picture, $\Phi$ backreacts on the warp factor:
 
-$$\sigma(y) = ky + \frac{\kappa_5^2}{12}\int_0^y (\Phi')^2\,dy'$$
+$$\sigma(y) = ky + \frac{\kappa_5^2}{12}\int_0^y (\Phi')^2\,dy' \tag{229}$$
 
 At $y = 0$, the $\Phi$-induced metric perturbation couples $\Phi$ to all brane-localized fields through their stress-energy. This is a **tree-level 5D** process — no $1/(4\pi)^2$ loop suppression.
 
 The effective mass of $\Phi$ from the trace anomaly follows from dimensional analysis:
 
-$$m_\Phi^2 \sim \frac{\langle T^\mu{}_{\mu}\rangle}{\Lambda^2}$$
+$$m_\Phi^2 \sim \frac{\langle T^\mu{}_{\mu}\rangle}{\Lambda^2} \tag{230}$$
 
 with $\langle T^\mu{}_{\mu}\rangle \sim b_0^2 \times v_{\text{EW}}^4$ (from QCD conformal breaking) and $\Lambda \sim v_{\text{EW}}$ (the natural scale on the UV brane where EWSB sets the dimension):
 
-$$m_\Phi^2 \sim b_0^2\,v_{\text{EW}}^2 \quad \Longrightarrow \quad \boxed{m_\Phi = b_0 \times v_{\text{EW}}}$$
+$$m_\Phi^2 \sim b_0^2\,v_{\text{EW}}^2 \quad \Longrightarrow \quad \boxed{m_\Phi = b_0 \times v_{\text{EW}}} \tag{231}$$
 
 The factor $b_0$ enters **linearly** in $m_\Phi$ because $T^\mu{}_{\mu} \propto \beta(g) \propto b_0$ (the trace anomaly is first-order in the beta function), and $m = \sqrt{m^2} = \sqrt{b_0^2 v_{\text{EW}}^2} = b_0\,v_{\text{EW}}$.
 
@@ -2831,7 +2831,7 @@ Key point: **$b_0 = 7$ is calculated, not chosen.** It follows uniquely from $SU
 
 Combining both identifications:
 
-$$\boxed{G = \frac{\eta_B^3}{8\pi\,(10\,m_t)^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)}}$$
+$$\boxed{G = \frac{\eta_B^3}{8\pi\,(10\,m_t)^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)}} \tag{232}$$
 
 Every quantity on the right-hand side is **independently measured**:
 
@@ -2842,11 +2842,11 @@ Every quantity on the right-hand side is **independently measured**:
 
 ### 5.4.2. Numerical Evaluation
 
-$$\alpha = \ln(1/\eta_B) = 21.217$$
+$$\alpha = \ln(1/\eta_B) = 21.217 \tag{233}$$
 
-$$m = 10\,m_t = 1727.6~\text{GeV}$$
+$$m = 10\,m_t = 1727.6~\text{GeV} \tag{234}$$
 
-$$G_{\text{pred}} = \frac{(6.104 \times 10^{-10})^3}{8\pi \times (1727.6)^2 \times (21.217)^2 \times (1 - (6.104\times10^{-10})^2)}$$
+$$G_{\text{pred}} = \frac{(6.104 \times 10^{-10})^3}{8\pi \times (1727.6)^2 \times (21.217)^2 \times (1 - (6.104\times10^{-10})^2)} \tag{235}$$
 
 The 38 orders of magnitude arise from three factors:
 
@@ -2859,21 +2859,21 @@ The 38 orders of magnitude arise from three factors:
 
 ### 5.4.3. Comparison with Experiment
 
-$$G_{\text{pred}} = 6.735 \times 10^{-39}~\text{GeV}^{-2}$$
+$$G_{\text{pred}} = 6.735 \times 10^{-39}~\text{GeV}^{-2} \tag{236}$$
 
-$$G_{\text{obs}} = 6.709 \times 10^{-39}~\text{GeV}^{-2} \quad \text{(CODATA 2018)}$$
+$$G_{\text{obs}} = 6.709 \times 10^{-39}~\text{GeV}^{-2} \quad \text{(CODATA 2018)} \tag{237}$$
 
-$$\frac{|G_{\text{pred}} - G_{\text{obs}}|}{G_{\text{obs}}} = 0.39\%$$
+$$\frac{|G_{\text{pred}} - G_{\text{obs}}|}{G_{\text{obs}}} = 0.39\% \tag{238}$$
 
 **Propagated uncertainty.** The dominant input uncertainty comes from $\eta_B$ ($\pm$0.95%), which propagates as $3 \times 0.95\% = 2.85\%$ through $\eta_B^3$. The $m_t$ uncertainty ($\pm$0.17%) contributes $2 \times 0.17\% = 0.34\%$. The combined propagated uncertainty on $G_{\text{pred}}$ is $\sigma_G \approx 2.9\%$. The 0.39% deviation is well within 1$\sigma$ of the input uncertainties, confirming that the formula is consistent with observation.
 
 ### 5.4.4. Equivalent QCD Formulation
 
-$$G = \frac{\eta_B^3}{8\pi\,(b_0\,v_{\text{EW}})^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)}$$
+$$G = \frac{\eta_B^3}{8\pi\,(b_0\,v_{\text{EW}})^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)} \tag{239}$$
 
 with $b_0 = 7$, $v_{\text{EW}} = 246.22$ GeV:
 
-$$G_{\text{pred}}^{(B)} = 6.767 \times 10^{-39}~\text{GeV}^{-2} \quad (\text{error } 0.87\%)$$
+$$G_{\text{pred}}^{(B)} = 6.767 \times 10^{-39}~\text{GeV}^{-2} \quad (\text{error } 0.87\%) \tag{240}$$
 
 ---
 
@@ -2881,7 +2881,7 @@ $$G_{\text{pred}}^{(B)} = 6.767 \times 10^{-39}~\text{GeV}^{-2} \quad (\text{err
 
 ### 5.5.1. Definition
 
-$$\alpha \equiv \ln\!\left(\frac{1}{\varepsilon_c}\right) = \ln\!\left(\frac{1}{\eta_B}\right) \approx 21.2$$
+$$\alpha \equiv \ln\!\left(\frac{1}{\varepsilon_c}\right) = \ln\!\left(\frac{1}{\eta_B}\right) \approx 21.2 \tag{241}$$
 
 ### 5.5.2. Three Independent Routes to $\alpha$
 
@@ -2909,7 +2909,7 @@ The same suppression exponent links previously disconnected branches of fundamen
 
 **$\alpha \approx 21$ is the universal hierarchy constant of the Twin-Brane framework** — the single exponential bridge parameter relating:
 
-$$\text{5D tunneling} \;\longleftrightarrow\; \text{baryogenesis} \;\longleftrightarrow\; \text{top-quark scale} \;\longleftrightarrow\; \text{gravity}$$
+$$\text{5D tunneling} \;\longleftrightarrow\; \text{baryogenesis} \;\longleftrightarrow\; \text{top-quark scale} \;\longleftrightarrow\; \text{gravity} \tag{242}$$
 
 ---
 
@@ -2919,18 +2919,18 @@ With $\varepsilon_c = \eta_B$ and $m = 10\,m_t$ fully fixed, the framework predi
 
 ### 5.6.1. Energy Barrier
 
-$$E_{\text{barrier}} = \frac{m\,\alpha}{\beta} = \frac{1727.6 \times 21.22}{1.14} = 32.2~\text{TeV}$$
+$$E_{\text{barrier}} = \frac{m\,\alpha}{\beta} = \frac{1727.6 \times 21.22}{1.14} = 32.2~\text{TeV} \tag{243}$$
 
 - **LHC** (13.6 TeV): below barrier → consistent with null results PASS
 - **FCC-hh** (100 TeV): above barrier → **testable prediction**
 
 Critical temperature of the twin phase transition:
 
-$$T_c = \frac{E_{\text{barrier}}}{k_B} = 3.7 \times 10^{17}~\text{K}$$
+$$T_c = \frac{E_{\text{barrier}}}{k_B} = 3.7 \times 10^{17}~\text{K} \tag{244}$$
 
 ### 5.6.2. Yukawa Correction
 
-$$\delta(r) = \frac{2}{3}\,e^{-m_1\,r}$$
+$$\delta(r) = \frac{2}{3}\,e^{-m_1\,r} \tag{245}$$
 
 - At $r = 1$ pm: $\delta \approx 48\%$ (huge at nuclear scale)
 - At $r = 50~\mu$m (Eöt-Wash torsion balance): $\delta \approx 0$ (consistent with null results  — confirmed)
@@ -2939,7 +2939,7 @@ $$\delta(r) = \frac{2}{3}\,e^{-m_1\,r}$$
 
 Twin photon modifies Casimir force at separations $d \sim 100$ nm:
 
-$$\Delta_{\text{Casimir}} \approx 0.3\%$$
+$$\Delta_{\text{Casimir}} \approx 0.3\% \tag{246}$$
 
 This coincides with the observed Drude-plasma discrepancy (0.1–0.3%) in precision Casimir experiments — a potential smoking gun.
 
@@ -3014,7 +3014,7 @@ The zero-parameter version is not only more constrained — it is **more accurat
 
 The near-integer ratio $m_t/v_{\text{EW}} \approx 7/10$ is equivalent to:
 
-$$y_t = \sqrt{2}\,\frac{m_t}{v_{\text{EW}}} = 0.9923 \approx 1$$
+$$y_t = \sqrt{2}\,\frac{m_t}{v_{\text{EW}}} = 0.9923 \approx 1 \tag{247}$$
 
 The top Yukawa coupling being close to unity is a well-known fact of the Standard Model, often interpreted as:
 - The top quark being the **only** SM fermion with an $O(1)$ Yukawa coupling
@@ -3038,7 +3038,7 @@ In the Twin-Brane context, the near-unity $y_t$ is what makes both identificatio
 
 The Twin-Brane framework produces a formula for Newton's constant with **zero adjustable parameters** and, following Stage 12 (§3.12), **zero hypotheses**. The Coleman-Weinberg calculation proves $c = 1$ (the last open hypothesis), completing the derivation chain Higgs → QCD → Gravity:
 
-$$G = \frac{\eta_B^3}{8\pi\,(10\,m_t)^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)}$$
+$$G = \frac{\eta_B^3}{8\pi\,(10\,m_t)^2\,\ln^2(1/\eta_B)\,(1 - \eta_B^2)} \tag{248}$$
 
 This formula:
 - Uses **only measured quantities** ($\eta_B$ from Planck, $m_t$ from LHC) — or equivalently, via the QCD route (§5.11), only collider inputs ($\alpha_s$, $m_t$, $v_{\text{EW}}$)
@@ -3077,7 +3077,7 @@ The warp exponent $\alpha$ — previously an open problem requiring cosmological
 
 ### 5.11.1. Key Result
 
-$$\boxed{\alpha = \frac{4\pi}{b_0\,\alpha_s(b_0\,v_{\text{EW}})}}$$
+$$\boxed{\alpha = \frac{4\pi}{b_0\,\alpha_s(b_0\,v_{\text{EW}})}} \tag{249}$$
 
 where $\alpha_s$ is the strong coupling constant evaluated at the GW scalar mass $m_\Phi = b_0\,v_{\text{EW}}$, computed via 1-loop RG running with threshold matching at the top-quark mass.
 
@@ -3085,23 +3085,23 @@ where $\alpha_s$ is the strong coupling constant evaluated at the GW scalar mass
 
 **Step 1: $M_Z \to m_t$ (5 active flavors).** Using the 1-loop QCD beta function:
 
-$$\alpha_s(\mu) = \frac{\alpha_s(M_Z)}{1 + \frac{b_0^{(5)}}{2\pi}\,\alpha_s(M_Z)\,\ln\!\left(\frac{\mu}{M_Z}\right)}$$
+$$\alpha_s(\mu) = \frac{\alpha_s(M_Z)}{1 + \frac{b_0^{(5)}}{2\pi}\,\alpha_s(M_Z)\,\ln\!\left(\frac{\mu}{M_Z}\right)} \tag{250}$$
 
 with $b_0^{(5)} = 11 - \frac{2 \times 5}{3} = \frac{23}{3}$, $\alpha_s(M_Z) = 0.1180$ (LEP/LHC), $M_Z = 91.1876$ GeV, $m_t = 172.76$ GeV:
 
-$$\alpha_s(m_t) = \frac{0.1180}{1 + \frac{23}{3 \times 2\pi} \times 0.1180 \times \ln\!\left(\frac{172.76}{91.19}\right)} = 0.10806$$
+$$\alpha_s(m_t) = \frac{0.1180}{1 + \frac{23}{3 \times 2\pi} \times 0.1180 \times \ln\!\left(\frac{172.76}{91.19}\right)} = 0.10806 \tag{251}$$
 
 **Step 2: $m_t \to m_\Phi$ (6 active flavors).** Above the top threshold, $N_f = 6$:
 
-$$\alpha_s(m_\Phi) = \frac{\alpha_s(m_t)}{1 + \frac{b_0^{(6)}}{2\pi}\,\alpha_s(m_t)\,\ln\!\left(\frac{m_\Phi}{m_t}\right)}$$
+$$\alpha_s(m_\Phi) = \frac{\alpha_s(m_t)}{1 + \frac{b_0^{(6)}}{2\pi}\,\alpha_s(m_t)\,\ln\!\left(\frac{m_\Phi}{m_t}\right)} \tag{252}$$
 
 with $b_0^{(6)} = 11 - \frac{2 \times 6}{3} = 7$, $m_\Phi = b_0\,v_{\text{EW}} = 7 \times 246.22 = 1723.5$ GeV:
 
-$$\alpha_s(m_\Phi) = \frac{0.10806}{1 + \frac{7}{2\pi} \times 0.10806 \times \ln\!\left(\frac{1723.5}{172.76}\right)} = 0.08462$$
+$$\alpha_s(m_\Phi) = \frac{0.10806}{1 + \frac{7}{2\pi} \times 0.10806 \times \ln\!\left(\frac{1723.5}{172.76}\right)} = 0.08462 \tag{253}$$
 
 **Step 3: $\alpha$ from dimensional transmutation.**
 
-$$\alpha = \frac{4\pi}{b_0 \times \alpha_s(m_\Phi)} = \frac{4\pi}{7 \times 0.08462} = 21.214$$
+$$\alpha = \frac{4\pi}{b_0 \times \alpha_s(m_\Phi)} = \frac{4\pi}{7 \times 0.08462} = 21.214 \tag{254}$$
 
 ### 5.11.3. Comparison: QCD vs. Cosmological Routes
 
@@ -3117,11 +3117,11 @@ $$\alpha = \frac{4\pi}{b_0 \times \alpha_s(m_\Phi)} = \frac{4\pi}{7 \times 0.084
 
 QCD dimensional transmutation generates the confinement scale $\Lambda_{\text{QCD}}$ from the dimensionless coupling $\alpha_s$:
 
-$$\Lambda_{\text{QCD}}^{(6)} = m_t \cdot \exp\!\left(-\frac{2\pi}{b_0\,\alpha_s(m_t)}\right) = 172.76 \times e^{-\frac{2\pi}{7 \times 0.10806}} = 42.6~\text{MeV}$$
+$$\Lambda_{\text{QCD}}^{(6)} = m_t \cdot \exp\!\left(-\frac{2\pi}{b_0\,\alpha_s(m_t)}\right) = 172.76 \times e^{-\frac{2\pi}{7 \times 0.10806}} = 42.6~\text{MeV} \tag{255}$$
 
 The warp hierarchy in the twin-brane model is the **square** of the ratio $\Lambda_{\text{QCD}}^{(6)}/m_\Phi$:
 
-$$e^{-\alpha} = \left(\frac{\Lambda_{\text{QCD}}^{(6)}}{m_\Phi}\right)^{\!2} = \left(\frac{42.6~\text{MeV}}{1723.5~\text{GeV}}\right)^{\!2} = 6.12 \times 10^{-10}$$
+$$e^{-\alpha} = \left(\frac{\Lambda_{\text{QCD}}^{(6)}}{m_\Phi}\right)^{\!2} = \left(\frac{42.6~\text{MeV}}{1723.5~\text{GeV}}\right)^{\!2} = 6.12 \times 10^{-10} \tag{256}$$
 
 The factor $4\pi$ (rather than $2\pi$) — i.e., the square — has a natural geometric interpretation: in the twin-brane structure, decoherence involves **both** barrier profiles ($\chi_0$ and $\chi_L$), giving a double suppression.
 
@@ -3129,11 +3129,11 @@ The factor $4\pi$ (rather than $2\pi$) — i.e., the square — has a natural ge
 
 Since $\varepsilon_c = e^{-\alpha}$ (closure formula, Section 4) and $\varepsilon_c = \eta_B$ (Section 5.2), the QCD-derived $\alpha$ **predicts** the baryon asymmetry:
 
-$$\eta_B^{\text{pred}} = e^{-\alpha_{\text{QCD}}} = e^{-21.214} = 6.124 \times 10^{-10}$$
+$$\eta_B^{\text{pred}} = e^{-\alpha_{\text{QCD}}} = e^{-21.214} = 6.124 \times 10^{-10} \tag{257}$$
 
-$$\eta_B^{\text{obs}} = 6.104 \times 10^{-10} \quad \text{(Planck 2018)}$$
+$$\eta_B^{\text{obs}} = 6.104 \times 10^{-10} \quad \text{(Planck 2018)} \tag{258}$$
 
-$$\frac{|\eta_B^{\text{pred}} - \eta_B^{\text{obs}}|}{\eta_B^{\text{obs}}} = 0.32\%$$
+$$\frac{|\eta_B^{\text{pred}} - \eta_B^{\text{obs}}|}{\eta_B^{\text{obs}}} = 0.32\% \tag{259}$$
 
 **The baryon asymmetry of the Universe is predicted from three collider-measured quantities** — $\alpha_s(M_Z) = 0.1180$ [6], $m_t = 172.76$ GeV [7], and $v_{\text{EW}} = 246.22$ GeV [8] — **with no cosmological input.** This is an entirely new cross-sector prediction: QCD running $\to$ warp geometry $\to$ baryogenesis. The observed value $\eta_B^{\text{obs}} = (6.104 \pm 0.058) \times 10^{-10}$ is from Planck 2018 [9].
 
@@ -3141,13 +3141,13 @@ $$\frac{|\eta_B^{\text{pred}} - \eta_B^{\text{obs}}|}{\eta_B^{\text{obs}}} = 0.3
 
 Substituting the QCD-derived $\alpha$ and $m_\Phi = b_0\,v_{\text{EW}}$ into the closure formula:
 
-$$\boxed{G = \frac{\left(\Lambda_{\text{QCD}}^{(6)}\right)^6}{32\pi\,(b_0\,v_{\text{EW}})^8\,\ln^2\!\left(b_0\,v_{\text{EW}}/\Lambda_{\text{QCD}}^{(6)}\right)}}$$
+$$\boxed{G = \frac{\left(\Lambda_{\text{QCD}}^{(6)}\right)^6}{32\pi\,(b_0\,v_{\text{EW}})^8\,\ln^2\!\left(b_0\,v_{\text{EW}}/\Lambda_{\text{QCD}}^{(6)}\right)}} \tag{260}$$
 
 where $\Lambda_{\text{QCD}}^{(6)} = m_t \cdot \exp\!\left(-2\pi/(b_0\,\alpha_s(m_t))\right)$.
 
 **Important:** The coupling $\alpha_s(m_t)$ is **not** $\alpha_s(M_Z)$. It is obtained by 1-loop RG running from $M_Z$ to $m_t$ with $N_f = 5$ (see §5.11.2):
 
-$$\alpha_s(m_t) = \frac{\alpha_s(M_Z)}{1 + \frac{b_0^{(5)}}{2\pi}\,\alpha_s(M_Z)\,\ln\!\left(\frac{m_t}{M_Z}\right)} = \frac{0.1180}{1 + \frac{23/3}{2\pi}\times 0.1180 \times \ln(172.76/91.19)} = 0.10806$$
+$$\alpha_s(m_t) = \frac{\alpha_s(M_Z)}{1 + \frac{b_0^{(5)}}{2\pi}\,\alpha_s(M_Z)\,\ln\!\left(\frac{m_t}{M_Z}\right)} = \frac{0.1180}{1 + \frac{23/3}{2\pi}\times 0.1180 \times \ln(172.76/91.19)} = 0.10806 \tag{261}$$
 
 Plugging $\alpha_s(M_Z) = 0.1180$ directly into Λ without running gives a result $\sim$78× too large, because $\alpha_s$ must be evaluated at the correct scale.
 
@@ -3168,7 +3168,7 @@ Derived intermediate values:
 | $\Lambda_{\text{QCD}}^{(6)}$ | $m_t\,e^{-2\pi/(b_0\alpha_s(m_t))}$ | $42.6$ MeV |
 | $\alpha$ | $4\pi/(b_0\,\alpha_s(m_\Phi))$ | $21.214$ |
 
-$$G_{\text{pred}}^{(\text{QCD})} = 6.84 \times 10^{-39}~\text{GeV}^{-2} \quad (\text{error } 1.88\%)$$
+$$G_{\text{pred}}^{(\text{QCD})} = 6.84 \times 10^{-39}~\text{GeV}^{-2} \quad (\text{error } 1.88\%) \tag{262}$$
 
 The larger error (1.88% vs. 0.39%) is expected: $G \propto e^{-3\alpha}$ is exponentially sensitive to $\alpha$, so the 0.015% error in $\alpha$ is amplified to $\sim$2% in $G$.
 
@@ -3216,7 +3216,7 @@ The framework makes quantitative predictions testable by current and near-future
 
 The Goldberger-Wise stabilization scalar (radion) has a predicted mass:
 
-$$m_\Phi = b_0\,v_{\text{EW}} = 7 \times 246.22 = 1723.5~\text{GeV}$$
+$$m_\Phi = b_0\,v_{\text{EW}} = 7 \times 246.22 = 1723.5~\text{GeV} \tag{263}$$
 
 This is within the kinematic reach of the LHC ($\sqrt{s} = 13.6$ TeV) and HL-LHC ($\sqrt{s} = 14$ TeV, $\mathcal{L} = 3000~\text{fb}^{-1}$).
 
@@ -3238,7 +3238,7 @@ This is within the kinematic reach of the LHC ($\sqrt{s} = 13.6$ TeV) and HL-LHC
 
 The twin-photon sector contributes an extra vacuum force between conducting plates. The predicted excess over the standard Casimir force:
 
-$$\frac{\Delta F}{F_{\text{Casimir}}} \approx 0.3\% \quad \text{at } d = 100{-}300~\text{nm}$$
+$$\frac{\Delta F}{F_{\text{Casimir}}} \approx 0.3\% \quad \text{at } d = 100{-}300~\text{nm} \tag{264}$$
 
 This arises from kinetic mixing between the SM photon and the twin-sector photon through the warped bulk.
 
@@ -3277,7 +3277,7 @@ The closure formula provides an **exponentially sensitive** probe of new QCD-cha
 
 If $\Delta N_f$ vector-like fermion (VLF) generations with mass $M_F < m_\Phi$ exist, the QCD beta function coefficient changes above the threshold $M_F$:
 
-$$b_0 \;\to\; b_0^{\text{new}} = b_0 - \tfrac{2}{3}\,\Delta N_f$$
+$$b_0 \;\to\; b_0^{\text{new}} = b_0 - \tfrac{2}{3}\,\Delta N_f \tag{265}$$
 
 This modifies the formula in **three** places simultaneously:
 
@@ -3316,11 +3316,11 @@ A **single** extra colored fermion generation destroys the agreement by a factor
 
 The amplification factor scales as:
 
-$$\frac{\delta G}{G} \;\sim\; 3\,\delta\alpha \;=\; 3 \times \frac{4\pi}{b_0^2\,\alpha_s} \times \frac{2}{3}\,\Delta N_f$$
+$$\frac{\delta G}{G} \;\sim\; 3\,\delta\alpha \;=\; 3 \times \frac{4\pi}{b_0^2\,\alpha_s} \times \frac{2}{3}\,\Delta N_f \tag{266}$$
 
 For $b_0 = 7$, $\alpha_s \approx 0.085$: $\delta\alpha \approx 1.8$ per VLF generation. Because $G \propto e^{-3\alpha}$, this translates to:
 
-$$\frac{G^{\text{new}}}{G^{\text{SM}}} \;\sim\; e^{-3 \times 1.8} \;=\; e^{-5.4} \;\approx\; 0.005$$
+$$\frac{G^{\text{new}}}{G^{\text{SM}}} \;\sim\; e^{-3 \times 1.8} \;=\; e^{-5.4} \;\approx\; 0.005 \tag{267}$$
 
 consistent with the 99.5% suppression computed numerically. The Twin-Brane formula is **more sensitive to new colored particles than direct LHC searches**, because the exponential warp factor amplifies small shifts in $b_0$ into catastrophic shifts in $G$.
 
@@ -3573,7 +3573,7 @@ This sensitivity is a feature: it makes the framework maximally falsifiable. The
 
 This work presents, to the best of the author's knowledge, the first microscopic derivation of Newton's gravitational constant $G_N$ from Standard Model collider measurements alone:
 
-$$G_N = \frac{e^{-3\alpha}}{8\pi\,(b_0\,v_{\text{EW}})^2\;\alpha^2\,(1 - e^{-2\alpha})}, \qquad \alpha = \frac{4\pi}{b_0\,\alpha_s(m_\Phi)}$$
+$$G_N = \frac{e^{-3\alpha}}{8\pi\,(b_0\,v_{\text{EW}})^2\;\alpha^2\,(1 - e^{-2\alpha})}, \qquad \alpha = \frac{4\pi}{b_0\,\alpha_s(m_\Phi)} \tag{268}$$
 
 with $m_\Phi = b_0\,v_{\text{EW}}$ ($c = 1$, proven in Stage 12) and $\alpha_s(m_\Phi)$ obtained by 1-loop QCD running from $\alpha_s(M_Z)$ through $m_t$.
 
