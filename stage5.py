@@ -29,7 +29,7 @@ import numpy as np
 
 jax.config.update("jax_enable_x64", True)
 
-from stage3_zero_mode import build_Ly_operator_simple
+from stage3 import build_Ly_operator_simple
 
 
 def build_kinetic_matrix(y_grid, k=1.0):

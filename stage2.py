@@ -85,86 +85,74 @@ def build_operator_matrix(r_grid: jnp.ndarray, y_grid: jnp.ndarray,
         y = 0     : Z₂ symmetry  (ghost: Φ_{i,-1} = Φ_{i,+1})
         y = y_max : Φ = 0  (Dirichlet, deep bulk)
     """
-    Nr = r_grid.shape[0]
-    Ny = y_grid.shape[0]
+    import numpy as _np
+    r_arr = _np.asarray(r_grid)
+    y_arr = _np.asarray(y_grid)
+    Nr = len(r_arr)
+    Ny = len(y_arr)
     N = Nr * Ny
 
-    dr = r_grid[1] - r_grid[0]
-    dy = y_grid[1] - y_grid[0]
+    dr = float(r_arr[1] - r_arr[0])
+    dy = float(y_arr[1] - y_arr[0])
 
-    L = jnp.zeros((N, N))
+    L = _np.zeros((N, N), dtype=_np.float64)
 
     def idx(i, j):
         return i * Ny + j
 
     for i in range(Nr):
-        r = r_grid[i]
-        r_safe = jnp.maximum(r, 1e-14)
+        r = float(r_arr[i])
+        r_safe = max(r, 1e-14)
 
         for j in range(Ny):
             row = idx(i, j)
 
             # ── r-direction ──────────────────────────────────────
             if i == 0:
-                # Neumann at r_min: ∂_rΦ=0 → ghost Φ_{-1}=Φ_{+1}
-                # ∂²_r ≈ (2Φ_{1,j} - 2Φ_{0,j}) / dr²
                 cr_center = -2.0 / dr**2
                 cr_plus = 2.0 / dr**2
-                L = L.at[row, idx(i, j)].add(cr_center)
+                L[row, idx(i, j)] += cr_center
                 if i + 1 < Nr:
-                    L = L.at[row, idx(i + 1, j)].add(cr_plus)
-                # (2/r) ∂_r = 0 by symmetry
+                    L[row, idx(i + 1, j)] += cr_plus
 
             elif i == Nr - 1:
-                # Robin BC: ∂_r(rΦ) = 0  →  ∂_rΦ = -Φ/r
-                # Ghost point: Φ_{Nr} = Φ_{Nr-2} - (2dr/r) Φ_{Nr-1}
-                #
-                # ∂²_r = (Φ_Nr - 2Φ_{i} + Φ_{i-1}) / dr²
-                #       = (Φ_{i-1} - (2dr/r)Φ_i - 2Φ_i + Φ_{i-1}) / dr²
-                #       = (2Φ_{i-1} - (2 + 2dr/r)Φ_i) / dr²
                 c_im1 = 2.0 / dr**2
                 c_i = -(2.0 + 2.0 * dr / r_safe) / dr**2
-
-                # (2/r)∂_r = (2/r)(Φ_Nr - Φ_{i-1})/(2dr)
-                #           = (2/r)(-(2dr/r)Φ_i)/(2dr) = -2/r² Φ_i
                 c_i += -2.0 / r_safe**2
 
-                L = L.at[row, idx(i - 1, j)].add(c_im1)
-                L = L.at[row, idx(i,     j)].add(c_i)
+                L[row, idx(i - 1, j)] += c_im1
+                L[row, idx(i,     j)] += c_i
 
             else:
-                # Interior
                 cr_minus = 1.0 / dr**2 - 1.0 / (r_safe * dr)
                 cr_center = -2.0 / dr**2
                 cr_plus = 1.0 / dr**2 + 1.0 / (r_safe * dr)
-                L = L.at[row, idx(i - 1, j)].add(cr_minus)
-                L = L.at[row, idx(i, j)].add(cr_center)
-                L = L.at[row, idx(i + 1, j)].add(cr_plus)
+                L[row, idx(i - 1, j)] += cr_minus
+                L[row, idx(i, j)] += cr_center
+                L[row, idx(i + 1, j)] += cr_plus
 
             # ── y-direction ──────────────────────────────────────
             if j == 0:
-                # Z₂ at brane: ghost Φ_{i,-1} = Φ_{i,+1}
                 cy_center = -2.0 / dy**2
                 cy_plus = 2.0 / dy**2
-                L = L.at[row, idx(i, j)].add(cy_center)
+                L[row, idx(i, j)] += cy_center
                 if j + 1 < Ny:
-                    L = L.at[row, idx(i, j + 1)].add(cy_plus)
-                # -4k ∂_y = 0 by Z₂
+                    L[row, idx(i, j + 1)] += cy_plus
 
             elif j == Ny - 1:
-                # Dirichlet: Φ = 0 at y-boundary
-                L = L.at[row, row].set(1.0)
+                L[row, :] = 0.0
+                L[row, row] = 1.0
                 continue
 
             else:
                 cy_minus = 1.0 / dy**2 + 4.0 * k / (2.0 * dy)
                 cy_center = -2.0 / dy**2
                 cy_plus = 1.0 / dy**2 - 4.0 * k / (2.0 * dy)
-                L = L.at[row, idx(i, j - 1)].add(cy_minus)
-                L = L.at[row, idx(i, j)].add(cy_center)
-                L = L.at[row, idx(i, j + 1)].add(cy_plus)
+                L[row, idx(i, j - 1)] += cy_minus
+                L[row, idx(i, j)] += cy_center
+                L[row, idx(i, j + 1)] += cy_plus
 
-    return L
+    return jnp.array(L)
 
 
 def build_rhs(r_grid: jnp.ndarray, y_grid: jnp.ndarray,
@@ -190,16 +178,17 @@ def build_rhs(r_grid: jnp.ndarray, y_grid: jnp.ndarray,
     rhs = S.ravel()
 
     # Zero out rows corresponding to Dirichlet BC (y=y_max only)
+    import numpy as _np
+    rhs_np = _np.array(rhs, copy=True)
     for i in range(Nr):
         row = i * Ny + (Ny - 1)
-        rhs = rhs.at[row].set(0.0)
+        rhs_np[row] = 0.0
 
-    return rhs
+    return jnp.array(rhs_np)
 
 
 # ── Solver ───────────────────────────────────────────────────────────────────
 
-@partial(jit, static_argnums=(2, 3, 4))
 def solve_linearized(r_grid: jnp.ndarray, y_grid: jnp.ndarray,
                      k: float = 1.0, M: float = 1.0,
                      M5: float = 1.0,

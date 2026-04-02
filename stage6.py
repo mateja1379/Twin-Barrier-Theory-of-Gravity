@@ -28,7 +28,7 @@ import numpy as np
 
 jax.config.update("jax_enable_x64", True)
 
-from stage3_zero_mode import build_Ly_raw, build_Ly_operator
+from stage3 import build_Ly_raw, build_Ly_operator
 
 
 def initial_perturbation(y_grid, y0=0.0, sigma=0.5):

@@ -38,7 +38,7 @@ import numpy as np
 
 jax.config.update("jax_enable_x64", True)
 
-from stage2_source import solve_linearized, brane_potential
+from stage2 import solve_linearized, brane_potential
 
 
 def fit_1_over_r(r, V):

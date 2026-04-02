@@ -23,7 +23,7 @@ import numpy as np
 
 jax.config.update("jax_enable_x64", True)
 
-from stage3_zero_mode import build_Ly_operator_simple
+from stage3 import build_Ly_operator_simple
 
 
 def compute_spectrum(Ny, y_max, k=1.0):
