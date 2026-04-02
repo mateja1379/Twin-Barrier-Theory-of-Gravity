@@ -42,20 +42,20 @@
 - [2.9. Tunneling Origin of the VEV Hierarchy](#29-tunneling-origin-of-the-vev-hierarchy)
 
 **Section 3: Computational Validation Suite**
-- [3.1. Stage 1 — Background Metric Verification](#31-stage-1--background-metric-verification)
-- [3.2. Stage 2 — Linearized Barrier Graviton](#32-stage-2--linearized-barrier-graviton)
-- [3.3. Stage 3 — Kaluza-Klein Zero Mode](#33-stage-3--kaluza-klein-zero-mode)
-- [3.4. Stage 4 — KK Spectrum Convergence](#34-stage-4--kk-spectrum-convergence)
-- [3.5. Stage 5 — Ghost & Tachyon Exclusion (Fatal Gate)](#35-stage-5--ghost--tachyon-exclusion-fatal-gate)
-- [3.6. Stage 6 — Newtonian Limit Recovery](#36-stage-6--newtonian-limit-recovery)
-- [3.7. Stage 7 — PPN Relativistic Check](#37-stage-7--ppn-relativistic-check)
-- [3.8. Stage 8 — 5D Bounce Instanton](#38-stage-8--5d-bounce-instanton)
-- [3.9. Stage 9 — Microscopic Derivation of RS Closure Relations](#39-stage-9--microscopic-derivation-of-rs-closure-relations)
-- [3.10. Stage 10 — QCD Route to Newton's Constant](#310-stage-10--qcd-route-to-newtons-constant)
-- [3.11. Stage 11 — Bootstrap Proof: mΦ = b₀ v_EW](#311-stage-11--bootstrap-proof-mΦ--b₀-vew)
-- [3.12. Stage 12 — Coleman-Weinberg Proof: c = 1](#312-stage-12--coleman-weinberg-proof-c--1)
-- [3.13. Stage 13 — NLO Precision & Error Budget](#313-stage-13--nlo-precision--error-budget)
-- [3.14. Stage 14 — Casimir Prediction vs Experiment](#314-stage-14--casimir-prediction-vs-experiment)
+- [3.1. Stage 1 — Background Metric Verification](#31-stage-1-background-metric-verification)
+- [3.2. Stage 2 — Linearized Barrier Graviton](#32-stage-2-linearized-barrier-graviton)
+- [3.3. Stage 3 — Kaluza-Klein Zero Mode](#33-stage-3-kaluza-klein-zero-mode)
+- [3.4. Stage 4 — KK Spectrum Convergence](#34-stage-4-kk-spectrum-convergence)
+- [3.5. Stage 5 — Ghost & Tachyon Exclusion (Fatal Gate)](#35-stage-5-ghost-tachyon-exclusion-fatal-gate)
+- [3.6. Stage 6 — Newtonian Limit Recovery](#36-stage-6-newtonian-limit-recovery)
+- [3.7. Stage 7 — PPN Relativistic Check](#37-stage-7-ppn-relativistic-check)
+- [3.8. Stage 8 — 5D Bounce Instanton](#38-stage-8-5d-bounce-instanton)
+- [3.9. Stage 9 — Microscopic Derivation of RS Closure Relations](#39-stage-9-microscopic-derivation-of-rs-closure-relations)
+- [3.10. Stage 10 — QCD Route to Newton's Constant](#310-stage-10-qcd-route-to-newtons-constant)
+- [3.11. Stage 11 — Bootstrap Proof: mΦ = b₀ v_EW](#311-stage-11-bootstrap-proof-mφ-b₀-v_ew)
+- [3.12. Stage 12 — Coleman-Weinberg Proof: c = 1](#312-stage-12-coleman-weinberg-proof-c-1)
+- [3.13. Stage 13 — NLO Precision & Error Budget](#313-stage-13-nlo-precision-error-budget)
+- [3.14. Stage 14 — Casimir Prediction vs Experiment](#314-stage-14-casimir-prediction-vs-experiment)
 
 **Section 4: Closed Derivation of Newton's Constant**
 - [4.0. Summary](#40-summary)
@@ -3587,10 +3587,10 @@ The framework makes concrete, quantitative predictions accessible to current and
 
 | Observable | Value | Experiment | Status |
 |:--|:--|:--|:--|
-| $\alpha_s$ tension | $0.05\sigma$ | PDG world average | [PASS — confirmed (Stage 13)](#313-stage-13--nlo-precision--error-budget) |
-| $\eta_B$ prediction | $6.124 \times 10^{-10}$ (0.32%) | Planck CMB | [PASS — confirmed (Stage 10)](#310-stage-10--qcd-route-to-newtons-constant) |
-| $b_0 = 7$ ($N_f = 6$) | no exotics $< 1.7$ TeV | LHC Run 2 | [PASS — survived (Stage 11)](#311-stage-11--bootstrap-proof-mΦ--b₀-vew) |
-| Casimir compatibility | hidden below 0.5–1.75% | Chen 2004 + Decca 2005 | [PASS — confirmed (Stage 14)](#314-stage-14--casimir-prediction-vs-experiment) |
+| $\alpha_s$ tension | $0.05\sigma$ | PDG world average | [PASS — confirmed (Stage 13)](#313-stage-13-nlo-precision-error-budget) |
+| $\eta_B$ prediction | $6.124 \times 10^{-10}$ (0.32%) | Planck CMB | [PASS — confirmed (Stage 10)](#310-stage-10-qcd-route-to-newtons-constant) |
+| $b_0 = 7$ ($N_f = 6$) | no exotics $< 1.7$ TeV | LHC Run 2 | [PASS — survived (Stage 11)](#311-stage-11-bootstrap-proof-mφ-b₀-v_ew) |
+| Casimir compatibility | hidden below 0.5–1.75% | Chen 2004 + Decca 2005 | [PASS — confirmed (Stage 14)](#314-stage-14-casimir-prediction-vs-experiment) |
 | Casimir detection | SNR $\sim 3$ at 100 nm | next-gen 0.1% Casimir | 2025–30 |
 | Radion $m_\Phi$ | $1723.5$ GeV | HL-LHC | 2029+ |
 | FCC-ee $\alpha_s$ | $0.11795 \pm 0.0001$ | FCC-ee | 2035+ |
