@@ -142,14 +142,14 @@ dimensional mechanism.
 #### Key Results at a Glance
 
 - **Emergent gravity from dual mass-component realignment** — gravitational attraction arises as the residual tendency of visible and twin wavefunction peaks to merge across a warped extra dimension
-- **Newton's constant derived entirely from particle collider measurements** — $G$ is computed from three Standard Model inputs alone ($\alpha_s(M_Z)$, $m_t$, $v_{\text{EW}}$) with zero free parameters, yielding $0.05\sigma$ tension against the CODATA value
+- **Newton's constant derived entirely from particle collider measurements** — $G$ is computed from three Standard Model inputs alone ($\alpha_s(M_Z)$, $m_t$, $v_{\text{EW}}$) with zero free parameters, constituting a first-principles reconstruction of $G$, and yielding $0.05\sigma$ tension against the CODATA value
 - **Twin-photon Casimir residual at 100–300 nm** — a $0.18{-}0.30\%$ Yukawa enhancement consistent with all existing precision Casimir data (Stage 14, verified against Chen 2004 and Decca 2005)
 - **Barrier transition threshold at 32–37 TeV** — the energy required for full cross-barrier transfer, placing the twin sector just beyond current LHC reach
 - **Dark matter as cross-barrier equilibrium states** *(logical consequence, not independently derived)* — the barrier geometry naturally admits gauge-decoupled configurations that preserve gravitational coupling, requiring no new particle species; a dedicated derivation remains future work
 - **Baryon asymmetry prediction $\eta_B = 6.124 \times 10^{-10}$** — derived from the twin-barrier QCD sector, matching the Planck CMB measurement to 0.32%
 - **Radion at $m_\Phi = 1723.5$ GeV** — diboson resonance ($WW/ZZ/hh$) searchable at HL-LHC with $3000\;\text{fb}^{-1}$
 - **Exponential sensitivity to new colored fermions** — a single vector-like generation would shift $G$ by $-99.5\%$, making this framework more sensitive than direct collider searches
-- **Fourteen-stage computational validation** — every prediction verified numerically with zero free parameters; full code publicly available
+- **Fourteen-stage computational validation** — every prediction verified numerically with zero free parameters; full code publicly available (see Section 3)
 
 
 ---
