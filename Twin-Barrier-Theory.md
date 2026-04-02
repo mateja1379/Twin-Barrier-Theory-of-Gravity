@@ -152,6 +152,8 @@ dimensional mechanism.
 - **Exponential sensitivity to new colored fermions** — a single vector-like generation would shift $G$ by $-99.5\%$, making this framework more sensitive than direct collider searches
 - **Fourteen-stage computational validation** — every prediction verified numerically with zero free parameters; full code publicly available (see Section 3)
 
+> **Structure of the derivation.** The paper develops the gravitational constant in three progressive stages of rigor: (1) Section 4 derives $G$ from two fitted microscopic parameters ($m$, $\varepsilon_c$), achieving 1.0% agreement; (2) Section 5 eliminates both parameters via physical identifications, reducing the error to 0.39%; (3) Stages 10–13 derive $G$ entirely from first principles using only collider inputs ($\alpha_s(M_Z)$, $m_t$, $v_{\text{EW}}$), with no free parameters and no hypotheses remaining after Stage 12.
+
 
 ---
 
