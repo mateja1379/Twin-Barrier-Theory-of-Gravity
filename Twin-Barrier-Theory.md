@@ -192,21 +192,21 @@ A useful physical analogy: two strong magnets separated by a glass plate. The ma
 
 ## Table of Contents
 
-1.1. [Geometric Setup and Definitions](#1-geometric-setup-and-definitions)
-1.2. [The Dual Wave Function Ansatz](#2-the-dual-wave-function-ansatz)
-1.3. [5D Gravitational Action](#3-5d-gravitational-action)
-1.4. [Background Solution and Fine-Tuning Relations](#4-background-solution-and-fine-tuning-relations)
-1.5. [Brane-Localized Matter and the Energy-Momentum Tensor](#5-brane-localized-matter-and-the-energy-momentum-tensor)
-1.6. [Metric Perturbation and Linearized 5D Einstein Equations](#6-metric-perturbation-and-linearized-5d-einstein-equations)
-1.7. [Kaluza–Klein Decomposition and the Graviton Zero Mode](#7-kaluzaklein-decomposition-and-the-graviton-zero-mode)
-1.8. [Derivation of the Effective 4D Planck Mass](#8-derivation-of-the-effective-4d-planck-mass)
-1.9. [Derivation of Newton's Constant](#9-derivation-of-newtons-constant)
-1.10. [Newtonian Potential on the Brane](#10-newtonian-potential-on-the-brane)
-1.11. [Recovery of the Schwarzschild Exterior Metric](#11-recovery-of-the-schwarzschild-exterior-metric)
-1.12. [Parameter Determination and Self-Consistency](#12-parameter-determination-and-self-consistency)
-1.13. [Energy Barrier for Dimensional Transition](#13-energy-barrier-for-dimensional-transition)
-1.14. [Physical Interpretation](#14-physical-interpretation)
-1.15. [Summary of Results](#15-summary-of-results)
+- 1.1. [Geometric Setup and Definitions](#11-geometric-setup-and-definitions)
+- 1.2. [The Dual Wave Function Ansatz](#12-the-dual-wave-function-ansatz)
+- 1.3. [5D Gravitational Action](#13-5d-gravitational-action)
+- 1.4. [Background Solution and Fine-Tuning Relations](#14-background-solution-and-fine-tuning-relations)
+- 1.5. [Brane-Localized Matter and the Energy-Momentum Tensor](#15-brane-localized-matter-and-the-energy-momentum-tensor)
+- 1.6. [Metric Perturbation and Linearized 5D Einstein Equations](#16-metric-perturbation-and-linearized-5d-einstein-equations)
+- 1.7. [Kaluza–Klein Decomposition and the Graviton Zero Mode](#17-kaluzaklein-decomposition-and-the-graviton-zero-mode)
+- 1.8. [Derivation of the Effective 4D Planck Mass](#18-derivation-of-the-effective-4d-planck-mass)
+- 1.9. [Derivation of Newton's Constant](#19-derivation-of-newtons-constant)
+- 1.10. [Newtonian Potential on the Brane](#110-newtonian-potential-on-the-brane)
+- 1.11. [Recovery of the Schwarzschild Exterior Metric](#111-recovery-of-the-schwarzschild-exterior-metric)
+- 1.12. [Parameter Determination and Self-Consistency](#112-parameter-determination-and-self-consistency)
+- 1.13. [Energy Barrier for Dimensional Transition](#113-energy-barrier-for-dimensional-transition)
+- 1.14. [Physical Interpretation](#114-physical-interpretation)
+- 1.15. [Summary of Results](#115-summary-of-results)
 
 ---
 
@@ -715,14 +715,15 @@ This section contains proofs and derivations that **extend** the foundational fr
 
 ## 2.0.1. Table of Contents
 
-1. [Proof 1: Radion Stabilization via Effective Potential](#proof-1-radion-stabilization-via-effective-potential)
-2. [Proof 2: IR Criticality as a Variational Principle](#proof-2-ir-criticality-as-a-variational-principle)
-3. [Proof 3: Twin Overlap Exponential Decay](#proof-3-twin-overlap-exponential-decay)
-4. [Proof 4: Bulk Scalar Mass Links Bounce Parameters to Stabilization](#proof-4-bulk-scalar-mass-links-bounce-parameters-to-stabilization)
-5. [Proof 5: Deepest Closure — $G$ from Two Physical Inputs](#proof-5-deepest-closure--g-from-two-physical-inputs)
-6. [Proof 6: Complete Bounce-to-Gravity Chain](#proof-6-complete-bounce-to-gravity-chain)
-7. [Proof 7: Casimir Submicron Prediction](#proof-7-casimir-submicron-prediction)
-8. [Discussion: What Remains Open](#discussion-what-remains-open)
+- [2.1. Proof 1: Radion Stabilization via Effective Potential](#21-proof-1-radion-stabilization-via-effective-potential)
+- [2.2. Proof 2: IR Criticality as a Variational Principle](#22-proof-2-ir-criticality-as-a-variational-principle)
+- [2.3. Proof 3: Twin Overlap Exponential Decay](#23-proof-3-twin-overlap-exponential-decay)
+- [2.4. Proof 4: Bulk Scalar Mass Links Bounce Parameters to Stabilization](#24-proof-4-bulk-scalar-mass-links-bounce-parameters-to-stabilization)
+- [2.5. Proof 5: Deepest Closure — $G$ from Two Physical Inputs](#25-proof-5-deepest-closure--g-from-two-physical-inputs)
+- [2.6. Proof 6: Complete Bounce-to-Gravity Chain](#26-proof-6-complete-bounce-to-gravity-chain)
+- [2.7. Proof 7: Casimir Submicron Prediction](#27-proof-7-casimir-submicron-prediction)
+- [2.8. Discussion: What Remains Open](#28-discussion-what-remains-open)
+- [2.9. Tunneling Origin of the VEV Hierarchy](#29-tunneling-origin-of-the-vev-hierarchy)
 
 ---
 
@@ -2665,7 +2666,7 @@ The number of active quark flavors $N_f$ is determined self-consistently:
 | 3 | 9.00 | 2216 | 39.1% | $m > m_t$ but wrong G |
 | 4 | 8.33 | 2052 | 29.0% | $m > m_t$ but wrong G |
 | 5 | 7.67 | 1888 | 16.1% | $m > m_t$ but wrong G |
-| **6** | **7** | **1724** | **0.87%** | **$m > m_t$ ✓ and G ✓** |
+| **6** | **7** | **1724** | **0.87%** | **$m > m_t$ (PASS) and G PASS** |
 
 Only $N_f = 6$ yields sub-percent $G$ error. This selects the energy regime **above the top-quark threshold** ($m_\Phi = 1724 > m_t = 173$ GeV), where all six quark flavors contribute to the QCD running.
 
@@ -2771,7 +2772,7 @@ With $\varepsilon_c = \eta_B$ and $m = 10\,m_t$ fully fixed, the framework predi
 
 $$E_{\text{barrier}} = \frac{m\,\alpha}{\beta} = \frac{1727.6 \times 21.22}{1.14} = 32.2~\text{TeV}$$
 
-- **LHC** (13.6 TeV): below barrier → consistent with null results ✓
+- **LHC** (13.6 TeV): below barrier → consistent with null results PASS
 - **FCC-hh** (100 TeV): above barrier → **testable prediction**
 
 Critical temperature of the twin phase transition:
@@ -2783,7 +2784,7 @@ $$T_c = \frac{E_{\text{barrier}}}{k_B} = 3.7 \times 10^{17}~\text{K}$$
 $$\delta(r) = \frac{2}{3}\,e^{-m_1\,r}$$
 
 - At $r = 1$ pm: $\delta \approx 48\%$ (huge at nuclear scale)
-- At $r = 50~\mu$m (Eöt-Wash torsion balance): $\delta \approx 0$ (consistent with null results ✓)
+- At $r = 50~\mu$m (Eöt-Wash torsion balance): $\delta \approx 0$ (consistent with null results  — confirmed)
 
 ### 5.6.3. Casimir Correction
 
@@ -2797,7 +2798,7 @@ This coincides with the observed Drude-plasma discrepancy (0.1–0.3%) in precis
 
 | Observable | Symbol | Prediction | Status |
 |------------|--------|------------|--------|
-| Newton's constant | $G$ | $6.735 \times 10^{-39}$ GeV$^{-2}$ | ✅ Matches observation (0.39%) |
+| Newton's constant | $G$ | $6.735 \times 10^{-39}$ GeV$^{-2}$ | PASS — Matches observation (0.39%) |
 | Energy barrier | $E_{\text{barrier}}$ | 32.2 TeV | Testable at FCC-hh |
 | Yukawa correction | $\delta(1~\text{pm})$ | 48% | Nuclear-scale effect |
 | Casimir excess | $\Delta_C(100~\text{nm})$ | 0.3% | Matches Drude-plasma anomaly |
@@ -2836,12 +2837,12 @@ To be explicit about what has and has not been demonstrated:
 
 **What remains hypothesized (one remaining hypothesis):**
 
-- ⚠️ $m = 10\,m_t = b_0 v_{\text{EW}}$ — supported by two converging routes and a self-consistency selection ($N_f = 6$), but the coupling of the GW scalar to the QCD trace anomaly is postulated, not derived from a UV completion
+- CAUTION — $m = 10\,m_t = b_0 v_{\text{EW}}$ — supported by two converging routes and a self-consistency selection ($N_f = 6$), but the coupling of the GW scalar to the QCD trace anomaly is postulated, not derived from a UV completion
 
 **What this does NOT claim:**
 
-- ❌ A proof of $G$ from pure mathematics (impossible — at least one physical scale must be measured)
-- ❌ That the remaining hypothesis ($m_\Phi = b_0 v_{\text{EW}}$) is established physics — it is a testable conjecture
+- NOT CLAIMED: A proof of $G$ from pure mathematics (impossible — at least one physical scale must be measured)
+- NOT CLAIMED: That the remaining hypothesis ($m_\Phi = b_0 v_{\text{EW}}$) is established physics — it is a testable conjecture
 
 ---
 
@@ -2902,10 +2903,10 @@ This formula:
 
 | Identification | Before QCD route | After QCD route (§5.11) | After Stage 12 (§3.12) |
 |:--|:--|:--|:--|
-| $\varepsilon_c = \eta_B$ | ⚠️ Hypothesis A | ✅ **Prediction** (0.32%) | ✅ Prediction |
-| $m = b_0\,v_{\text{EW}}$ ($c = 1$) | ⚠️ Hypothesis B | ⚠️ Hypothesis | ✅ **Proven** — RG fixed point + CW $\delta c < 0.5\%$ |
-| $\alpha$ | ❌ Not derived | ✅ **Derived** from QCD | ✅ Derived |
-| $\eta_B$ | Input (measured) | ✅ **Predicted** (0.32%) | ✅ Predicted |
+| $\varepsilon_c = \eta_B$ | CAUTION — Hypothesis A | PASS — **Prediction** (0.32%) | PASS — Prediction |
+| $m = b_0\,v_{\text{EW}}$ ($c = 1$) | CAUTION — Hypothesis B | CAUTION — Hypothesis | PASS — **Proven** — RG fixed point + CW $\delta c < 0.5\%$ |
+| $\alpha$ | NOT DERIVED | PASS — **Derived** from QCD | PASS — Derived |
+| $\eta_B$ | Input (measured) | PASS — **Predicted** (0.32%) | PASS — Predicted |
 
 Stage 12 (§3.12) proves $c = 1$ via three pillars: (1) RG fixed point, (2) 1-loop CW correction $\delta c \sim 10^{-4}$, (3) $c_\text{implied}$ within NLO uncertainty. All hypotheses are now either **proven** or **promoted to predictions**. The derivation chain Higgs → QCD → Gravity is **closed**.
 
@@ -2913,12 +2914,12 @@ Stage 12 (§3.12) proves $c = 1$ via three pillars: (1) RG fixed point, (2) 1-lo
 
 | Level | Hypotheses | Measured inputs | $G$ error | Status |
 |:--|:--|:--|:--|:--|
-| Section 1: Fitted | — | 0 | fit | ✅ 3 free params |
-| Section 4: Closure | — | 2 ($m$, $\varepsilon_c$) | 1.0% | ✅ 0 free params |
-| Section 5: $\eta_B$ route | 2 (A+B) | 2 ($\eta_B$, $m_t$) | 0.39% | ✅ 0 free params |
-| §5.11: QCD route | 1 (B only) | 3 ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | 1.88% | ✅ 0 free params + predicts $\eta_B$ |
-| **§3.12: CW proof ($c=1$)** | **0** | **3** ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | **1.88%** | **✅ COMPLETE — 0 hypotheses, 0 free params** |
-| **§3.13: NLO error budget** | **0** | **3** ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | **1.88% ($0.05\sigma$)** | **✅ 300 ppm in $\alpha$; tension = $0.05\sigma$** |
+| Section 1: Fitted | — | 0 | fit | PASS 3 free params |
+| Section 4: Closure | — | 2 ($m$, $\varepsilon_c$) | 1.0% | PASS — 0 free params |
+| Section 5: $\eta_B$ route | 2 (A+B) | 2 ($\eta_B$, $m_t$) | 0.39% | PASS — 0 free params |
+| §5.11: QCD route | 1 (B only) | 3 ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | 1.88% | PASS — 0 free params + predicts $\eta_B$ |
+| **§3.12: CW proof ($c=1$)** | **0** | **3** ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | **1.88%** | **PASS — COMPLETE — 0 hypotheses, 0 free params** |
+| **§3.13: NLO error budget** | **0** | **3** ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | **1.88% ($0.05\sigma$)** | **PASS — 300 ppm in $\alpha$; tension = $0.05\sigma$** |
 
 ---
 ## 5.11. Resolved: $\alpha$ from QCD Dimensional Transmutation
@@ -3026,10 +3027,10 @@ The larger error (1.88% vs. 0.39%) is expected: $G \propto e^{-3\alpha}$ is expo
 
 | Quantity | Before (§5.0–5.10) | After QCD Route (§5.11) | After Stage 12 (§3.12) |
 |----------|--------------------|-----------------------|-----------------------|
-| $m_\Phi = b_0\,v_{\text{EW}}$ ($c = 1$) | ⚠️ Hypothesis B | ⚠️ Hypothesis, strong QCD motivation | ✅ **Proven** — RG fixed point + CW $\delta c < 0.5\%$ |
-| $\alpha$ | ❌ Not derived | ✅ **Derived** from QCD dim. transmutation | ✅ Derived |
-| $\varepsilon_c = \eta_B$ | ⚠️ Hypothesis A | ✅ **Prediction** (error 0.32%) | ✅ Prediction |
-| $\eta_B$ | Input (measured from CMB) | ✅ **Predicted** from collider data alone | ✅ Predicted |
+| $m_\Phi = b_0\,v_{\text{EW}}$ ($c = 1$) | CAUTION — Hypothesis B | CAUTION — Hypothesis, strong QCD motivation | PASS — **Proven** — RG fixed point + CW $\delta c < 0.5\%$ |
+| $\alpha$ | NOT DERIVED | PASS — **Derived** from QCD dim. transmutation | PASS — Derived |
+| $\varepsilon_c = \eta_B$ | CAUTION — Hypothesis A | PASS — **Prediction** (error 0.32%) | PASS — Prediction |
+| $\eta_B$ | Input (measured from CMB) | PASS — **Predicted** from collider data alone | PASS — Predicted |
 
 **Summary**: The QCD route (§5.11) reduced the framework from two hypotheses to one ($m_\Phi = b_0\,v_{\text{EW}}$). Stage 12 (§3.12) now **proves** that remaining hypothesis via the Coleman-Weinberg calculation: $c = 1$ at tree level (RG fixed point) with 1-loop corrections $\delta c \sim 10^{-4}$ (negligible). The framework now has **zero hypotheses**.
 
@@ -3037,12 +3038,12 @@ The larger error (1.88% vs. 0.39%) is expected: $G \propto e^{-3\alpha}$ is expo
 
 | Level | Free params | Hypotheses | Measured inputs | $G$ error | Status |
 |-------|------------|-----------|----------------|-----------|--------|
-| Section 1: Fitted | 3 ($k, L, M_5$) | — | 0 | fit | ✅ |
-| Section 4: Closure | 0 | — | 2 ($m$, $\varepsilon_c$) | 1.0% | ✅ |
-| Section 5: $\eta_B$ route | 0 | 2 (A+B) | 2 ($\eta_B$, $m_t$) | 0.39% | ✅ |
-| Section 5.11: QCD route | 0 | 1 (B only) | 3 ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | 1.88% | ✅ + predicts $\eta_B$ |
-| **§3.12: CW proof ($c=1$)** | **0** | **0** | **3** ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | **1.88%** | **✅ COMPLETE** |
-| **§3.13: NLO error budget** | **0** | **0** | **3** ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | **1.88% ($0.05\sigma$)** | **✅ 300 ppm in $\alpha$; tension = $0.05\sigma$** |
+| Section 1: Fitted | 3 ($k, L, M_5$) | — | 0 | fit | PASS |
+| Section 4: Closure | 0 | — | 2 ($m$, $\varepsilon_c$) | 1.0% | PASS |
+| Section 5: $\eta_B$ route | 0 | 2 (A+B) | 2 ($\eta_B$, $m_t$) | 0.39% | PASS |
+| Section 5.11: QCD route | 0 | 1 (B only) | 3 ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | 1.88% | PASS + predicts $\eta_B$ |
+| **§3.12: CW proof ($c=1$)** | **0** | **0** | **3** ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | **1.88%** | **PASS — COMPLETE** |
+| **§3.13: NLO error budget** | **0** | **0** | **3** ($\alpha_s$, $m_t$, $v_{\text{EW}}$) | **1.88% ($0.05\sigma$)** | **PASS — 300 ppm in $\alpha$; tension = $0.05\sigma$** |
 
 The CW proof (Stage 12) closes the chain: 0 hypotheses remain. Stage 13 quantifies the precision: the 1.88% error maps to only $0.05\sigma$ tension in $\alpha_s(M_Z)$, corresponding to 287 ppm precision in the warp parameter $\alpha$. The QCD route uses no cosmological input — everything comes from collider experiments. It predicts $\eta_B$ with 0.32% accuracy as a bonus.
 
@@ -3111,7 +3112,7 @@ The predicted signal **coincides** with the unresolved Drude-plasma discrepancy 
 |:--|:--|:--|:--|
 | Radion mass | $1723.5$ GeV | HL-LHC ($WW$, $ZZ$, $hh$, $t\bar{t}$) | 2029+ |
 | Radion dominant BR | $WW$ ($47\%$), $ZZ$/$hh$ ($23\%$ each) | HL-LHC | 2029+ |
-| No new colored particles | $b_0 = 7$ ($N_f = 6$) | LHC exclusions | ✅ confirmed |
+| No new colored particles | $b_0 = 7$ ($N_f = 6$) | LHC exclusions | PASS — confirmed |
 | Casimir excess | $0.3\%$ at 100–300 nm | Precision Casimir | 2025–30 |
 | $\alpha_s(M_Z)$ for exact $G$ | $0.11795$ | FCC-ee ($\pm 0.0001$) | 2035+ |
 | $\eta_B$ from collider data | $6.124 \times 10^{-10}$ | CMB-S4 ($\pm 0.02 \times 10^{-10}$) | 2030+ |
@@ -3199,12 +3200,12 @@ With FCC-ee precision ($\delta\alpha_s = \pm 0.0001$), the $G$ uncertainty from 
 The complete computation — including both derivations and all consistency checks — is verified in the computational validation suite (Section 3, Stage 10). The results are:
 
 ```
-  ✅ PASS  Derivation A: ε_c = η_B (baryogenesis fixed point)
-  ✅ PASS  Derivation B: m = b₀ v_EW (trace anomaly mass)
-  ✅ PASS  G error < 1%: 0.394%
-  ✅ PASS  G error < 0.5%: 0.394%
-  ✅ PASS  α agreement (bounce vs cosm) < 2%
-  ✅ PASS  Zero free parameters
+  PASS  Derivation A: ε_c = η_B (baryogenesis fixed point)
+  PASS  Derivation B: m = b₀ v_EW (trace anomaly mass)
+  PASS  G error < 1%: 0.394%
+  PASS  G error < 0.5%: 0.394%
+  PASS  α agreement (bounce vs cosm) < 2%
+  PASS  Zero free parameters
 
   G_pred = 6.73524e-39 GeV⁻²
   G_obs  = 6.70883e-39 GeV⁻²
@@ -3438,8 +3439,8 @@ The framework makes concrete, quantitative predictions accessible to current and
 
 **Already confirmed:**
 
-- **NLO precision test:** ✅ **Confirmed (Stage 13).** The 1.88% $G$ error maps to $0.05\sigma$ tension in $\alpha_s(M_Z)$ (287 ppm in $\alpha$). QCD 3-loop/2-loop convergence ratio = 0.0018. The value $\alpha_s(M_Z) = 0.11795$ needed for exact $G_\text{obs}$ is $0.05\sigma$ from the PDG world average.
-- **No new colored fermions below $m_\Phi$:** ✅ The relation requires $b_0 = 7$ ($N_f = 6$), ruling out additional QCD-charged particles below $1.7$ TeV. LHC Run 2 exclusions are consistent. **Quantitative sensitivity (§5.11.11):** even a single vector-like fermion generation ($\Delta N_f = 1$) would shift $G_{\text{closure}}$ by $-99.5\%$ ($G_{\text{eff}}/G_{\text{obs}} \approx 0.005$) — a factor of $\sim 200$ deviation, exponentially amplified by $e^{-3\alpha}$. This makes the formula **more sensitive to new colored particles than direct collider searches**.
+- **NLO precision test:** **PASS — Confirmed (Stage 13).** The 1.88% $G$ error maps to $0.05\sigma$ tension in $\alpha_s(M_Z)$ (287 ppm in $\alpha$). QCD 3-loop/2-loop convergence ratio = 0.0018. The value $\alpha_s(M_Z) = 0.11795$ needed for exact $G_\text{obs}$ is $0.05\sigma$ from the PDG world average.
+- **No new colored fermions below $m_\Phi$:** PASS The relation requires $b_0 = 7$ ($N_f = 6$), ruling out additional QCD-charged particles below $1.7$ TeV. LHC Run 2 exclusions are consistent. **Quantitative sensitivity (§5.11.11):** even a single vector-like fermion generation ($\Delta N_f = 1$) would shift $G_{\text{closure}}$ by $-99.5\%$ ($G_{\text{eff}}/G_{\text{obs}} \approx 0.005$) — a factor of $\sim 200$ deviation, exponentially amplified by $e^{-3\alpha}$. This makes the formula **more sensitive to new colored particles than direct collider searches**.
 
 **Testable 2025–2030:**
 
@@ -3455,9 +3456,9 @@ The framework makes concrete, quantitative predictions accessible to current and
 
 | Observable | Value | Experiment | Status |
 |:--|:--|:--|:--|
-| $\alpha_s$ tension | $0.05\sigma$ | PDG world average | ✅ confirmed |
-| $\eta_B$ prediction | $6.124 \times 10^{-10}$ (0.32%) | Planck CMB | ✅ confirmed |
-| $b_0 = 7$ ($N_f = 6$) | no exotics $< 1.7$ TeV | LHC Run 2 | ✅ survived current LHC bounds |
+| $\alpha_s$ tension | $0.05\sigma$ | PDG world average | PASS — confirmed |
+| $\eta_B$ prediction | $6.124 \times 10^{-10}$ (0.32%) | Planck CMB | PASS — confirmed |
+| $b_0 = 7$ ($N_f = 6$) | no exotics $< 1.7$ TeV | LHC Run 2 | PASS — survived current LHC bounds |
 | Casimir excess | $0.3\%$ at 100–300 nm | precision Casimir | 2025–30 |
 | Radion $m_\Phi$ | $1723.5$ GeV | HL-LHC | 2029+ |
 | FCC-ee $\alpha_s$ | $0.11795 \pm 0.0001$ | FCC-ee | 2035+ |
