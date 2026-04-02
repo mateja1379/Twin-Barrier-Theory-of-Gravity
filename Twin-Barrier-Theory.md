@@ -3666,3 +3666,17 @@ The framework makes concrete, quantitative predictions accessible to current and
 ---
 
 **Author:** Mateja Radojičić · Independent Researcher · Belgrade, Serbia
+
+---
+
+## Author Information
+
+**Mateja Radojičić**
+
+Independent Researcher
+
+Belgrade, Serbia
+
+mateja.d.radojicic@gmail.com
+
+[LinkedIn](https://www.linkedin.com/in/mateja-radojicic/)
