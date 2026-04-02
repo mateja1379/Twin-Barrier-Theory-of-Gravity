@@ -109,24 +109,24 @@ The central idea of the theory is that these two components naturally tend towar
 alignment into a lower-action equilibrium state. However, due to the finite energetic barrier 
 associated with the extra-dimensional separation, spontaneous collapse into a unified state is 
 generally forbidden under ordinary conditions. The residual tendency toward this re-alignment 
-manifests in our spacetime as an eƯective attractive interaction, identified here with gravity. 
+manifests in our spacetime as an effective attractive interaction, identified here with gravity. 
 An intuitive analogy may be drawn from two magnets separated by a thin glass barrier: the attractive 
 force is always present, yet complete contact can occur only when the force exceeds the structural 
-resistance of the barrier. In the Twin- Barrier picture, the extra-dimensional separation plays the role 
+resistance of the barrier. In the Twin-Barrier picture, the extra-dimensional separation plays the role 
 of this barrier, while gravitational attraction reflects the persistent energetic drive of the particle and 
 its twin component to recombine. 
 This framework naturally extends to interactions between distinct particles. Each particle induces a 
 localized cross-barrier permeability in spacetime, producing a weak channel through which the 
-twin components of neighboring particles partially couple. As a result, each particle eƯectively 
+twin components of neighboring particles partially couple. As a result, each particle effectively
 lowers the twin-barrier mismatch experienced by nearby particles, creating a mutual energetic 
 drive toward reduced separation that appears in 4D spacetime as gravitational attraction. As the 
-total mass-energy density increases, this permeability grows, strengthening the eƯective attraction. 
-In the extreme limit, suƯiciently concentrated mass may produce a permeability large enough to 
+total mass-energy density increases, this permeability grows, strengthening the effective attraction. 
+In the extreme limit, sufficiently concentrated mass may produce a permeability large enough to 
 trigger full cross-barrier merger, corresponding to gravitational collapse and the formation of Black 
 Holes. 
 A particularly compelling consequence of this model is a natural interpretation of Dark Matter. 
 States in which the visible and twin components merge into a perfectly balanced cross-barrier 
-configuration may become eƯectively decoupled from standard gauge interactions while 
+configuration may become effectively decoupled from standard gauge interactions while 
 preserving gravitational influence. Such states would remain physically real yet electromagnetically 
 invisible, reproducing the phenomenology commonly attributed to dark matter. 
 The central theoretical question is therefore: what energy scale is required to transfer a particle 
@@ -1090,7 +1090,7 @@ In the warped background, the kinetic and potential terms acquire different warp
 
 ## Fourteen-Stage Validation
 
-> **Source code:** All 13 stage scripts (`stage1.py` – `stage13.py`) plus the orchestrator `run_all.py` are available at
+> **Source code:** All 14 stage scripts (`stage1.py` – `stage14.py`) plus the orchestrator `run_all.py` are available at
 > [https://github.com/mateja1379/Twin-Barrier-Theory-of-Gravity](https://github.com/mateja1379/Twin-Barrier-Theory-of-Gravity)
 >
 > To reproduce every check:
