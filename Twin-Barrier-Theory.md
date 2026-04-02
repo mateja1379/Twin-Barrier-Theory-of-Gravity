@@ -2,7 +2,6 @@
 
 # Twin Barrier Theory of Gravity
 
-### *A Microscopic Derivation of Newton's Constant from Standard Model Inputs*
 
 <br><br>
 
