@@ -109,49 +109,17 @@ Release 2.0 — April 2026
 
 ## Introduction
 
-One of the deepest unresolved questions in modern physics is the fundamental origin of gravity. 
-Although General Relativity describes gravity with extraordinary precision as the curvature of 
-spacetime, it fundamentally explains how gravity behaves rather than why it exists in the first 
-place. In parallel, the framework of Quantum Mechanics successfully explains the other 
-fundamental interactions, yet gravity remains the only interaction without a universally accepted 
-foundational origin. 
-In this work, I propose the Twin-Barrier Theory of Gravity, based on the hypothesis that mass is 
-not fully localized within our observable four-dimensional spacetime. Instead, each fundamental 
-particle is treated as a single physical entity whose wavefunction is distributed across two coupled 
-barrier, or equivalently, two spatial components separated by an additional dimension. From the 
-perspective of our barrier, the particle possesses a visible component, while its complementary 
-twin maximum resides in the adjacent dimension. 
-The central idea of the theory is that these two components naturally tend toward energetic re-
-alignment into a lower-action equilibrium state. However, due to the finite energetic barrier 
-associated with the extra-dimensional separation, spontaneous collapse into a unified state is 
-generally forbidden under ordinary conditions. The residual tendency toward this re-alignment 
-manifests in our spacetime as an effective attractive interaction, identified here with gravity. 
-An intuitive analogy may be drawn from two magnets separated by a thin glass barrier: the attractive 
-force is always present, yet complete contact can occur only when the force exceeds the structural 
-resistance of the barrier. In the Twin-Barrier picture, the extra-dimensional separation plays the role 
-of this barrier, while gravitational attraction reflects the persistent energetic drive of the particle and 
-its twin component to recombine. 
-This framework naturally extends to interactions between distinct particles. Each particle induces a 
-localized cross-barrier permeability in spacetime, producing a weak channel through which the 
-twin components of neighboring particles partially couple. As a result, each particle effectively
-lowers the twin-barrier mismatch experienced by nearby particles, creating a mutual energetic 
-drive toward reduced separation that appears in 4D spacetime as gravitational attraction. As the 
-total mass-energy density increases, this permeability grows, strengthening the effective attraction. 
-In the extreme limit, sufficiently concentrated mass may produce a permeability large enough to 
-trigger full cross-barrier merger, corresponding to gravitational collapse and the formation of Black 
-Holes. 
-A particularly compelling consequence of this model is a natural interpretation of Dark Matter. 
-States in which the visible and twin components merge into a perfectly balanced cross-barrier 
-configuration may become effectively decoupled from standard gauge interactions while 
-preserving gravitational influence. Such states would remain physically real yet electromagnetically 
-invisible, reproducing the phenomenology commonly attributed to dark matter. 
-The central theoretical question is therefore: what energy scale is required to transfer a particle 
-entirely into its twin-dimensional counterpart? Here I present the first fully microscopic 
-realization of the Twin-barrier framework, showing that a converged finite-action 5D tunneling 
-sector dynamically generates the exponential hierarchy that simultaneously accounts for 
-gravitational attraction, dark-sector metastability, black-hole collapse physics, and the observed 
-smallness and stability of Newtonian gravity as emergent consequences of a single higher-
-dimensional mechanism.
+One of the deepest unresolved questions in modern physics is the fundamental origin of gravity. Although General Relativity describes gravity with extraordinary precision as the curvature of spacetime, it fundamentally explains how gravity *behaves* rather than why it *exists* in the first place. In parallel, the framework of Quantum Mechanics successfully explains the other fundamental interactions, yet gravity remains the only interaction without a universally accepted foundational origin.
+
+In this work, I propose the **Twin-Barrier Theory of Gravity**, based on the hypothesis that mass is not fully localized within our observable four-dimensional spacetime. Instead, each fundamental particle is treated as a single physical entity whose wavefunction is distributed across two coupled barriers, or equivalently, two spatial components separated by an additional dimension. From the perspective of our barrier, the particle possesses a visible component, while its complementary twin maximum resides in the adjacent dimension.
+
+The central idea of the theory is that these two components naturally tend toward energetic re-alignment into a lower-action equilibrium state. However, due to the finite energetic barrier associated with the extra-dimensional separation, spontaneous collapse into a unified state is generally forbidden under ordinary conditions. The residual tendency toward this re-alignment manifests in our spacetime as an effective attractive interaction, identified here with gravity. An intuitive analogy may be drawn from two magnets separated by a thin glass barrier: the attractive force is always present, yet complete contact can occur only when the force exceeds the structural resistance of the barrier. In the Twin-Barrier picture, the extra-dimensional separation plays the role of this barrier, while gravitational attraction reflects the persistent energetic drive of the particle and its twin component to recombine.
+
+This framework naturally extends to interactions between distinct particles. Each particle induces a localized cross-barrier permeability in spacetime, producing a weak channel through which the twin components of neighboring particles partially couple. As a result, each particle effectively lowers the twin-barrier mismatch experienced by nearby particles, creating a mutual energetic drive toward reduced separation that appears in 4D spacetime as gravitational attraction. As the total mass-energy density increases, this permeability grows, strengthening the effective attraction. In the extreme limit, sufficiently concentrated mass may produce a permeability large enough to trigger full cross-barrier merger, corresponding to gravitational collapse and the formation of black holes.
+
+A particularly compelling consequence of this model is a natural interpretation of **dark matter**. States in which the visible and twin components merge into a perfectly balanced cross-barrier configuration may become effectively decoupled from standard gauge interactions while preserving gravitational influence. Such states would remain physically real yet electromagnetically invisible, reproducing the phenomenology commonly attributed to dark matter.
+
+The central theoretical question is therefore: *what energy scale is required to transfer a particle entirely into its twin-dimensional counterpart?* Here I present the first fully microscopic realization of the Twin-Barrier framework, showing that a converged finite-action 5D tunneling sector dynamically generates the exponential hierarchy that simultaneously accounts for gravitational attraction, dark-sector metastability, black-hole collapse physics, and the observed smallness and stability of Newtonian gravity as emergent consequences of a single higher-dimensional mechanism.
 
 > **Note on mathematical tools.** The warped 5D orbifold geometry and Goldberger–Wise stabilization are used here strictly as mathematical tools for constructing a self-consistent extra-dimensional manifold. The physical content of the theory does not extend the Randall–Sundrum program, but introduces an independent dual-component mechanism for emergent gravity. It is essential not to conflate the geometric scaffolding (which is borrowed) with the physical hypothesis (which is new).
 
