@@ -2308,7 +2308,7 @@ At 100 nm the signal-to-noise ratio is $\sim 3$, making this a falsifiable predi
 | Next-gen detectable | SNR $>$ 1 at 100–300 nm with 0.1% precision | **PASS** |
 | Both experiments | Consistent with Chen 2004 AND Decca 2005 | **PASS** |
 
-**Verdict: ALL 8 CHECKS PASS** — Twin-barrier Casimir prediction is consistent with existing data and falsifiable by next-generation experiments.
+**Verdict: ALL 8 CHECKS PASS** — Existing precision Casimir data are fully compatible with the predicted twin-photon Yukawa residual. The signal lies below current experimental sensitivity at every measured separation, carries the correct sign (enhancement, same as the plasma-over-Drude direction), and falls entirely within the Drude–plasma gap. It is falsifiable by next-generation experiments achieving $\sim 0.1\%$ precision at 100–300 nm.
 
 ---
 
