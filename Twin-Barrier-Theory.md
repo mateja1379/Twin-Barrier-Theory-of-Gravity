@@ -3587,10 +3587,10 @@ The framework makes concrete, quantitative predictions accessible to current and
 
 | Observable | Value | Experiment | Status |
 |:--|:--|:--|:--|
-| $\alpha_s$ tension | $0.05\sigma$ | PDG world average | [PASS — confirmed (Stage 13)](#313-stage-13-nlo-precision-error-budget) |
-| $\eta_B$ prediction | $6.124 \times 10^{-10}$ (0.32%) | Planck CMB | [PASS — confirmed (Stage 10)](#310-stage-10-qcd-route-to-newtons-constant) |
-| $b_0 = 7$ ($N_f = 6$) | no exotics $< 1.7$ TeV | LHC Run 2 | [PASS — survived (Stage 11)](#311-stage-11-bootstrap-proof-mφ-b₀-v_ew) |
-| Casimir compatibility | hidden below 0.5–1.75% | Chen 2004 + Decca 2005 | [PASS — confirmed (Stage 14)](#314-stage-14-casimir-prediction-vs-experiment) |
+| $\alpha_s$ tension | $0.05\sigma$ | PDG world average | [PASS — confirmed (Stage 13)](#313-stage-13--nlo-precision--error-budget) |
+| $\eta_B$ prediction | $6.124 \times 10^{-10}$ (0.32%) | Planck CMB | [PASS — confirmed (Stage 10)](#310-stage-10--qcd-route-to-newtons-constant) |
+| $b_0 = 7$ ($N_f = 6$) | no exotics $< 1.7$ TeV | LHC Run 2 | [PASS — survived (Stage 11)](#311-stage-11--bootstrap-proof-mφ--b₀-v_ew) |
+| Casimir compatibility | hidden below 0.5–1.75% | Chen 2004 + Decca 2005 | [PASS — confirmed (Stage 14)](#314-stage-14--casimir-prediction-vs-experiment) |
 | Casimir detection | SNR $\sim 3$ at 100 nm | next-gen 0.1% Casimir | 2025–30 |
 | Radion $m_\Phi$ | $1723.5$ GeV | HL-LHC | 2029+ |
 | FCC-ee $\alpha_s$ | $0.11795 \pm 0.0001$ | FCC-ee | 2035+ |
