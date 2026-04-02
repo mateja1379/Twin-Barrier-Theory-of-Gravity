@@ -1071,7 +1071,18 @@ In the warped background, the kinetic and potential terms acquire different warp
 
 # Section 3: Computational Validation Suite
 
-## Eight-Stage (Extended to Ten-Stage) Validation
+## Thirteen-Stage Validation
+
+> **Source code:** All 13 stage scripts (`stage1.py` – `stage13.py`) plus the orchestrator `run_all.py` are available at
+> [https://github.com/mateja1379/Twin-Barrier-Theory-of-Gravity](https://github.com/mateja1379/Twin-Barrier-Theory-of-Gravity)
+>
+> To reproduce every check:
+> ```bash
+> git clone https://github.com/mateja1379/Twin-Barrier-Theory-of-Gravity.git
+> cd Twin-Barrier-Theory-of-Gravity
+> pip install jax jaxlib numpy scipy matplotlib
+> python run_all.py
+> ```
 
 ### 3.1. Stage 1 — Background Metric Verification
 
