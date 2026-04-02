@@ -1,3 +1,23 @@
+<div align="center">
+
+# Twin Barrier Theory of Gravity
+
+### *A Microscopic Derivation of Newton's Constant from Standard Model Inputs*
+
+<br><br>
+
+**Mateja Radojičić**
+
+Independent Researcher
+
+Belgrade, Serbia
+
+<br>
+
+Release 1.0 — April 2026
+
+</div>
+
 
 
 ---
