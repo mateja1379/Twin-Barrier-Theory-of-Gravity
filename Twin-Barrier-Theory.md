@@ -3530,6 +3530,23 @@ In short: the existence of a relation spanning 12 branches of physics (with zero
 
 ---
 
+
+## Addressing Common Objections
+
+**1. "The mass identification $m = 10\,m_t$ is numerology."**
+It is not. The relation $m_\Phi = b_0\,v_{\text{EW}}$ emerges as the unique renormalization-group fixed point of the Goldberger–Wise effective potential (Stage 11), stabilized by the Coleman–Weinberg calculation to $|\delta c| < 0.6\%$ (Stage 12). The factor $\approx 10$ in $m_\Phi/m_t$ is a consequence of $y_t \approx 1$, not an input.
+
+**2. "An extraordinary claim requires extraordinary evidence."**
+We agree. The full derivation code (14 stages) is publicly available for independent reproduction. The framework also makes falsifiable quantitative predictions — a radion at 1723.5 GeV (HL-LHC), a Yukawa Casimir residual of 0.18–0.30% at 100–300 nm (next-generation experiments), and a baryon asymmetry matching Planck to 0.32% — any one of which can refute the theory.
+
+**3. "'Zero free parameters' hides assumptions in geometric choices."**
+The five foundational postulates (warped $S^1/\mathbb{Z}_2$ orbifold, dual wave function, Goldberger–Wise stabilization, gravitational zero-mode dominance, spectral stability) are stated explicitly in Section 1.1. "Zero free parameters" refers strictly to the absence of fitted constants: no measured value of $G$ or $M_{\text{Pl}}$ enters the derivation.
+
+**4. "1.88% agreement is postdiction, not prediction."**
+The formula has no tunable parameters; the three inputs ($\alpha_s(M_Z)$, $m_t$, $v_{\text{EW}}$) are independently measured at colliders. The same derivation chain independently predicts the baryon asymmetry $\eta_B = 6.124 \times 10^{-10}$, matching the Planck CMB measurement to 0.32% — a cosmological observable derived from collider data. Postdiction cannot produce independent cross-domain predictions.
+
+---
+
 ## Conclusion: A Microscopic Derivation of Newton's Constant
 
 This work presents, to the best of the author's knowledge, the first microscopic derivation of Newton's gravitational constant $G_N$ from Standard Model collider measurements alone:
