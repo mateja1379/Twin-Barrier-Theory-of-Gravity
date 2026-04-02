@@ -1,9 +1,10 @@
 <div align="center">
 
+<br><br><br><br>
+
 # Twin Barrier Theory of Gravity
 
-
-<br><br>
+<br><br><br><br>
 
 **Mateja Radojičić**
 
@@ -11,9 +12,9 @@ Independent Researcher
 
 Belgrade, Serbia
 
-<br>
+<br><br>
 
-Release 1.0 — April 2026
+Release 2.0 — April 2026
 
 </div>
 
